@@ -6,8 +6,9 @@
 
  	<script type="text/javascript" language="javascript">
 
- 	    var jqxhr = $.get("yahoo.htm", function () {
+ 	    var text = $.get("yahoo.htm", function () {
  	        console.log('sucess');
+ 	        console.log(text)
  	    })
  	</script>
  	<script>
@@ -15,11 +16,12 @@
  	</script>
  </head>
  <body>
- 1234
- <input type="button" id="btn1" name="btn1" value="執行jQuery Load按鈕" />
- <div id="jqloadDiv"></div>
-
-<p>Test Paragraph.</p>
+ <b>Projects:</b>
+<ol id="new-projects"></ol>
+ 
+<script>
+$( "#new-projects" ).load( "yahoo.htm" );
+</script>
 
 
  </body>
