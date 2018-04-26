@@ -14,11 +14,13 @@
 	</script>
 
 	<script>
-	$("#btn-go").click(function(){
-gtag('event', 'action', 
-{ 'event_category' : 'ec', 
-'event_label' : 'el' });
-});
+	// $("#btn-go").click(function(){
+	// 	console.log('hi');
+	// 	gtag('event', 'action', 
+	// 	{ 'event_category' : 'ec', 
+	// 	'event_label' : 'el' });
+	// 	});
+
 	</script>
 
 
@@ -27,5 +29,15 @@ gtag('event', 'action',
 <body>
 	<button id="btn-go">button</button>
 1234
+
+<script>
+	$("#btn-go").click(function(){
+		console.log('hello');
+		gtag('event', 'action', 
+			{ 'event_category' : 'ec', 
+			'event_label' : 'el' });
+	});
+
+</script>
 </body>
 </html>
