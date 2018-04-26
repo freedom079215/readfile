@@ -1,24 +1,20 @@
- <!DOCTYPE html>
- <html>
- <head>
- 	<title></title>
- 	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
- 	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
- 	<script type="text/javascript" language="javascript">
- 		$.get( "yahoo.htm" , function( data ) {
-  		alert( "Data Loaded: " + data );
-		});
- 	</script>
- </head>
- <body>
- <b>Projects:</b>
-<ol id="new-projects"></ol>
- 
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-$( "#new-projects" ).load( "yahoo.htm" );
+$(document).ready(function(){
+    $("button").click(function(){
+        $.get("yahoo.htm", function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+    });
+});
 </script>
+</head>
+<body>
 
+<button>Send an HTTP GET request to a page and get the result back</button>
 
- </body>
- </html>
+</body>
+</html>
