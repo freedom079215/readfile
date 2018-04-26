@@ -26,8 +26,7 @@ $(document).ready(function(){
                  idiv.id = str3;
                  idiv.className = 'block'
                  document.getElementsByTagName('body')[0].appendChild(idiv);
-                 text = "$(\"#" + str3 + "\").click(function(){\b\r \n\ 
-                 	gtag(\'event\', \'action\', { \'event_category\' : \'ec\', \'event_label\' : \'el\' });" +
+                 text = "$(\"#" + str3 + "\").click(function(){\b\r \n\ gtag(\'event\', \'action\', { \'event_category\' : \'ec\', \'event_label\' : \'el\' });" +
                  	"});"
                  console.log(text)
                  $('#'+str3).text(text)
