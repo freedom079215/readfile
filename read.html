@@ -10,8 +10,8 @@ $(document).ready(function(){
         });
     });
 });
-var str = $.get("yahoo.htm");
-$( "text" ).html( str );
+var str = $.get("yahoo.htm").text();
+$( "#text" ).text( str );
 </script>
 </head>
 <body>
