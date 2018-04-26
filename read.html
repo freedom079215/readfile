@@ -17,7 +17,7 @@ $(document).ready(function(){
                 console.log(str2)
                 //str2 = str2.replace(/\'/gi,' ')
                 str2 = str2[0].replace("\"","")
-                str3 = str2[0].replace("id=","")
+                str3 = str2.replace("id=","")
                 console.log(str3[0])
                  $("#text").append(i+":"+ str3 + "<br>")
                  var idiv = document.createElement('div')
