@@ -5,7 +5,7 @@
 <script>
 $(document).ready(function(){
     $("button").click(function(){
-        $.get("test.htm", function(data, status){
+        $.get("ts.htm", function(data, status){
             //alert("Data: " + data + "\nStatus: " + status);
             //var str = data.match(/href.*?html/g)
             var str = data.match(/<a id=".*?>/g)
