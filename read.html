@@ -9,13 +9,16 @@ $(document).ready(function(){
             //alert("Data: " + data + "\nStatus: " + status);
             //var str = data.match(/href.*?html/g)
             var str = data.match(/<a.*?<\/a>/g)
-            //var str2 = str.split(",")
+            //var str2 = str.split(",")        
             for (var i = 0; i < str.length; i++) {
                 var str2 = str[i];
+                str2.match(/id=.*?"/g)
                  $("#text").append(i+":"+ str2 + "<br>");
             }
         });
     });
+
+
 });
 var str = $.get("yahoo.htm");
 $( '#text' ).text( str );
