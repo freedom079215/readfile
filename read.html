@@ -8,7 +8,7 @@ $(document).ready(function(){
         $.get("ts.htm", function(data, status){
             //alert("Data: " + data + "\nStatus: " + status);
             //var str = data.match(/href.*?html/g)
-            var str = data.match(/<a.*?>/g)
+            var str = data.match(/<a id=".*?>/g)
             //var str2 = str.split(",")        
             for (var i = 0; i < str.length; i++) {
                 var str2 = str[i];
