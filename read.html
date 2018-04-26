@@ -6,13 +6,16 @@
 $(document).ready(function(){
     $("button").click(function(){
         $.get("yahoo.htm", function(data, status){
-            alert("Data: " + data + "\nStatus: " + status);
+            //alert("Data: " + data + "\nStatus: " + status);
+            $("#text").text( 'text' );
+            $("#text").text( str );
+
         });
     });
 });
 var str = $.get("yahoo.htm");
 $( '#text' ).text( str );
-$( '#text' ).text( 'text' );
+$("#text").text( 'text' );
 
 </script>
 </head>
