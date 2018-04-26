@@ -7,8 +7,9 @@ $(document).ready(function(){
     $("button").click(function(){
         $.get("ts.htm", function(data, status){
             //alert("Data: " + data + "\nStatus: " + status);
+            var str = data.match(/href\b/)
             $("#text").text( 'text' );
-            $("#text").text( data );
+            $("#text").text( str );
 
         });
     });
