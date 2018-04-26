@@ -12,7 +12,7 @@ $(document).ready(function(){
             //var str2 = str.split(",")        
             for (var i = 0; i < str.length; i++) {
                 var str2 = str[i];
-                str2 = str2.match(/id=.*?"/g)
+                str2 = str2.match(/id=".*?"/g)
                  $("#text").append(i+":"+ str2 + "<br>");
             }
         });
