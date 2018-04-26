@@ -1,0 +1,523 @@
+@charset "UTF-8";
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Droid Sans", PingFang TC, 黑體-繁, Heiti TC, 蘋果儷中黑, Apple LiGothic Medium, 微軟正黑體, Microsoft JhengHei;
+  background-color: #ffe1ce; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+button {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Droid Sans", PingFang TC, 黑體-繁, Heiti TC, 蘋果儷中黑, Apple LiGothic Medium, 微軟正黑體, Microsoft JhengHei; }
+  button:focus {
+    outline: none; }
+
+a {
+  text-decoration: none; }
+
+input, textarea, select {
+  border: 0;
+  background-color: transparent;
+  display: inline-block; }
+  input:focus, textarea:focus, select:focus {
+    outline: none; }
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+    color: white; }
+  input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+    color: white; }
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
+    color: white; }
+  input:-moz-placeholder, textarea:-moz-placeholder, select:-moz-placeholder {
+    color: white; }
+
+.fixed-button-container {
+  position: fixed;
+  right: 10px;
+  bottom: 60px;
+  z-index: 100;
+  text-align: right; }
+  .fixed-button-container button#btn-top {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 0; }
+
+@media screen and (max-width: 414px) {
+  .fixed-button-container {
+    bottom: 67px; } }
+
+.navbar {
+  margin-bottom: 0; }
+
+footer {
+  position: relative; }
+  footer .container-fluid .row {
+    background-color: #d80c18; }
+    footer .container-fluid .row .grey {
+      position: absolute;
+      left: 50%;
+      width: 50%;
+      height: 50px;
+      background-color: #878789; }
+    footer .container-fluid .row .container {
+      height: 50px; }
+      footer .container-fluid .row .container span.helper {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle; }
+      footer .container-fluid .row .container .copyright {
+        font-size: 12px;
+        color: white;
+        background-color: #d80c18;
+        height: 100%;
+        padding-left: 0;
+        vertical-align: middle; }
+        footer .container-fluid .row .container .copyright p {
+          margin: 0;
+          display: inline-block;
+          vertical-align: middle; }
+      footer .container-fluid .row .container .logo {
+        background-color: #878789;
+        height: 100%; }
+        footer .container-fluid .row .container .logo img {
+          display: inline-block;
+          vertical-align: middle; }
+
+@media screen and (max-width: 768px) {
+  footer .container-fluid .row .container {
+    padding-left: 0;
+    padding-right: 0; }
+    footer .container-fluid .row .container .copyright {
+      padding-left: 15px;
+      padding-right: 15px; } }
+
+@media screen and (max-width: 414px) {
+  footer .container-fluid .row .container .copyright {
+    text-align: center;
+    padding-top: 2%; }
+    footer .container-fluid .row .container .copyright span.helper {
+      display: none; }
+  footer .container-fluid .row .container .logo {
+    text-align: center; } }
+
+body {
+  background-color: white; }
+
+.wrap {
+  position: relative;
+  width: 100%;
+  background-color: #ffe1ce; }
+  .wrap .content-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    background-image: url("../img/index/bg.jpg");
+    background-repeat: no-repeat; }
+    .wrap .content-container:before {
+      position: relative;
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 52.5%; }
+    .wrap .content-container .bg-container {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; }
+      .wrap .content-container .bg-container .paper-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10; }
+        .wrap .content-container .bg-container .paper-container .paper {
+          position: absolute; }
+          .wrap .content-container .bg-container .paper-container .paper.paper-1 {
+            left: 3.33333%;
+            top: 61.5873%;
+            width: 7.75%;
+            background-image: url("../img/index/paper/paper_1.png");
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: contain; }
+            .wrap .content-container .bg-container .paper-container .paper.paper-1:before {
+              position: relative;
+              display: block;
+              content: "";
+              width: 100%;
+              padding-top: 110.75269%; }
+          .wrap .content-container .bg-container .paper-container .paper.paper-2 {
+            left: 58.58333%;
+            top: 4.12698%;
+            width: 8.25%;
+            background-image: url("../img/index/paper/paper_2.png");
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: contain; }
+            .wrap .content-container .bg-container .paper-container .paper.paper-2:before {
+              position: relative;
+              display: block;
+              content: "";
+              width: 100%;
+              padding-top: 44.44444%; }
+          .wrap .content-container .bg-container .paper-container .paper.paper-3 {
+            left: 1.08333%;
+            top: 31.90476%;
+            width: 6.08333%;
+            background-image: url("../img/index/paper/paper_3.png");
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: contain; }
+            .wrap .content-container .bg-container .paper-container .paper.paper-3:before {
+              position: relative;
+              display: block;
+              content: "";
+              width: 100%;
+              padding-top: 138.35616%; }
+          .wrap .content-container .bg-container .paper-container .paper.paper-4 {
+            left: 46%;
+            top: 13.33333%;
+            width: 7%;
+            background-image: url("../img/index/paper/paper_4.png");
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: contain; }
+            .wrap .content-container .bg-container .paper-container .paper.paper-4:before {
+              position: relative;
+              display: block;
+              content: "";
+              width: 100%;
+              padding-top: 115.47619%; }
+          .wrap .content-container .bg-container .paper-container .paper.paper-5 {
+            left: 91.66667%;
+            top: 46.03175%;
+            width: 7.91667%;
+            background-image: url("../img/index/paper/paper_5.png");
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: contain; }
+            .wrap .content-container .bg-container .paper-container .paper.paper-5:before {
+              position: relative;
+              display: block;
+              content: "";
+              width: 100%;
+              padding-top: 90.52632%; }
+      .wrap .content-container .bg-container .box-container {
+        position: absolute;
+        left: 2.16667%;
+        top: 12.69841%;
+        width: 114.41667%;
+        background-image: url("../img/index/bg.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain; }
+        .wrap .content-container .bg-container .box-container:before {
+          position: relative;
+          display: block;
+          content: "";
+          width: 100%;
+          padding-top: 43.69993%; }
+      .wrap .content-container .bg-container .light {
+        position: absolute;
+        left: 47.25%;
+        top: 10.31746%;
+        width: 42.25%;
+        background-image: url("../img/index/light.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain; }
+        .wrap .content-container .bg-container .light:before {
+          position: relative;
+          display: block;
+          content: "";
+          width: 100%;
+          padding-top: 99.01381%; }
+      .wrap .content-container .bg-container .staff {
+        position: absolute;
+        left: 45.66667%;
+        top: 42.53968%;
+        width: 21.58333%;
+        background-image: url("../img/index/staff.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain; }
+        .wrap .content-container .bg-container .staff:before {
+          position: relative;
+          display: block;
+          content: "";
+          width: 100%;
+          padding-top: 129.34363%; }
+      .wrap .content-container .bg-container .wealth-god {
+        position: absolute;
+        left: 68.41667%;
+        top: 2.85714%;
+        width: 31.08333%;
+        background-image: url("../img/index/wealth_god.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain;
+        z-index: 20; }
+        .wrap .content-container .bg-container .wealth-god:before {
+          position: relative;
+          display: block;
+          content: "";
+          width: 100%;
+          padding-top: 89.54424%; }
+      .wrap .content-container .bg-container .tiny-wealth-god-2 {
+        position: absolute;
+        left: 88.83333%;
+        top: 61.42857%;
+        width: 11.16667%;
+        background-image: url("../img/index/tiny_wealth_god_2.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain; }
+        .wrap .content-container .bg-container .tiny-wealth-god-2:before {
+          position: relative;
+          display: block;
+          content: "";
+          width: 100%;
+          padding-top: 135.07463%; }
+      .wrap .content-container .bg-container .tiny-wealth-god-3 {
+        position: absolute;
+        left: 79.5%;
+        top: 61.74603%;
+        width: 10.08333%;
+        background-image: url("../img/index/tiny_wealth_god_3.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain; }
+        .wrap .content-container .bg-container .tiny-wealth-god-3:before {
+          position: relative;
+          display: block;
+          content: "";
+          width: 100%;
+          padding-top: 142.97521%; }
+      .wrap .content-container .bg-container .box {
+        position: absolute;
+        left: 82.16667%;
+        top: 80.79365%;
+        width: 16.08333%;
+        background-image: url("../img/index/box_1.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain; }
+        .wrap .content-container .bg-container .box:before {
+          position: relative;
+          display: block;
+          content: "";
+          width: 100%;
+          padding-top: 56.99482%; }
+      .wrap .content-container .bg-container .tiny-wealth-god-1 {
+        position: absolute;
+        left: 67.58333%;
+        top: 69.68254%;
+        width: 11.66667%;
+        background-image: url("../img/index/tiny_wealth_god_1.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain; }
+        .wrap .content-container .bg-container .tiny-wealth-god-1:before {
+          position: relative;
+          display: block;
+          content: "";
+          width: 100%;
+          padding-top: 139.28571%; }
+    .wrap .content-container .txt-container {
+      position: absolute;
+      left: 9.25%;
+      top: 0;
+      width: 34.83333%;
+      height: 100%; }
+      .wrap .content-container .txt-container .title {
+        position: absolute;
+        left: 0;
+        top: -11.11111%;
+        width: 100%;
+        background-image: url("../img/index/title.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain; }
+        .wrap .content-container .txt-container .title:before {
+          position: relative;
+          display: block;
+          content: "";
+          width: 100%;
+          padding-top: 78.70813%; }
+      .wrap .content-container .txt-container p.desc {
+        display: inline-block;
+        position: relative;
+        width: 110%;
+        margin-top: 63%;
+        color: #1b263e;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 36px; }
+        .wrap .content-container .txt-container p.desc span {
+          color: #b70000;
+          font-size: 34px; }
+      .wrap .content-container .txt-container .hand {
+        position: absolute;
+        left: 11.72249%;
+        top: 66.03175%;
+        width: 70.57416%;
+        background-image: url("../img/index/btn_go.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain; }
+        .wrap .content-container .txt-container .hand:before {
+          position: relative;
+          display: block;
+          content: "";
+          width: 100%;
+          padding-top: 87.11864%; }
+        .wrap .content-container .txt-container .hand a#btn-go {
+          display: block;
+          position: absolute;
+          left: 8.13559%;
+          top: 2.72374%;
+          width: 89.49153%;
+          height: 23.3463%;
+          line-height: 200%;
+          color: #fff;
+          font-size: 26px;
+          text-decoration: none;
+          text-align: center; }
+          .wrap .content-container .txt-container .hand a#btn-go span.text {
+            vertical-align: middle; }
+          .wrap .content-container .txt-container .hand a#btn-go img.arr {
+            vertical-align: middle;
+            margin-left: 10px;
+            width: 5%; }
+
+@media screen and (max-width: 1600px) {
+  .wrap .content-container .bg-container {
+    overflow: hidden; } }
+
+@media screen and (max-width: 1199px) {
+  .wrap .content-container .txt-container p.desc {
+    margin-top: 65%;
+    font-size: 1.7vw;
+    line-height: 150%; }
+    .wrap .content-container .txt-container p.desc span {
+      font-size: 2.5vw; }
+  .wrap .content-container .txt-container .hand a#btn-go {
+    font-size: 2.2vw; } }
+
+@media screen and (max-width: 768px) {
+  .wrap .content-container:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 181.25%; }
+  .wrap .content-container .bg-container .paper-container .paper.paper-1 {
+    display: none; }
+  .wrap .content-container .bg-container .paper-container .paper.paper-2 {
+    left: 27.34375%;
+    top: 48.36207%;
+    width: 15.46875%; }
+  .wrap .content-container .bg-container .paper-container .paper.paper-3 {
+    display: none; }
+  .wrap .content-container .bg-container .paper-container .paper.paper-4 {
+    left: 4.6875%;
+    top: 53.44828%;
+    width: 13.125%; }
+  .wrap .content-container .bg-container .paper-container .paper.paper-5 {
+    left: 77.1875%;
+    top: 72.41379%;
+    width: 14.84375%; }
+  .wrap .content-container .bg-container .box-container {
+    left: -78.75%;
+    top: 52.67241%;
+    width: 214.53125%; }
+  .wrap .content-container .bg-container .light {
+    left: 5.15625%;
+    top: 50.94828%;
+    width: 79.21875%; }
+  .wrap .content-container .bg-container .staff {
+    left: 3.4375%;
+    top: 68.87931%;
+    width: 40.46875%; }
+  .wrap .content-container .bg-container .wealth-god {
+    left: 43.4375%;
+    top: 47.5%;
+    width: 58.28125%; }
+  .wrap .content-container .bg-container .tiny-wealth-god-1 {
+    left: 42.8125%;
+    top: 82.58621%;
+    width: 21.875%; }
+  .wrap .content-container .bg-container .tiny-wealth-god-2 {
+    left: 80.9375%;
+    top: 78.36207%;
+    width: 20.9375%; }
+  .wrap .content-container .bg-container .tiny-wealth-god-3 {
+    left: 64.0625%;
+    top: 78.53448%;
+    width: 18.90625%; }
+  .wrap .content-container .bg-container .box {
+    left: 69.0625%;
+    top: 88.44828%;
+    width: 30.15625%; }
+  .wrap .content-container .txt-container {
+    left: 50%;
+    margin-left: -32.65625%;
+    width: 65.3125%; }
+    .wrap .content-container .txt-container .title {
+      left: 0;
+      top: -9.74138%;
+      width: 100%; }
+    .wrap .content-container .txt-container p.desc {
+      display: block;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      width: 150%;
+      margin-top: 55%;
+      font-size: 3.6vw;
+      line-height: 140%; }
+      .wrap .content-container .txt-container p.desc span {
+        font-size: 5.2vw; }
+    .wrap .content-container .txt-container .hand {
+      left: -27%;
+      top: 32.84483%;
+      width: 121.29187%;
+      background-image: url("../img/index/btn_go_mobile.png");
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain; }
+      .wrap .content-container .txt-container .hand:before {
+        position: relative;
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 57.98817%; }
+      .wrap .content-container .txt-container .hand a#btn-go {
+        left: 32.1499%;
+        top: 2.38095%;
+        width: 66.07495%;
+        height: 27.21088%;
+        font-size: 5vw;
+        line-height: 230%; } }
