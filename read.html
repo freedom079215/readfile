@@ -13,7 +13,12 @@ $(document).ready(function(){
             for (var i = 0; i < str.length; i++) {
                 var str2 = str[i];
                 str2 = str2.match(/id=".*?"/g)
-                 $("#text").append(i+":"+ str2 + "<br>");
+                 $("#text").append(i+":"+ str2 + "<br>")
+                 var idiv = document.createElement('div')
+                 idiv.id = str2;
+                 idiv.className = 'block'
+                 document.getElementsByTagName('body')[0].appendChild(iDiv);
+                 $("#"+str2).append(i+":"+ str2 + "<br>");
             }
         });
     });
