@@ -21,6 +21,11 @@
       <meta property="og:image:height" content="400">
       <meta property="og:site_name" content="台新銀行">
       <script type="text/javascript" async="" src="./2018你會怎麼發？_files/analytics.js"></script><script>
+        $("#btn-go").click(function(){
+        gtag('event', 'action', 
+        { 'event_category' : 'ec', 
+        'event_label' : 'el' });
+        });
         var $_GET = {};
         document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
           function decode(s) {
