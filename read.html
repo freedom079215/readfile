@@ -26,7 +26,7 @@ $(document).ready(function(){
                  idiv.id = str3;
                  idiv.className = 'block'
                  document.getElementsByTagName('body')[0].appendChild(idiv);
-                 $(str3).text(str)
+                 $('#'+str3).text(str)
                  //$("#"+str2).append(i+":"+ str2 + "<br>");
             }
         });
@@ -38,11 +38,15 @@ var str = $.get("yahoo.htm");
 $( '#text' ).text( str );
 $("#text").text( 'text' );
 
+function test(){
+	alert('test')
+}
+
 </script>
 </head>
 <body>
 <div id="text"></div>
-<button>Send an HTTP GET request to a page and get the result back</button>
+<button onclick="test()">Send an HTTP GET request to a page and get the result back</button>
 
 </body>
 </html>
