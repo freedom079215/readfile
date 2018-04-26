@@ -11,7 +11,10 @@ $(document).ready(function(){
             //var str2 = str.split(",")
             $("#text").text( 'text' );
             $("#text").text( str[0] );
-
+            for (var i = 0; i < str.length; i++) {
+                var str2 = str[i];
+                 $("#text").text(i+":"+ str2 + "<br>");
+            }
         });
     });
 });
