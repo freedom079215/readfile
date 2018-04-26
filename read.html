@@ -27,7 +27,9 @@ $(document).ready(function(){
                  idiv.className = 'block'
                  document.getElementsByTagName('body')[0].appendChild(idiv);
                  text = "$(\"#" + str3 + "\")\.click(function(){ \n\
-                 	gtag(\'event\', \'action\', { \n\
+                 	gtag(\'event\', \'action\', { \n\ 
+                 		\'event_category\' : \'ec\', \n\
+                 		\'event_label\' : \'el\' \n\
                  	});" +
                  	"});"
                  console.log(text)
