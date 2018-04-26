@@ -13,18 +13,18 @@
 	</script>
 
 	<script>
-	function test(){
-		gtag('event', 'action', 
-		{ 'event_category' : 'ec', 
-		'event_label' : 'el' });
-}
+	f$("#btn-go").click(function(){
+gtag('event', 'action', 
+{ 'event_category' : 'ec', 
+'event_label' : 'el' });
+});
 	</script>
 
 
 	12345
 </head>
 <body>
-	<button onclick="test()">button</button>
+	<button id="btn-go">button</button>
 1234
 </body>
 </html>
