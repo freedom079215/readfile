@@ -9,10 +9,9 @@
  	    var jqxhr = $.get("yahoo.htm", function () {
  	        console.log('sucess');
  	    })
-
- 	    var jqxhr = $( "jqloadDiv" ).text();
- 	    console.log(jqxhr)
- 	    $( "jqloadDiv" ).html( jqxhr );
+ 	</script>
+ 	<script>
+ 	$( "p" ).text( "<b>Some</b> new text." );
  	</script>
  </head>
  <body>
@@ -20,8 +19,8 @@
  <input type="button" id="btn1" name="btn1" value="執行jQuery Load按鈕" />
  <div id="jqloadDiv"></div>
 
-<p><b>Test</b> Paragraph.</p>
-<p></p>
+<p>Test Paragraph.</p>
+
 
  </body>
  </html>
