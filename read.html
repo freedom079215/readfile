@@ -26,10 +26,10 @@ $(document).ready(function(){
                  idiv.id = str3;
                  idiv.className = 'block'
                  document.getElementsByTagName('body')[0].appendChild(idiv);
-                 text = "$(\"#" + str3 + "\").click(function(){<br/> \n\ gtag(\'event\', \'action\', { \'event_category\' : \'ec\', \'event_label\' : \'el\' });" +
-                 	"});"
+                 text = "$(\"#" + str3 + "\").click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
+                 	"<br/>});"
                  console.log(text)
-                 $('#'+str3).html(text)
+                 $('#'+str3).html(i+":"+text +"<br><br>")
                  //$("#"+str2).append(i+":"+ str2 + "<br>");
             }
         });
