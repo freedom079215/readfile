@@ -10,10 +10,12 @@ $(document).ready(function(){
         });
     });
 });
+var str = $.get("yahoo.htm");
+$( "text" ).html( str );
 </script>
 </head>
 <body>
-
+<div id=text></div>
 <button>Send an HTTP GET request to a page and get the result back</button>
 
 </body>
