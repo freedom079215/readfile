@@ -13,8 +13,8 @@ $(document).ready(function(){
             for (var i = 0; i < str.length; i++) {
                 var str2 = str[i];
                 str2 = str2.match(/id=".*?"/g)
-                str2 = str2.replace(/\'/gi,'')
-                str2 = str2.replace(/id/gi,'')
+                //str2 = str2.replace(/\'/gi,' ')
+                str2 = str2.replace(/id/gi,' ')
                  $("#text").append(i+":"+ str2 + "<br>")
                  var idiv = document.createElement('div')
                  idiv.id = str2;
