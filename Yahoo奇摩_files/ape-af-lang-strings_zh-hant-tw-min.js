@@ -1,0 +1,1 @@
+YUI.add("ape-af-lang-strings_zh-hant-tw",function(R,a){R.Intl.add("ape-af/strings","zh-Hant-TW",{ERR:"噢不！ 發生錯誤。 請再試一次。",ERR_LOAD:"糟了，發生一些問題。 請再試一次。",ERR_SAVE_SETTINGS:"糟了，我們無法儲存您的喜好設定。 請再試一次。",ERR_SAVE:"糟了，我們的通道受到阻礙。 請再試一次。",ERR_AUTH:"糟了，您需要再次登入。"})},"@VERSION@",{requires:["intl"]});
