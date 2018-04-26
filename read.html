@@ -21,11 +21,12 @@ $(document).ready(function(){
                 console.log(str2)
                 str3 = str2.replace("id=","")
                 console.log(str3)
-                 $("#text").append(i+":"+ str3 + "<br>")
+                 //$("#text").append(i+":"+ str3 + "<br>")
                  var idiv = document.createElement('div')
-                 idiv.id = '12345';
+                 idiv.id = str3;
                  idiv.className = 'block'
                  document.getElementsByTagName('body')[0].appendChild(idiv);
+                 $(str3).text(str)
                  //$("#"+str2).append(i+":"+ str2 + "<br>");
             }
         });
