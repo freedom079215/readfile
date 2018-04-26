@@ -5,7 +5,7 @@
 <script>
 $(document).ready(function(){
     $("button").click(function(){
-        $.get("ts.htm", function(data, status){
+        $.get("test.htm", function(data, status){
             //alert("Data: " + data + "\nStatus: " + status);
             //var str = data.match(/href.*?html/g)
             var str = data.match(/<a id=".*?>/g)
@@ -35,7 +35,7 @@ $(document).ready(function(){
 
 });
 var str = $.get("yahoo.htm");
-$( '#text' ).text( str );
+$('#text' ).text( str );
 $("#text").text( 'text' );
 
 function test(){
@@ -46,7 +46,7 @@ function test(){
 </head>
 <body>
 <div id="text"></div>
-<a href='./' button onclick="test()">Send an HTTP GET request to a page and get the result back</button>
+<button onclick="test()">Send an HTTP GET request to a page and get the result back</button>
 
 </body>
 </html>
