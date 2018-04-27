@@ -7,10 +7,9 @@ $(document).ready(function(){
     $("button").click(function(){
         $.get("ts2.html", function(data, status){
             //alert("Data: " + data + "\nStatus: " + status);
-            //var str = data.match(/href.*?html/g)
+            var str = data.match(/href.*?html/g)
             //var str2 = str.split(",")        
             for (var i = 0; i < str.length; i++) {
-            	var str = data.match(/<a id=".*?>/g)
             	var str = data.match(/<a id=".*?>/g)
                 var str2 = str[i];
                 console.log(str2)
