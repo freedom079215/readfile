@@ -19,7 +19,7 @@ $(document).ready(function(){
              var button3 = new Array;
              var test = button2[i].toString();
              button3[i] = test.replace(/class=".*?/,"")
-             button3[i] = button3[i].replace(/class=".*?/,"")
+             button3[i] = button3[i].replace(/".*?/,"")
              console.log("3:"+button3[i])
              var idiv = document.createElement('div')
              idiv.id = button3[i];
