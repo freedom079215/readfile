@@ -10,8 +10,9 @@ $(document).ready(function(){
             var str = data.match(/href.*?html/g)
             var button = data.match(/button.*?">/g)
             //var str2 = str.split(",")        
-            for (var i = 0; i < str.length; i++) {
+            for (var i = 0; i < button.length; i++) {
              $("#text").append(i+":"+ button[i] + "<br>")
+             console.log(button.match(/class="/g))
             	// var str = data.match(/<a id=".*?>/g)
              //    var str2 = str[i];
              //    console.log(str2)
