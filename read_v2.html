@@ -12,8 +12,10 @@ $(document).ready(function(){
             //var str2 = str.split(",")        
             for (var i = 0; i < button.length; i++) {
              $("#text").append(i+":"+ button[i] + "<br>")
-             var button2 = button[i].match(/class=".*?"/g)
+             var button2[i] = button[i].match(/class=".*?"/g)
              console.log(button2)
+             button3[i] = button2.replace(/\".*?/,"")
+
             	// var str = data.match(/<a id=".*?>/g)
              //    var str2 = str[i];
              //    console.log(str2)
