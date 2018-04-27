@@ -16,8 +16,9 @@ $(document).ready(function(){
              button2[i] = button[i].match(/class=".*?"/g)
              console.log(button2[i])
              var button3 = new Array;
+             var test = button2[i].toString();
              button3[i] = test.replace(/\".*?/,"")
-             console.log(test)
+             console.log(button3[i])
 
             	// var str = data.match(/<a id=".*?>/g)
              //    var str2 = str[i];
