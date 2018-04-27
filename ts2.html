@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <title>2018你會怎麼發？</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="title" content="2018你會怎麼發？">
+      <meta name="description" content="30秒完成問卷即可得發財金">
+      <meta name="url" content="https://mkp.taishinbank.com.tw/TsCms/WebMarketing?id=WM_20180124140709604">
+      <link rel="image_src" href="http://rtqms.taishinbank.com.tw/img/1516781825594.jpg" type="image/jpeg">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <meta property="og:title" content="2018你會怎麼發？">
+      <meta property="og:description" content="30秒完成問卷即可得發財金">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://mkp.taishinbank.com.tw/TsCms/WebMarketing?id=WM_20180124140709604">
+      <meta property="og:image" content="http://rtqms.taishinbank.com.tw/img/1516781825594.jpg">
+      <meta property="og:image:width" content="960">
+      <meta property="og:image:height" content="400">
+      <meta property="og:site_name" content="台新銀行">
+      <script>
+        var $_GET = {};
+        document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+          function decode(s) {
+            return decodeURIComponent(s.split("+").join(" "));
+          }
+        
+          $_GET[decode(arguments[1])] = decode(arguments[2]);
+        });
+      </script>
+      <!-- Global site tag (gtag.js) - Google Analytics-->
+      <script src="https://www.googletagmanager.com/gtag/js?id=UA-109454817-1" async></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+      </script>
+      <script>
+        var cust_No = $_GET['utm_term'];
+        if (cust_No == undefined) {
+          var cust_No = null;
+        }
+        function cID(name) {
+          var value = "; " + document.cookie;
+          var parts = value.split("; " + name + "=");
+          if (parts.length == 2) return parts.pop().split(";").shift();
+        }
+        var cidL = cID("_ga").split(".").length;
+        var TSB_ga_Cookie = cID("_ga").split(".")[cidL - 2] + "." + cID("_ga").split(".")[cidL - 1];
+      </script>
+      <script>
+        gtag('config', 'UA-109454817-1', {
+          'user_id': cust_No,
+          'cookie_expires': 63072000,
+          'dimension1': cust_No,
+          'dimension2': TSB_ga_Cookie
+        });
+      </script>
+      <!-- Eland-->
+      <script>
+        if (cust_No != null) {
+          var ts_id = cust_No;
+        } else if (window.TSB_SAS_Cookie != null) {
+          var ts_id = window.TSB_SAS_Cookie;
+        }
+        else {
+          var ts_id = TSB_ga_Cookie;
+        }
+      </script>
+      <script src="//dmp.eland-tech.com/dmpreceiver/eland_tracker_nopd.js"></script>
+      <script>
+        var dataJson = {
+          'subFolder': 'taishin_activity1',
+          'ecInfo': {
+            'memberID': ts_id
+          },
+          'trackType': 'view',
+          'trackSubfolderDepth': 1,
+          'targetType': 'usual',
+          'source': 'taishinbank'
+        };
+        ElandTracker.Track(dataJson);
+      </script>
+      <script src="js/vendor/TweenMax.min.js"></script>
+      <script src="js/vendor/ScrollToPlugin.min.js"></script>
+      <script src="js/vendor/isMobile.min.js"></script>
+      <script src="js/Utils.js"></script>
+      <script src="js/Common.js"></script>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/font-awesome.min.css" rel="stylesheet">
+      <!--link(href="css/style.css" rel="stylesheet")-->
+      <link href="css/public.css" rel="stylesheet">
+      <!--link(href="css/common.css" rel="stylesheet")--><!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+      <link href="css/game.css" rel="stylesheet">
+    </head>
+  <body>
+        <nav class="navbar ts-nav">
+          <div class="container">
+            <div class="navbar-header"><a class="navbar-brand" href="index.html" title="台新銀行"><img class="img-responsive" src="images/logo.jpg" alt="台新銀行"></a></div>
+                <div class="ts-dropdown pull-right" id="mynav"><span class="subject"></span>
+                  <div class="btn-group pull-right">
+                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                    <ul class="dropdown-menu">
+                      <li><a id="btn-home" href="index.html">首頁</a></li>
+                      <li><a id="btn-game" href="game.html">2018運勢預言</a></li>
+                      <li><a id="btn-event" href="http://rtqms.taishinbank.com.tw/questionnaire/NjI5" target="_blank">賺取發財金</a></li>
+                      <li><a id="btn-product" href="prod.html">發財神器</a></li>
+                      <li><a id="btn-rule" href="rule.html">活動辦法</a></li>
+                    </ul>
+                  </div>
+                </div>
+          </div>
+        </nav>
+    <div class="wrap">
+      <div class="content-container">
+        <div class="city"></div>
+        <div class="q-container">
+          <p class="title"><img src="./img/game/q/txt_q.png"> <span>今年拿到年終打算怎麼花</span></p>
+          <div class="gods-container">
+            <div class="tiny-wealth-god-3"></div>
+            <div class="money-container"></div>
+            <div class="tiny-wealth-god-1">
+              <div class="icon-coin coin-1"></div>
+              <div class="icon-coin coin-2"></div>
+              <div class="icon-coin coin-3"></div>
+              <div class="icon-coin coin-4"></div>
+            </div>
+            <div class="tiny-wealth-god-2"></div>
+            <div class="wealth-god"></div>
+          </div>
+          <div class="select-container">
+            <button class="item type-1">
+              <div class="redbag-bottom"></div>
+              <div class="redbag-top"></div>
+              <div class="staff"></div>
+              <div class="staff-say"></div>
+              <p class="title">出國小確幸</p>
+              <p class="sub-title">閃瞎塗鴉牆<br>征服全世界</p>
+              <p class="cfa"><span>決定醬花</span><img src="./img/game/q/select/arr.png"></p>
+            </button>
+            <button class="item type-2">
+              <div class="redbag-bottom"></div>
+              <div class="staff"></div>
+              <div class="redbag-top"></div>
+              <div class="staff-say"></div>
+              <p class="title">沒有年終QQ</p>
+              <p class="sub-title">血汗一整年<br>取暖求安慰</p>
+              <p class="cfa"><span>決定醬花</span><img src="./img/game/q/select/arr.png"></p>
+            </button>
+            <button class="item type-3">
+              <div class="redbag-bottom"></div>
+              <div class="redbag-top"></div>
+              <div class="staff"></div>
+              <div class="staff-say"></div>
+              <p class="title">包個大紅包</p>
+              <p class="sub-title">以前是媽寶<br>現在寶貝媽</p>
+              <p class="cfa"><span>決定醬花</span><img src="./img/game/q/select/arr.png"></p>
+            </button>
+            <button class="item type-4">
+              <div class="redbag-bottom"></div>
+              <div class="staff"></div>
+              <div class="redbag-top"></div>
+              <div class="staff-say"></div>
+              <p class="title">當結婚基金</p>
+              <p class="sub-title">脫離魯蛇人生<br>邁向宅宅顛峰</p>
+              <p class="cfa"><span>決定醬花</span><img src="./img/game/q/select/arr.png"></p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="fixed-button-container">
+        <button id="btn-top"><img src="./img/btn_top.png"></button>
+      </div>
+    </div>
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="grey hidden-xs"></div>
+              <div class="container">
+                <div class="copyright col-xs-12 col-sm-10"><span class="helper"></span>
+                  <p>©台新國際商業銀行 Copyright Taishin International Bank. All Rights Reserved.<br><span class="ie-browser hidden-xs">建議瀏覽器版本：IE9以上</span></p>
+                </div>
+                <div class="logo col-xs-12 col-sm-2"><span class="helper"></span><img class="img-responsive" src="images/logo-f.jpg" alt="台新金控"></div>
+              </div>
+            </div>
+          </div>
+        </footer>
+  </body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Menu.js"></script>
+<script src="js/FixedButtons.js"></script>
+<script src="js/Game.js"></script>
+<script src="js/flexibility.js"></script>
