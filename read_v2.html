@@ -8,29 +8,31 @@ $(document).ready(function(){
         $.get("ts2.html", function(data, status){
             //alert("Data: " + data + "\nStatus: " + status);
             var str = data.match(/href.*?html/g)
+            var button = data.match(/button.*?">/g)
             //var str2 = str.split(",")        
             for (var i = 0; i < str.length; i++) {
-            	var str = data.match(/<a id=".*?>/g)
-                var str2 = str[i];
-                console.log(str2)
-                str2 = str2.match(/id=".*?"/g)
-                console.log(str2)
-                //str2 = str2.replace(/\'/gi,' ')
-                str2 = str2[0].replace("\"","")
-                str2 = str2.replace("\"","")
-                console.log(str2)
-                str3 = str2.replace("id=","")
-                console.log(str3)
-                 $("#text").append(i+":"+ str[i] + "<br>")
-                 var idiv = document.createElement('div')
-                 idiv.id = str3;
-                 idiv.className = 'block'
-                 document.getElementsByTagName('body')[0].appendChild(idiv);
-                 text = "$(\"#" + str3 + "\").click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
-                 	"<br/>});"
-                 console.log(text)
-                 $('#'+str3).html(i+":"+text +"<br><br>")
-                 //$("#"+str2).append(i+":"+ str2 + "<br>");
+             $("#text").append(i+":"+ button[i] + "<br>")
+            	// var str = data.match(/<a id=".*?>/g)
+             //    var str2 = str[i];
+             //    console.log(str2)
+             //    str2 = str2.match(/id=".*?"/g)
+             //    console.log(str2)
+             //    //str2 = str2.replace(/\'/gi,' ')
+             //    str2 = str2[0].replace("\"","")
+             //    str2 = str2.replace("\"","")
+             //    console.log(str2)
+             //    str3 = str2.replace("id=","")
+             //    console.log(str3)
+             //     $("#text").append(i+":"+ str[i] + "<br>")
+             //     var idiv = document.createElement('div')
+             //     idiv.id = str3;
+             //     idiv.className = 'block'
+             //     document.getElementsByTagName('body')[0].appendChild(idiv);
+             //     text = "$(\"#" + str3 + "\").click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
+             //     	"<br/>});"
+             //     console.log(text)
+             //     $('#'+str3).html(i+":"+text +"<br><br>")
+             //     //$("#"+str2).append(i+":"+ str2 + "<br>");
             }
         });
     });
