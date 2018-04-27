@@ -33,10 +33,10 @@ $(document).ready(function(){
              idiv.className = 'block'
              console.log("div"+idiv.id)
              document.getElementsByTagName('body')[0].appendChild(idiv);
-             text = "$(\"#" + button3[i] + "\").click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
+             text = "$(\"." + button3[i] + "\").click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
              	"<br/>});"
              console.log(text)
-             $("."+button3[i]).html(i+":"+text +"<br><br>")
+             $(button3[i]).html(i+":"+text +"<br><br>")
 
 
             	// var str = data.match(/<a id=".*?>/g)
