@@ -13,8 +13,9 @@ $(document).ready(function(){
             for (var i = 0; i < button.length; i++) {
              $("#text").append(i+":"+ button[i] + "<br>")
              var button2[i] = button[i].match(/class=".*?"/g)
-             console.log(button2)
+             console.log(button2[i])
              button3[i] = button2.replace(/\".*?/,"")
+             console.log(button3[i])
 
             	// var str = data.match(/<a id=".*?>/g)
              //    var str2 = str[i];
