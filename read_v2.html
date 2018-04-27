@@ -13,12 +13,13 @@ $(document).ready(function(){
             for (var i = 0; i < button.length; i++) {
              $("#text").append(i+":"+ button[i] + "<br>")
              var button2 = new Array;
+             console.log("1:"+button[i])
              button2[i] = button[i].match(/class=".*?"/g)
-             console.log(button2[i])
+             console.log("2:"+button2[i])
              var button3 = new Array;
-             var test = button2[i]
-             button3[i] = test.replace(/\".*/g,"")
-             console.log(button3[i])
+             var test = button2[i].toString();
+             button3[i] = test.replace(/class=".*?/,"")
+             console.log("3:"+button3[i])
 
             	// var str = data.match(/<a id=".*?>/g)
              //    var str2 = str[i];
