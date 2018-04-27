@@ -17,7 +17,7 @@ $(document).ready(function(){
              console.log(button2[i])
              var button3 = new Array;
              var test = button2[i]
-             button3[i] = test.replace(/\".*?/,"")
+             button3[i] = test.replace(/\".*/g,"")
              console.log(button3[i])
 
             	// var str = data.match(/<a id=".*?>/g)
