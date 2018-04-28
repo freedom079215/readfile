@@ -38,7 +38,8 @@ $(document).ready(function(){
              text = "$(\'." + button3[i] + "\'').click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
              	"<br/>});"
              console.log(text)
-             classname2 = '"'+ classname + '"'
+             classname2 = '"'+ classname + '"';
+             console.log(classname2)
              //$("'."+button3[i]+"'").html(i+":"+text +"<br><br>")
              $(classname2).html(i+":"+text +"<br><br>")
             	// var str = data.match(/<a id=".*?>/g)
