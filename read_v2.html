@@ -41,7 +41,7 @@ $(document).ready(function(){
              classname2 = '.'+ button3[i];
              console.log(button3[i])
              //$("'."+button3[i]+"'").html(i+":"+text +"<br><br>")
-             $(classname2).html(i+":"+text +"<br><br>")
+             $(classname2).html(text +"<br><br>")
             	// var str = data.match(/<a id=".*?>/g)
              //    var str2 = str[i];
              //    console.log(str2)
@@ -76,6 +76,7 @@ $(document).ready(function(){
 <div id="text"></div>
 <button >Send an HTTP GET request to a page and get the result back</button>
 <div class="a b">1234556</div>
+
 </body>
 <script type="text/javascript">
 	$('.a.b').text("test class")
