@@ -29,8 +29,8 @@ $(document).ready(function(){
              }
              console.log("3:"+button3[i])
              var idiv = document.createElement('div')
-             idiv.id = button3[i];
-             idiv.className = 'block'
+             //idiv.id = button3[i];
+             idiv.className = button3[i]
              console.log("div"+idiv.id)
              document.getElementsByTagName('body')[0].appendChild(idiv);
              text = "$(\'." + button3[i] + "\'').click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
