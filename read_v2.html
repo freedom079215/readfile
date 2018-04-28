@@ -38,8 +38,8 @@ $(document).ready(function(){
              text = "$(\'." + button3[i] + "\'').click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
              	"<br/>});"
              console.log(text)
-             $("'."+button3[i]+"'").html(i+":"+text +"<br><br>")
-
+             //$("'."+button3[i]+"'").html(i+":"+text +"<br><br>")
+             $(".dropdown-toggle").html(i+":"+text +"<br><br>")
             	// var str = data.match(/<a id=".*?>/g)
              //    var str2 = str[i];
              //    console.log(str2)
