@@ -30,10 +30,7 @@ $(document).ready(function(){
     //         }
     //     });
     // });
-    var message = "Spoon!";
-    $( ".a.b" ).bind( "click", function() {
-      alert( message );
-    });
+
 
 });
 
@@ -45,7 +42,10 @@ $(document).ready(function(){
 <div class="a b">1234556</div>
 </body>
 <script type="text/javascript">
-	$('.a.b').text("test class")
+	var message = "Spoon!";
+	$( ".a.b" ).bind( "click", function() {
+	  alert( message );
+	});
 
 </script>
 </html>
