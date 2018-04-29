@@ -21,20 +21,18 @@ $(document).ready(function(){
                   {
                         continue;
                   }
-                  console.log(link_ID[i])
-
                   //link_ID2 = link_ID[0].replace("\"","")
                   if(link_ID[i] == null)
                   {
                         continue;
                   }
-                  link_ID[i] = link_ID[i].replace("id=","")
+                  link_ID[i] = link_ID[i].replace(/id=/g,"")
                   if(link_ID[i] == null)
                   {
                         continue;
                   }
                   console.log(link_ID[i])
-                   $("#text").append(i+":"+ link_ID[i] + "<br>")
+                   $("#text").append(i+":"+ link[i] + "<br>")
            }
 
 
