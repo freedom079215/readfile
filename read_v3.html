@@ -10,7 +10,7 @@ $(document).ready(function(){
             //偵測連結類型的元素
             var link = data.match(/<a.*?a>/g)
             var button_data = data.match(/<button.*?"button>/g)
-            console.log(link)
+            console.log(button_data)
             for (var i = 0; i < link.length; i++) {
                   var link_ID = new Array;
                   link_ID[i] = link[i].replace(/"/g,"")
@@ -47,7 +47,7 @@ $(document).ready(function(){
 
             for (var i = 0; i < link.length; i++) {
                   var button = new Array;
-                  button[i] = button_data.replace(/"/g,"")
+                  button[i] = button_data[i].replace(/"/g,"")
                   button[i] = button[i].match(/class=.*? /g)
                   console.log(button[i])
 
