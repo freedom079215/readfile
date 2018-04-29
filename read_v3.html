@@ -10,9 +10,11 @@ $(document).ready(function(){
             //偵測連結類型的元素
             var link = data.match(/href.*?html/g)
             //var link_ID = link[i];
+            console.log(link)
             for (var i = 0; i < link.length; i++) {
                   var link_ID = new Array;
                   link_ID[i] = link[i].match(/id=".*?"/g)
+                  console.log(link_ID[i])
 
                   //link_ID2 = link_ID[0].replace("\"","")
                   link_ID[i] = link_ID[i].replace("\"","")
