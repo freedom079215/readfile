@@ -9,7 +9,7 @@ $(document).ready(function(){
             //alert("Data: " + data + "\nStatus: " + status);
             //偵測連結類型的元素
             var link = data.match(/<a.*?a>/g)
-            var button_data = data.match(/<button.*?<\/button>/g)
+            var button_data = data.match(/<button.*?>/g)
             console.log(button_data)
             for (var i = 0; i < link.length; i++) {
                   var link_ID = new Array;
@@ -76,7 +76,7 @@ $(document).ready(function(){
 
            }
 
-            var button = data.match(/button.*?">/g)
+            //var button = data.match(/button.*?">/g)
             //var str2 = str.split(",")        
             // for (var i = 0; i < button.length; i++) {
             //  //$("#text").append(i+":"+ button[i] + "<br>")
