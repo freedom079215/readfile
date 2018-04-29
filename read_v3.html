@@ -49,7 +49,6 @@ $(document).ready(function(){
                   var button = new Array;
                   button[i] = button_data[i].replace(/"/g,"")
                   button[i] = button[i].match(/class=.*? /g)
-                  console.log(button[i])
 
                   if(button[i] == null)
                   {
@@ -71,7 +70,7 @@ $(document).ready(function(){
                   text = "$(\'." + button[i] + "').click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
                         "<br/>});"
  
-                  $("'."+button[i]+"'").html(i + ": <br>"+ str + "<br>:"+text +"<br>")
+                  $(".dropdown-toggle").html(i + ": <br>"+ str + "<br>:"+text +"<br>")
 
 
            }
