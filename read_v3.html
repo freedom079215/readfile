@@ -13,15 +13,26 @@ $(document).ready(function(){
             console.log(link)
             for (var i = 0; i < link.length; i++) {
                   var link_ID = new Array;
+                  link_ID[i] = link_ID[i].replace(/"/g,"")
                   link_ID[i] = link[i].match(/id=".*?"/g)
+                  if(link_ID[i] == null)
+                  {
+                        continue;
+                  }
                   console.log(link_ID[i])
 
                   //link_ID2 = link_ID[0].replace("\"","")
-                  link_ID[i] = link_ID[i].replace("\"","")
-
-                  link_ID2[i] = link_ID2[i].replace("id=","")
-                  console.log(link_ID2[i])
-                   $("#text").append(i+":"+ link_ID2[i] + "<br>")
+                  if(link_ID[i] == null)
+                  {
+                        continue;
+                  }
+                  link_ID[i] = link_ID[i].replace("id=","")
+                  if(link_ID[i] == null)
+                  {
+                        continue;
+                  }
+                  console.log(link_ID[i])
+                   $("#text").append(i+":"+ link_ID[i] + "<br>")
            }
 
 
