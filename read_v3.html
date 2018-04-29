@@ -9,7 +9,7 @@ $(document).ready(function(){
             //alert("Data: " + data + "\nStatus: " + status);
             //偵測連結類型的元素
             var link = data.match(/<a.*?a>/g)
-            //var link_ID = link[i];
+            var button = data.match(/<button.*?"button>/g)
             console.log(link)
             for (var i = 0; i < link.length; i++) {
                   var link_ID = new Array;
@@ -21,7 +21,6 @@ $(document).ready(function(){
                   {
                         continue;
                   }
-                  //link_ID2 = link_ID[0].replace("\"","")
                   if(link_ID[i] == null)
                   {
                         continue;
@@ -35,7 +34,6 @@ $(document).ready(function(){
                   }
                   console.log(link_ID[i])
                   str = link[i].toString();
-                   //$("#text").append(i+":"+ str + "<br>")
                    var idiv = document.createElement('div')
                    idiv.id = link_ID[i];
                    idiv.className = 'block'
@@ -47,7 +45,36 @@ $(document).ready(function(){
 
            }
 
+            for (var i = 0; i < link.length; i++) {
+                  var button = new Array;
+                  button[i] = button[i].replace(/"/g,"")
+                  button[i] = button[i].match(/class=.*? /g)
+                  console.log(button[i])
 
+                  if(button[i] == null)
+                  {
+                        continue;
+                  }
+
+                  button[i] = button[i].toString().replace("class=","")
+                  button[i] = button[i].toString().replace(" ","")
+
+                  if(button[i] == null)
+                  {
+                        continue;
+                  }
+                  console.log(button[i])
+                  str = button[i].toString();
+                  var idiv = document.createElement('div')
+                  idiv.className = classname
+                  document.getElementsByTagName('body')[0].appendChild(idiv);
+                  text = "$(\'." + button[i] + "').click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
+                        "<br/>});"
+ 
+                  $("'."+button[i]+"'").html(i + ": <br>"+ str + "<br>:"+text +"<br>")
+
+
+           }
 
             var button = data.match(/button.*?">/g)
             //var str2 = str.split(",")        
