@@ -61,15 +61,16 @@ $(document).ready(function(){
                   }
                   console.log(button[i])
                   str = button_data[i].toString();
+                  classname = button[i]
                   console.log(str)
-                  var idiv = document.createElement('div')
-                  idiv.className = button[i]
-                  document.getElementsByTagName('body')[0].appendChild(idiv);
+                  var idiv2 = document.createElement('div')
+                  idiv2.className = classname
+                  document.getElementsByTagName('body')[0].appendChild(idiv2);
                   text = "$(\'." + button[i] + "').click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
                         "<br/>});"
-                   classname = '.'+ button[i];
+                   classname2 = '.'+ button[i];
                    //$("'."+button3[i]+"'").html(i+":"+text +"<br><br>")
-                   $(classname).html(i + ": <br>"+ str + "<br>:"+text +"<br>")
+                   $(classname2).html(i + ": <br>"+ str + "<br>:"+text +"<br>")
 
            }
 
