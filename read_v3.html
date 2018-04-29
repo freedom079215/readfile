@@ -10,12 +10,10 @@ $(document).ready(function(){
             //偵測連結類型的元素
             var link = data.match(/<a.*?a>/g)
             var button_data = data.match(/<button.*?>/g)
-            console.log(button_data)
             for (var i = 0; i < link.length; i++) {
                   var link_ID = new Array;
                   link_ID[i] = link[i].replace(/"/g,"")
                   link_ID[i] = link_ID[i].match(/id=.*? /g)
-                  console.log(link_ID[i])
 
                   if(link_ID[i] == null)
                   {
@@ -32,7 +30,6 @@ $(document).ready(function(){
                   {
                         continue;
                   }
-                  console.log(link_ID[i])
                   str = link[i].toString();
                    var idiv = document.createElement('div')
                    idiv.id = link_ID[i];
@@ -56,7 +53,7 @@ $(document).ready(function(){
 
                   button[i] = button[i].toString().replace("class=","")
                   button[i] = button[i].toString().replace('"',"")
-
+                  console.log(button[i])
                   if(button[i] == null)
                   {
                         continue;
