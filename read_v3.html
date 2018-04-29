@@ -58,19 +58,19 @@ $(document).ready(function(){
              if(button3[i] == null){ 
              	continue;
              }
-             console.log("3:"+button3[i])
-             var idiv = document.createElement('div')
-             //idiv.id = button3[i];
-             idiv.className = classname
-             console.log("div"+idiv.id)
-             document.getElementsByTagName('body')[0].appendChild(idiv);
-             text = "$(\'." + button3[i] + "').click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
-             	"<br/>});"
-             console.log(text)
-             classname2 = '.'+ button3[i];
-             console.log(button3[i])
+             // console.log("3:"+button3[i])
+             // var idiv = document.createElement('div')
+             // //idiv.id = button3[i];
+             // idiv.className = classname
+             // console.log("div"+idiv.id)
+             // document.getElementsByTagName('body')[0].appendChild(idiv);
+             // text = "$(\'." + button3[i] + "').click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
+             // 	"<br/>});"
+             // console.log(text)
+             // classname2 = '.'+ button3[i];
+             // console.log(button3[i])
              //$("'."+button3[i]+"'").html(i+":"+text +"<br><br>")
-             $(classname2).html(text +"<br><br>")
+             //$(classname2).html(text +"<br><br>")
             	// var str = data.match(/<a id=".*?>/g)
              //    var str2 = str[i];
              //    console.log(str2)
