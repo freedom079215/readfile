@@ -26,14 +26,13 @@ $(document).ready(function(){
                   {
                         continue;
                   }
-                  console.log(link_ID)
                   link_ID[i] = link_ID[i].toString().replace("id=","")
                   if(link_ID[i] == null)
                   {
                         continue;
                   }
                   console.log(link_ID[i])
-                   $("#text").append(i+":"+ link[i] + "<br>")
+                   $("#text").append(i+":"+ link[i].toString + "<br>")
            }
 
 
