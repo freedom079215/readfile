@@ -9,8 +9,8 @@ $(document).ready(function(){
             //alert("Data: " + data + "\nStatus: " + status);
             //偵測連結類型的元素
             var link = data.match(/href.*?html/g)
-            var link_ID = link[i];
-            link_ID = link_ID.match(/id=".*?"/g)
+            //var link_ID = link[i];
+            link_ID = link.match(/id=".*?"/g)
             link_ID2 = link_ID[0].replace("\"","")
             link_ID2 = link_ID2.replace("\"","")
             link_ID3 = link_ID3.replace("id=","")
