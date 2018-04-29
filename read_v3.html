@@ -13,13 +13,13 @@ $(document).ready(function(){
             for (var i = 0; i < button.length; i++) {
                   var link_ID = new Array;
                   link_ID = link[i].match(/id=".*?"/g)
-                  
+
                   //link_ID2 = link_ID[0].replace("\"","")
                   link_ID2 = link_ID2.replace("\"","")
                   link_ID3 = link_ID3.replace("id=","")
                   console.log(link_ID3)
                    $("#text").append(i+":"+ str[i] + "<br>")
-
+           }
 
 
 
