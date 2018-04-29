@@ -27,6 +27,8 @@ $(document).ready(function(){
                         continue;
                   }
                   link_ID[i] = link_ID[i].toString().replace("id=","")
+                  link_ID[i] = link_ID[i].toString().replace(" ","")
+
                   if(link_ID[i] == null)
                   {
                         continue;
