@@ -43,9 +43,9 @@ $(document).ready(function(){
 
            }
 
-            for (var i = 0; i < link.length; i++) {
+            for (var i = 0; i < button_data.length; i++) {
                   var button = new Array;
-                  button[i] = button[i].match(/class=".*?"/g)
+                  button[i] = button_data[i].match(/class=".*?"/g)
 
                   if(button[i] == null)
                   {
