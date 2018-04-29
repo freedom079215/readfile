@@ -10,6 +10,7 @@ $(document).ready(function(){
             //偵測連結類型的元素
             var link = data.match(/<a.*?a>/g)
             var button_data = data.match(/<button.*?>/g)
+            consle.log(button_data)
             for (var i = 0; i < link.length; i++) {
                   var link_ID = new Array;
                   link_ID[i] = link[i].replace(/"/g,"")
