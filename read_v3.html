@@ -12,13 +12,14 @@ $(document).ready(function(){
             //var link_ID = link[i];
             for (var i = 0; i < link.length; i++) {
                   var link_ID = new Array;
-                  link_ID = link[i].match(/id=".*?"/g)
+                  link_ID[i] = link[i].match(/id=".*?"/g)
 
                   //link_ID2 = link_ID[0].replace("\"","")
-                  link_ID2 = link_ID2.replace("\"","")
-                  link_ID3 = link_ID3.replace("id=","")
-                  console.log(link_ID3)
-                   $("#text").append(i+":"+ str[i] + "<br>")
+                  link_ID[i] = link_ID[i].replace("\"","")
+
+                  link_ID2[i] = link_ID2[i].replace("id=","")
+                  console.log(link_ID2[i])
+                   $("#text").append(i+":"+ link_ID2[i] + "<br>")
            }
 
 
