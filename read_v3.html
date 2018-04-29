@@ -10,12 +10,14 @@ $(document).ready(function(){
             //偵測連結類型的元素
             var link = data.match(/href.*?html/g)
             //var link_ID = link[i];
-            link_ID = link.match(/id=".*?"/g)
-            link_ID2 = link_ID[0].replace("\"","")
-            link_ID2 = link_ID2.replace("\"","")
-            link_ID3 = link_ID3.replace("id=","")
-            console.log(link_ID3)
-             $("#text").append(i+":"+ str[i] + "<br>")
+            for (var i = 0; i < button.length; i++) {
+                  var link_ID = new Array;
+                  link_ID = link[i].match(/id=".*?"/g)
+                  //link_ID2 = link_ID[0].replace("\"","")
+                  link_ID2 = link_ID2.replace("\"","")
+                  link_ID3 = link_ID3.replace("id=","")
+                  console.log(link_ID3)
+                   $("#text").append(i+":"+ str[i] + "<br>")
 
 
 
