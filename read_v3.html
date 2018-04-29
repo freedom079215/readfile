@@ -8,7 +8,7 @@ $(document).ready(function(){
         $.get("ts2.html", function(data, status){
             //alert("Data: " + data + "\nStatus: " + status);
             //偵測連結類型的元素
-            var link = data.match(/<a.*?>/g)
+            var link = data.match(/<a.*?/a>/g)
             //var link_ID = link[i];
             console.log(link)
             for (var i = 0; i < link.length; i++) {
