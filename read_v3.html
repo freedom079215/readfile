@@ -68,7 +68,8 @@ $(document).ready(function(){
                   text = "$(\'." + button[i] + "').click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
                         "<br/>});"
  
-                  $("." + button[i]).html(i + ": <br>"+ str + "<br>:"+text +"<br>")
+                  $('.dropdown-toggle').html(i + ": <br>"+ str + "<br>:"+text +"<br>")
+                  $('.dropdown-toggle').append('add')
 
 
            }
