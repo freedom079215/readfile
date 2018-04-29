@@ -61,13 +61,14 @@ $(document).ready(function(){
                   }
                   console.log(button[i])
                   str = button_data[i].toString();
+                  console.log(str)
                   var idiv = document.createElement('div')
                   idiv.className = button[i]
                   document.getElementsByTagName('body')[0].appendChild(idiv);
                   text = "$(\'." + button[i] + "').click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
                         "<br/>});"
  
-                  $(".dropdown-toggle").html(i + ": <br>"+ str + "<br>:"+text +"<br>")
+                  $("." + button[i]).html(i + ": <br>"+ str + "<br>:"+text +"<br>")
 
 
            }
