@@ -38,9 +38,9 @@ $(document).ready(function(){
                    idiv.id = link_ID[i];
                    idiv.className = 'block'
                    document.getElementsByTagName('body')[0].appendChild(idiv);
-                   text = "$(\"#" + str3 + "\").click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
+                   text = "$(\"#" + link_ID[i] + "\").click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
                         "<br/>});"
-                   $('#'+link_ID[i]).html(i +"-"+ "str" + ":"+text +"<br><br>")
+                   $('#'+link_ID[i]).html(i +"-"+ str + ":"+text +"<br><br>")
 
 
            }
