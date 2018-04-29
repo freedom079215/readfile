@@ -13,7 +13,7 @@ $(document).ready(function(){
             console.log(link)
             for (var i = 0; i < link.length; i++) {
                   var link_ID = new Array;
-                  link_ID[i] = link[i].replace(/"/g," ")
+                  link_ID[i] = link[i].replace(/"/g,"")
                   link_ID[i] = link_ID[i].match(/id=.*? /g)
                   console.log(link_ID[i])
 
