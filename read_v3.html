@@ -42,7 +42,7 @@ $(document).ready(function(){
                    document.getElementsByTagName('body')[0].appendChild(idiv);
                    text = "$(\"#" + link_ID[i] + "\").click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
                         "<br/>});"
-                   $("#"+link_ID[i]).html(i + ": <br>"+ str + ":"+text +"<br>")
+                   $("#"+link_ID[i]).html(i + ": <br>"+ str + "<br>:"+text +"<br>")
 
 
            }
