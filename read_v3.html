@@ -33,14 +33,14 @@ $(document).ready(function(){
                   }
                   console.log(link_ID[i])
                   str = link[i].toString();
-                   $("#text").append(i+":"+ str + "<br>")
+                   //$("#text").append(i+":"+ str + "<br>")
                    var idiv = document.createElement('div')
                    idiv.id = link_ID[i];
                    idiv.className = 'block'
                    document.getElementsByTagName('body')[0].appendChild(idiv);
                    text = "$(\"#" + link_ID[i] + "\").click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
                         "<br/>});"
-                   $('#'+link_ID[i]).html(i +"-"+ str + ":"+text +"<br><br>")
+                   $('#'+link_ID[i]).html(i + ": <br>"+ str + ":"+text +"<br>")
 
 
            }
