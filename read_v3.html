@@ -53,7 +53,7 @@ $(document).ready(function(){
                         continue;
                   }
                   str = link[i].toString();
-                  console.log(link_ID[0])
+                  console.log(link_ID[1])
 
                    var idiv = document.createElement('div')
                    idiv.id = link_ID[i];
@@ -76,7 +76,7 @@ $(document).ready(function(){
                      <input id=' + link_ID[i]+ '2' + ' type="button" value="確認"> <br>\n\
                       </form>'
                   $("#"+link_ID[i]).html(str + ":<br>" + select + '<br>')
-                  console.log(link_ID[0])
+                  console.log(link_ID[1])
 
 
            }
@@ -121,7 +121,7 @@ $(document).ready(function(){
       var form = new Array;
       form = $("form").serializeArray()
       console.log(form)
-      console.log(link_ID[0])
+      console.log(link_ID[1])
     })
      console.log($('form').serialize())
 });
