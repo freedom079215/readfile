@@ -41,6 +41,8 @@ $(document).ready(function(){
                    $("#"+link_ID[i]).html(i + ": <br>"+ str + "<br>:"+text +"<br>")
                    
                    var select = '<form> \n\
+                  <input type="text" name="Event_Category"> \n\
+                  <input type="text" name="Event_Action"> \n\
                      <select id="event_label" size="4">\n\
                        <option>form</option>\n\
                        <option>questionnaire</option>\n\
@@ -154,7 +156,6 @@ $(document).ready(function(){
 <div id="text"></div>
 <button >Send an HTTP GET request to a page and get the result back</button>
 <div class="a b">1234556</div>
-
 </body>
 
 </html>
