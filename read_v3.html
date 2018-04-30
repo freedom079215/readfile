@@ -41,11 +41,11 @@ $(document).ready(function(){
                    $("#"+link_ID[i]).html(i + ": <br>"+ str + "<br>:"+text +"<br>")
                    
                    var select = '<form> \n\
-                     <select id="mySelect" size="4">\n\
-                       <option>Apple</option>\n\
-                       <option>Orange</option>\n\
-                       <option>Pineapple</option>\n\
-                       <option>Banana</option>\n\
+                     <select id="event_label" size="4">\n\
+                       <option>form</option>\n\
+                       <option>questionnaire</option>\n\
+                       <option>button</option>\n\
+                       <option>others</option>\n\
                      </select>\n\
                    </form>' 
                    $("#"+link_ID[i]).append(select + '<br>')
