@@ -78,39 +78,39 @@ $(document).ready(function(){
 
            }
 
-            for (var i = 0; i < button_data.length; i++) {
-                  var button = new Array;
-                  button[i] = button_data[i].match(/class=".*?"/g)
+           //  for (var i = 0; i < button_data.length; i++) {
+           //        var button = new Array;
+           //        button[i] = button_data[i].match(/class=".*?"/g)
 
-                  if(button[i] == null)
-                  {
-                        continue;
-                  }
+           //        if(button[i] == null)
+           //        {
+           //              continue;
+           //        }
 
-                  button[i] = button[i].toString().replace("class=","")
-                  button[i] = button[i].toString().replace('"',"")
-                  button[i] = button[i].toString().replace('"',"")
-                  console.log(button[i])
-                  if(button[i] == null)
-                  {
-                        continue;
-                  }
-                  console.log(button[i])
-                  str = button_data[i].toString();
-                  classname = button[i]
-                  console.log(str)
-                  var idiv2 = document.createElement('div')
-                  idiv2.className = classname
-                  document.getElementsByTagName('body')[0].appendChild(idiv2);
-                  text = "$(\'." + button[i] + "').click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
-                        "<br/>});"
-                  classname2 = button[i].toString().replace(' ',".")
+           //        button[i] = button[i].toString().replace("class=","")
+           //        button[i] = button[i].toString().replace('"',"")
+           //        button[i] = button[i].toString().replace('"',"")
+           //        console.log(button[i])
+           //        if(button[i] == null)
+           //        {
+           //              continue;
+           //        }
+           //        console.log(button[i])
+           //        str = button_data[i].toString();
+           //        classname = button[i]
+           //        console.log(str)
+           //        var idiv2 = document.createElement('div')
+           //        idiv2.className = classname
+           //        document.getElementsByTagName('body')[0].appendChild(idiv2);
+           //        text = "$(\'." + button[i] + "').click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
+           //              "<br/>});"
+           //        classname2 = button[i].toString().replace(' ',".")
 
-                   classname2 = '.'+ classname2;
-                   //$("'."+button3[i]+"'").html(i+":"+text +"<br><br>")
-                   $(classname2).html(i + ": <br>"+ str + classname +"</button>"+ "<br>:"+text +"<br>")
+           //         classname2 = '.'+ classname2;
+           //         //$("'."+button3[i]+"'").html(i+":"+text +"<br><br>")
+           //         $(classname2).html(i + ": <br>"+ str + classname +"</button>"+ "<br>:"+text +"<br>")
 
-           }
+           // }
             
         });
     });
