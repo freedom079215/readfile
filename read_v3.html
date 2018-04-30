@@ -5,7 +5,7 @@
 <script>
 $(document).ready(function(){
     $("button").click(function(){
-        $.get("ts.html", function(data, status){
+        $.get("https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20180202174821307/prod.html", function(data, status){
             //alert("Data: " + data + "\nStatus: " + status);
             //偵測連結類型的元素
             var link = data.match(/<a.*?a>/g)
