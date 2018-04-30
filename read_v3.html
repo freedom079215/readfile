@@ -73,7 +73,8 @@ $(document).ready(function(){
                      <input id=' + link_ID[i]+ '2' + ' type="button" value="確認"> <br>\n\
                       </form>'
                   $("#"+link_ID[i]).html(str + ":<br>" + select + '<br>')
-               
+                  window.link_ID = new Array;
+                  window.link_ID[i] =link_ID[i];
 
 
            }
