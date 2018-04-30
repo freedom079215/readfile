@@ -94,7 +94,8 @@ $(document).ready(function(){
         });
     });
     $('#send').click(function(){
-      new form = $("form").serializeArray()
+      new form = new Array;
+      form = $("form").serializeArray()
       console.log(form)
     })
      console.log($('form').serialize())
