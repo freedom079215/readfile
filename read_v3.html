@@ -3,6 +3,8 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+var link_ID = new Array;
+
 $(document).ready(function(){
 
       // $.get("ts.htm", function(data, status){
@@ -32,7 +34,6 @@ $(document).ready(function(){
             var button_data = data.match(/<button.*?>/g)
             console.log(button_data)
             for (var i = 0; i < link.length; i++) {
-                  var link_ID = new Array;
                   link_ID[i] = link[i].replace(/"/g,"")
                   link_ID[i] = link_ID[i].match(/id=.*? /g)
 
@@ -73,8 +74,7 @@ $(document).ready(function(){
                      <input id=' + link_ID[i]+ '2' + ' type="button" value="確認"> <br>\n\
                       </form>'
                   $("#"+link_ID[i]).html(str + ":<br>" + select + '<br>')
-                  window.link_ID = new Array;
-                  window.link_ID[i] =link_ID[i];
+
 
 
            }
