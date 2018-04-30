@@ -54,7 +54,7 @@ $(document).ready(function(){
                   <input id=' + link_ID[i]+ '2' + ' type="button" value="確認"> <br>\n\
                    </form>' 
                    $("#"+link_ID[i]).append(select + '<br>')
-                   console.log($("form").serializeArray())
+                   
            }
 
             for (var i = 0; i < button_data.length; i++) {
@@ -150,7 +150,7 @@ $(document).ready(function(){
         });
     });
 
-     console.log($('form').serialize())
+     console.log($("form").serializeArray())
 });
 
 </script>
