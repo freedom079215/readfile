@@ -4,7 +4,27 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-    $("button").click(function(){
+
+      // $.get("ts.htm", function(data, status){
+      //       var link = data.match(/<a.*?a>/g)
+      //       for (var i = 0; i < link.length; i++) {
+      //             var select = '<form> \n\
+      //              Event_Category : \n\
+      //             <input type="text" name="Event_Category"> <br>\n\
+      //             Event_Action : \n\
+      //             <input type="text" name="Event_Action"> <br>\n\
+      //                Event_Label<select name="Event_label" id="event_label" size="4">\n\
+      //                  <option>form</option>\n\
+      //                  <option>questionnaire</option>\n\
+      //                  <option>button</option>\n\
+      //                  <option>others</option>\n\
+      //                </select>\n\
+      //             <input id=' + link_ID[i]+ '2' + ' type="button" value="確認"> <br>\n\
+      //              </form>'
+      //             $("#"+link_ID[i]).append(select + '<br>')
+      //       }
+      // }
+      $("button").click(function(){
         $.get("ts.htm", function(data, status){
             //alert("Data: " + data + "\nStatus: " + status);
             //偵測連結類型的元素
@@ -38,22 +58,23 @@ $(document).ready(function(){
                    document.getElementsByTagName('body')[0].appendChild(idiv);
                    text = "$(\"#" + link_ID[i] + "\").click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
                         "<br/>});"
-                   $("#"+link_ID[i]).html(i + ": <br>"+ str + "<br>:"+text +"<br>")
-                   
-                   var select = '<form> \n\
-                   Event_Category : \n\
-                  <input type="text" name="Event_Category"> <br>\n\
-                  Event_Action : \n\
-                  <input type="text" name="Event_Action"> <br>\n\
-                     Event_Label<select name="Event_label" id="event_label" size="4">\n\
-                       <option>form</option>\n\
-                       <option>questionnaire</option>\n\
-                       <option>button</option>\n\
-                       <option>others</option>\n\
-                     </select>\n\
-                  <input id=' + link_ID[i]+ '2' + ' type="button" value="確認"> <br>\n\
-                   </form>' 
-                   $("#"+link_ID[i]).append(select + '<br>')
+                   //$("#"+link_ID[i]).html(i + ": <br>"+ str + "<br>:"+text +"<br>")
+                  var select = '<form> \n\
+                      Event_Category : \n\
+                     <input type="text" name="Event_Category"> <br>\n\
+                     Event_Action : \n\
+                     <input type="text" name="Event_Action"> <br>\n\
+                        Event_Label<select name="Event_label" id="event_label" size="4">\n\
+                          <option>form</option>\n\
+                          <option>questionnaire</option>\n\
+                          <option>button</option>\n\
+                          <option>others</option>\n\
+                        </select>\n\
+                     <input id=' + link_ID[i]+ '2' + ' type="button" value="確認"> <br>\n\
+                      </form>'
+                  $("#"+link_ID[i]).append(select + '<br>')
+               
+
 
            }
 
