@@ -148,7 +148,7 @@ $(document).ready(function(){
             form[1].name
             text = "$(\"#" + link_ID[i] + "\").click(function(){<br/> \n\ gtag(\'event\', \'"+  Event_Action + "\', <br/>{ \'event_category\' : \'"+ Event_Category +"\', <br/>\'event_label\' : \'" + Event_value +  "\' });" +
                  "<br/>});"
-            
+            console.log(text)
             $("#"+link_ID[i]).html(i + ": <br>"+ str + "<br>:"+text +"<br>")
     })
 });
