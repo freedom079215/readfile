@@ -53,8 +53,6 @@ $(document).ready(function(){
                         continue;
                   }
                   str = link[i].toString();
-                  console.log(link_ID[1])
-
                    var idiv = document.createElement('div')
                    idiv.id = link_ID[i];
                    idiv.className = 'block'
@@ -76,7 +74,6 @@ $(document).ready(function(){
                      <input id=' + link_ID[i]+ '2' + ' type="button" value="確認"> <br>\n\
                       </form>'
                   $("#"+link_ID[i]).html(str + ":<br>" + select + '<br>')
-                  console.log(link_ID[2])
 
 
            }
