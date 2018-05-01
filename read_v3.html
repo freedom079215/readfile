@@ -69,7 +69,7 @@ $(document).ready(function(){
         $.get("ts.htm", function(data, status){
             //alert("Data: " + data + "\nStatus: " + status);
             //偵測連結類型的元素
-            file_text = $('#editor').text()
+            file_text = $('#editor').textContent
             console.log(file_text)
 
             var link = file_text.match(/<a.*?a>/g)
