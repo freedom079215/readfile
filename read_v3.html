@@ -120,6 +120,7 @@ $(document).ready(function(){
       console.log(form)
       console.log(form[1].name + form[1].value)
       for(var i = 0; i < link_ID.length; i++)
+      {
             for(var j = 0; j < form.length; j++)
             {
                   if(form[j].name == null)
@@ -150,6 +151,9 @@ $(document).ready(function(){
                  "<br/>});"
             console.log(text)
             $("#"+link_ID[i]).html(i + ": <br>"+ str + "<br>:"+text +"<br>")
+            $("#"+link_ID[i]).html(str + ":<br>" + select + '<br>')
+      }
+
     })
 });
 
