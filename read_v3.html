@@ -160,9 +160,11 @@ $(document).ready(function(){
 
            // $("#"+link_ID[i]).html(str + ":<br>" + select + '<br>')
       }
+      $("#GACode").append('GA追蹤碼:')
+
       for(var i = 0; i < gacode.length; i++)
       {
-            $("#GACode").append(gacode[i])
+            $("#GACode").append(gacode[i]+ '<br>')
       }
 
     })
@@ -172,7 +174,6 @@ console.log(gacode)
 </head>
 <body>
 <div id="text"></div>
-GA追蹤碼
 <div id="GACode"></div>
 <button >分析網頁資料</button>
 <button id='send'>產出GACode</button>
