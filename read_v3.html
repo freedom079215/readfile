@@ -63,11 +63,11 @@ $(document).ready(function(){
   
                    //$("#"+link_ID[i]).html(i + ": <br>"+ str + "<br>:"+text +"<br>")
                   var select = '<form><div class="form-group"> \n\
-                      Event_Category : \n\
+                      <label>Event_Category : </label>\n\
                      <input type="text" name="Event_Category'+i+'"> <br>\n\
-                     Event_Action : \n\
+                     <label>Event_Action : </label>\n\
                      <input type="text" name="Event_Action'+i+'"> <br>\n\
-                        Event_Label<select name="Event_label'+i+'" id="event_label" size="4">\n\
+                        <label>Event_Label</label><select name="Event_label'+i+'" id="event_label" size="4">\n\
                           <option>form</option>\n\
                           <option>questionnaire</option>\n\
                           <option>button</option>\n\
@@ -191,10 +191,10 @@ console.log(gacode)
       <div class="container" id='bodycontainer'>
             <div class="row">
               <div class="col-sm">
-                  <button >分析網頁資料</button>
+                  <button class="btn btn-primary">分析網頁資料</button>
               </div>
               <div class="col-sm">
-                  <button id='send'>產出GACode</button>
+                  <button id='send' class="btn btn-primary">產出GACode</button>
               </div>
             </div>
            <figure class="highlight">
@@ -202,20 +202,5 @@ console.log(gacode)
             </figure>
       </div>
 </body>
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+
 </html>
