@@ -59,9 +59,8 @@ $(document).ready(function(){
                    var idiv = document.createElement('div')
                    idiv.id = link_ID[i];
                    idiv.className = 'block'
-                   document.getElementsByTagName('body')[0].appendChild(idiv);
-                   text = "$(\"#" + link_ID[i] + "\").click(function(){<br/> \n\ gtag(\'event\', \'action\', <br/>{ \'event_category\' : \'ec\', <br/>\'event_label\' : \'el\' });" +
-                        "<br/>});"
+                   document.getElementsByTagName('bodycontainer')[0].appendChild(idiv);
+  
                    //$("#"+link_ID[i]).html(i + ": <br>"+ str + "<br>:"+text +"<br>")
                   var select = '<form><div class="form-group"> \n\
                       Event_Category : \n\
@@ -190,7 +189,7 @@ console.log(gacode)
           <a class="nav-link" href="#">說明</a>
         </li>
       </ul>
-      <div class="container">
+      <div class="container" id='bodycontainer'>
 
             <button >分析網頁資料</button>
             <button id='send'>產出GACode</button>
