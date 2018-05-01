@@ -118,6 +118,33 @@ $(document).ready(function(){
       var form = new Array;
       form = $("form").serializeArray()
       console.log(form[1].name + form[1].value)
+      for(var i = 0; i < link.length; i++)
+            for(var j = 0; i < form.length; j++)
+            {
+                  var category = "Event_Category" + i 
+                  var action = "Event_Action" + i 
+                  var value = "Event_value" + i 
+                  if(form[j].name == action)
+                  {
+                        var Event_Action = form[j].value
+                        continue
+                  }
+                  if(form[j].name == category)
+                  {
+                        var Event_Category = form[j].value
+                        continue
+                  }
+                  if(form[j].name == value)
+                  {
+                        var Event_value = form[j].value
+                        continue
+                  }
+            }
+            form[1].name
+            text = "$(\"#" + link_ID[i] + "\").click(function(){<br/> \n\ gtag(\'event\', \'"+  Event_Action + "\', <br/>{ \'event_category\' : \'"+ Event_Category +"\', <br/>\'event_label\' : \'" + Event_value +  "\' });" +
+                 "<br/>});"
+            
+            $("#"+link_ID[i]).html(i + ": <br>"+ str + "<br>:"+text +"<br>")
     })
      console.log($('form').serialize())
 });
