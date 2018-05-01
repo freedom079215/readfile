@@ -59,7 +59,7 @@ $(document).ready(function(){
                    var idiv = document.createElement('div')
                    idiv.id = link_ID[i];
                    idiv.className = 'block'
-                   document.getElementsById("bodycontainer").appendChild(idiv);
+                   document.getElementsByTagName('body')[0].appendChild(idiv);
   
                    //$("#"+link_ID[i]).html(i + ": <br>"+ str + "<br>:"+text +"<br>")
                   var select = '<form><div class="form-group"> \n\
