@@ -58,8 +58,8 @@ $(document).ready(function(){
                   str = link[i].toString();
                    var idiv = document.createElement('div')
                    idiv.id = link_ID[i];
-                   idiv.className = 'block'
-                   document.getElementsByTagName('body')[0].appendChild(idiv);
+                   idiv.className = 'row'
+                   document.getElementsByTagName('p')[0].appendChild(idiv);
   
                    //$("#"+link_ID[i]).html(i + ": <br>"+ str + "<br>:"+text +"<br>")
                   var select = '<form><div class="form-group"> \n\
@@ -165,7 +165,7 @@ $(document).ready(function(){
       {
             if(i == 0 )
             {
-                 $("#GACode").append('<p><h2>GA追蹤碼:</h2></p>') 
+                 $("#GACode").append('<h2>GA追蹤碼:</h2><br>') 
             }
             if(gacode[i]==null)
             {
@@ -200,6 +200,8 @@ console.log(gacode)
            <figure class="highlight">
              <div id="GACode"></div>
             </figure>
+            <p>
+            </p>
       </div>
 </body>
 
