@@ -160,15 +160,18 @@ $(document).ready(function(){
 
            // $("#"+link_ID[i]).html(str + ":<br>" + select + '<br>')
       }
-      $("#GACode").append('<p><h2>GA追蹤碼:</h2></p>')
 
       for(var i = 0; i < gacode.length; i++)
       {
+            if(i = 0 )
+            {
+                 $("#GACode").append('<p><h2>GA追蹤碼:</h2></p>') 
+            }
             if(gacode[i]==null)
             {
                   continue
             }
-            $("#GACode").html(gacode[i]+ '<br>')
+            $("#GACode").append(gacode[i]+ '<br>')
       }
 
     })
