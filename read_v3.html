@@ -121,6 +121,10 @@ $(document).ready(function(){
       console.log(link_ID)
       for(var i = 0; i < link_ID.length; i++)
       {
+            if(link_ID[i] ==null)
+            {
+                  continue
+            }
             for(var j = 0; j < form.length; j++)
             {
                   if(form[j].name == null)
@@ -146,7 +150,7 @@ $(document).ready(function(){
                         continue
                   }
             }
-            
+
             text = "$(\"#" + link_ID[i] + "\").click(function(){<br/> \n\ gtag(\'event\', \'"+  Event_Action + "\', <br/>{ \'event_category\' : \'"+ Event_Category +"\', <br/>\'event_label\' : \'" + Event_value +  "\' });" +
                  "<br/>});"
             console.log(text)
