@@ -67,14 +67,14 @@ $(document).ready(function(){
                      <input type="text" name="Event_Category'+i+'"> <br>\n\
                      <label>Event_Action : </label>\n\
                      <input type="text" name="Event_Action'+i+'"> <br>\n\
-                        <label>Event_Label</label><select name="Event_label'+i+'" id="event_label" size="4">\n\
+                        <label>Event_Label</label><select name="Event_label'+i+'" id="event_label" size="4" class="form-control">\n\
                           <option>form</option>\n\
                           <option>questionnaire</option>\n\
                           <option>button</option>\n\
                           <option>others</option>\n\
                         </select>\n\
                       </div></form>'
-                  $("#"+link_ID[i]).append("網頁元素:" + str + "<br><請設定GA事件參數> " + select + '<br><hr>')
+                  $("#"+link_ID[i]).append("<label>網頁元素:</label>" + str + "<br><請設定GA事件參數> " + select + '<br><hr>')
 
            }
 
