@@ -75,7 +75,6 @@ $(document).ready(function(){
                       </form>'
                   $("#"+link_ID[i]).append(str + ":<br>" + select + '<br>')
 
-
            }
 
            //  for (var i = 0; i < button_data.length; i++) {
@@ -154,8 +153,10 @@ $(document).ready(function(){
             text = "$(\"#" + link_ID[i] + "\").click(function(){<br/> \n\ gtag(\'event\', \'"+  Event_Action + "\', <br/>{ \'event_category\' : \'"+ Event_Category +"\', <br/>\'event_label\' : \'" + Event_value +  "\' });" +
                  "<br/>});"
             console.log(text)
+            console.log(link_ID[i])
             $("#"+link_ID[i]).append("<br>"+text +"<br>")
             $("#"+link_ID[i]).append("testetsetestset")
+            $("#btn-home").html('efafaffafaf')
 
            // $("#"+link_ID[i]).html(str + ":<br>" + select + '<br>')
       }
