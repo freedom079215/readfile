@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
 <script>        
+  var file_text = new String
   function handleFileSelect()
   {               
     if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {
@@ -27,12 +28,14 @@
       fr = new FileReader();
       fr.onload = receivedText;
       fr.readAsText(file);
-      ㄥfr.readAsDataURL(file);
+      fr.readAsDataURL(file);
+      file_text = fr.result
     }
   }
 
   function receivedText() {
     document.getElementById('editor').appendChild(document.createTextNode(fr.result));
+
   }           
 
 </script>
@@ -66,7 +69,7 @@ $(document).ready(function(){
         $.get("ts.htm", function(data, status){
             //alert("Data: " + data + "\nStatus: " + status);
             //偵測連結類型的元素
-            var link = data.match(/<a.*?a>/g)
+            var link = file_text.match(/<a.*?a>/g)
             var button_data = data.match(/<button.*?>/g)
             console.log(link)
             for (var i = 0; i < link.length; i++) {
