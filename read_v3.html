@@ -118,7 +118,7 @@ $(document).ready(function(){
       var form = new Array;
       form = $("form").serializeArray()
       console.log(form)
-      console.log(form[1].name + form[1].value)
+      console.log(link_ID)
       for(var i = 0; i < link_ID.length; i++)
       {
             for(var j = 0; j < form.length; j++)
@@ -146,7 +146,7 @@ $(document).ready(function(){
                         continue
                   }
             }
-            form[1].name
+            
             text = "$(\"#" + link_ID[i] + "\").click(function(){<br/> \n\ gtag(\'event\', \'"+  Event_Action + "\', <br/>{ \'event_category\' : \'"+ Event_Category +"\', <br/>\'event_label\' : \'" + Event_value +  "\' });" +
                  "<br/>});"
             console.log(text)
