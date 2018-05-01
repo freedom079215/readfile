@@ -160,10 +160,14 @@ $(document).ready(function(){
 
            // $("#"+link_ID[i]).html(str + ":<br>" + select + '<br>')
       }
-      $("#GACode").append('<p>GA追蹤碼:')
+      $("#GACode").append('<p>GA追蹤碼:</p>')
 
       for(var i = 0; i < gacode.length; i++)
       {
+            if(gacode[i])
+            {
+                  continue
+            }
             $("#GACode").append(gacode[i]+ '<br>')
       }
 
