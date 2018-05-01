@@ -133,7 +133,7 @@ $(document).ready(function(){
                   }
                   var category = "Event_Category" + i 
                   var action = "Event_Action" + i 
-                  var value = "Event_value" + i 
+                  var value = "Event_label" + i 
                   if(form[j].name == action)
                   {
                         var Event_Action = form[j].value
@@ -155,11 +155,14 @@ $(document).ready(function(){
                  "<br/>});"
             console.log(text)
             $("#"+link_ID[i]).append("<br>"+text +"<br>")
+            $("#"+link_ID[i]).append("testetsetestset")
+
            // $("#"+link_ID[i]).html(str + ":<br>" + select + '<br>')
       }
 
     })
 });
+      $("#"+link_ID[i]).append("1235788ttsksksk")
 
 </script>
 </head>
