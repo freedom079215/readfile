@@ -4,6 +4,39 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
+<script>        
+  function handleFileSelect()
+  {               
+    if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {
+      alert('The File APIs are not fully supported in this browser.');
+      return;
+    }   
+
+    input = document.getElementById('fileinput');
+    if (!input) {
+      alert("Um, couldn't find the fileinput element.");
+    }
+    else if (!input.files) {
+      alert("This browser doesn't seem to support the `files` property of file inputs.");
+    }
+    else if (!input.files[0]) {
+      alert("Please select a file before clicking 'Load'");               
+    }
+    else {
+      file = input.files[0];
+      fr = new FileReader();
+      fr.onload = receivedText;
+      //fr.readAsText(file);
+      fr.readAsDataURL(file);
+    }
+  }
+
+  function receivedText() {
+    document.getElementById('editor').appendChild(document.createTextNode(fr.result));
+  }           
+
+</script>
+
 <script>
 var link_ID = new Array;
 var gacode = new Array;
@@ -195,6 +228,10 @@ console.log(gacode)
               </div>
               <div class="col-sm">
                   <button id='send' class="btn btn-primary">產出GACode</button>
+              </div>
+              <div class="col-sm">
+                  <input type="file" id="fileinput"/>
+                  <input type='button' id='btnLoad' value='Load' onclick='handleFileSelect();'>
               </div>
             </div>
            <div class="row">
