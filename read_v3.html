@@ -254,6 +254,9 @@ console.log(gacode)
               <div class="col-sm">
                   <button id='send' class="btn btn-primary">產出GACode</button>
               </div>
+              <div class="col-sm">
+                  <a href="#" id="downloadLink">下載GA追蹤碼js</a>
+              </div>
 
             </div>
 
@@ -262,7 +265,6 @@ console.log(gacode)
                         <div id="GACode"></div>
                   </div>
            </div>
-           <a href="" download="name.html">DOWNLOAD CSV</a>
             <p></p>
             <div class="row" id="editor"></div>
 
@@ -270,13 +272,12 @@ console.log(gacode)
       <div id="main">
           <span>Hey there</span>
       </div>
-      <a href="#" id="downloadLink">Download the inner html</a>
 
 </body>
 
 </html>
 <script type="text/javascript">
-      var fileName =  'GACode.html'; // You can use the .txt extension if you want
+      var fileName =  'GACode.js'; // You can use the .txt extension if you want
 
       $('#downloadLink').click(function(){
           downloadInnerHtml(fileName, 'GACode','text/html');
