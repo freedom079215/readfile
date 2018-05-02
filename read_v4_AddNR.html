@@ -42,6 +42,7 @@
 
 <script>
 var link_ID = new Array;
+var button_ID = new Array;
 var gacode = new Array;
 var gacode_str = new String;
 $(document).ready(function(){
@@ -78,30 +79,37 @@ $(document).ready(function(){
             console.log(link)
             for (var i = 0; i < link.length; i++) {
 
-                  if(link[i].match(/<button.*?/))
-                  {
-                    console.log(link[i])
-                    continue
+                  // if(link[i].match(/<button.*?/))
+                  // {
+                button_ID[i] = link[i].match(/<.*? /g)
+                console.log( "OK-new" + button_ID[i])
 
+                  // }
+                  // else
+                  // {
+                  //   link_ID[i] = link[i].replace(/"/g,"")
+                  //   console.log( "ok" + link_ID[i])
+                  // }
+                  // link_ID[i] = link[i].replace(/"/g,"")
+                  // link_ID[i] = link_ID[i].match(/id=.*? /g)
+                  
+
+                  if(link_ID[i] == null)
+                  {
+                        continue;
+                  }
+
+                  if(link[i].match(/id.*?/))
+                  {
+                    link_ID[i] = link_ID[i].toString().replace("id=","")
+                    link_ID[i] = link_ID[i].toString().replace(" ","")
                   }
                   else
                   {
-                    console.log("ok")
-
-                  link_ID[i] = link[i].replace(/"/g,"")
-                  link_ID[i] = link_ID[i].match(/id=.*? /g)
+                    link_ID[i] = link_ID[i].toString().replace("class=","")
+                    link_ID[i] = link_ID[i].toString().replace(" ","")
                   }
 
-                  if(link_ID[i] == null)
-                  {
-                        continue;
-                  }
-                  if(link_ID[i] == null)
-                  {
-                        continue;
-                  }
-                  link_ID[i] = link_ID[i].toString().replace("id=","")
-                  link_ID[i] = link_ID[i].toString().replace(" ","")
 
                   if(link_ID[i] == null)
                   {
