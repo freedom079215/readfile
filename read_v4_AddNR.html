@@ -71,13 +71,21 @@ $(document).ready(function(){
             //偵測連結類型的元素
             file_text = $('#editor').text()
             console.log(file_text)
-
             var link = file_text.match(/(<a.*?a>)|(<button.*?>)/g)
             var button_data = data.match(/<button.*?>/g)
             console.log(link)
             for (var i = 0; i < link.length; i++) {
+
+                  if(link[i].match(/button.*/))
+                  {
+                    continue
+                    console.log(link[i])
+                  }
+                  else
+                  {
                   link_ID[i] = link[i].replace(/"/g,"")
                   link_ID[i] = link_ID[i].match(/id=.*? /g)
+                  }
 
                   if(link_ID[i] == null)
                   {
