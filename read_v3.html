@@ -218,16 +218,20 @@ $(document).ready(function(){
 console.log(gacode)
 </script>
 <script type="text/javascript">
-      var data = gacode;
+      function downloadInnerHtml(filename, elId, mimeType) {
+          var elHtml = document.getElementById(elId).innerHTML;
+          var link = document.createElement('a');
+          mimeType = mimeType || 'text/plain';
 
-      $('<a></a>')
-          .attr('id','downloadFile')
-          .attr('href','data:text/csv;charset=utf8,' + encodeURIComponent(data))
-          .attr('download','filename.csv')
-          .appendTo('body');
+          link.setAttribute('download', filename);
+          link.setAttribute('href', 'data:' + mimeType  +  ';charset=utf-8,' + encodeURIComponent(elHtml));
+          link.click(); 
+      }
 
-      $('#downloadFile').ready(function() {
-          $('#downloadFile').get(0).click();
+      var fileName =  'tags.html'; // You can use the .txt extension if you want
+
+      $('#downloadLink').click(function(){
+          downloadInnerHtml(fileName, 'main','text/html');
       });
 </script>
 
@@ -266,6 +270,11 @@ console.log(gacode)
             <div class="row" id="editor"></div>
 
       </div>
+      <div id="main">
+          <span>Hey there</span>
+      </div>
+      <a href="#" id="downloadLink">Download the inner html</a>
+
 </body>
 
 </html>
