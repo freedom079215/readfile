@@ -72,7 +72,7 @@ $(document).ready(function(){
             file_text = $('#editor').text()
             console.log(file_text)
 
-            var link = file_text.match(/(<a.*?a>)|(<button.*?\/button>)/g)
+            var link = file_text.match(/(<a.*?a>)|(<button.*?>)/g)
             var button_data = data.match(/<button.*?>/g)
             console.log(link)
             for (var i = 0; i < link.length; i++) {
