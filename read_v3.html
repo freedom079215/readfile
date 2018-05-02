@@ -229,12 +229,7 @@ console.log(gacode)
           console.log('click_success')
       }
 
-      var fileName =  'tags.html'; // You can use the .txt extension if you want
 
-      $('#downloadLink').click(function(){
-          downloadInnerHtml(fileName, 'main','text/html');
-          console.log('click')
-      });
 </script>
 
 </head>
@@ -280,3 +275,11 @@ console.log(gacode)
 </body>
 
 </html>
+<script type="text/javascript">
+      var fileName =  'tags.html'; // You can use the .txt extension if you want
+
+      $('#downloadLink').click(function(){
+          downloadInnerHtml(fileName, 'main','text/html');
+          console.log('click')
+      });
+</script>
