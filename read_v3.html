@@ -244,6 +244,7 @@ console.log(gacode)
                       tmpArr.push('"' + tmpStr + '"');
                     });
                     csvData.push(tmpArr);
+                    console.log(data+"downloadtest1")
                 } else {
                     tmpArr = [];
                        $(this).find("td").each(function() {
@@ -255,11 +256,16 @@ console.log(gacode)
                             }
                        });
                     csvData.push(tmpArr.join(','));
+                    console.log(data+"downloadtest2")
+
                 }
             });
             var output = csvData.join('\n');
             var uri = 'data:application/csv;charset=UTF-8,' + encodeURIComponent(output);
             $link.attr("href", uri);
+            console.log(data+"downloadtest3")
+            console.log(output)
+
           }
           
           $("a[download]").click(function(){
