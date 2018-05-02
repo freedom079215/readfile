@@ -65,7 +65,7 @@ $(document).ready(function(){
       //             $("#"+link_ID[i]).append(select + '<br>')
       //       }
       // }
-      $("button").click(function(){
+      $("#analyze").click(function(){
         $.get("ts.htm", function(data, status){
             //alert("Data: " + data + "\nStatus: " + status);
             //偵測連結類型的元素
@@ -257,7 +257,7 @@ console.log(gacode)
                   <button class="btn btn-secondary" id='btnLoad' onclick='handleFileSelect();'>LOAD</button>
               </div>   
               <div class="col-sm">
-                  <button class="btn btn-primary">分析網頁資料</button>
+                  <button id="analyze" class="btn btn-primary">分析網頁資料</button>
               </div>
               <div class="col-sm">
                   <button id='send' class="btn btn-primary">產出GACode</button>
