@@ -230,49 +230,7 @@ console.log(gacode)
           $('#downloadFile').get(0).click();
       });
 </script>
-<script type="text/javascript">
-      jQuery(function($){
-          jQuery.fn.toCSV = function($link) {
-            var data = $(this).first(); //Only one table
-            var csvData = [];
-            var tmpArr = [];
-            var tmpStr = '';
-            data.find("tr").each(function() {
-                if($(this).find("th").length) {
-                    $(this).find("th").each(function() {
-                      tmpStr = $(this).text().replace(/"/g, '""');
-                      tmpArr.push('"' + tmpStr + '"');
-                    });
-                    csvData.push(tmpArr);
-                    console.log(data+"downloadtest1")
-                } else {
-                    tmpArr = [];
-                       $(this).find("td").each(function() {
-                            if($(this).text().match(/^-{0,1}\d*\.{0,1}\d+$/)) {
-                                tmpArr.push(parseFloat($(this).text()));
-                            } else {
-                                tmpStr = $(this).text().replace(/"/g, '""');
-                                tmpArr.push('"' + tmpStr + '"');
-                            }
-                       });
-                    csvData.push(tmpArr.join(','));
-                    console.log(data+"downloadtest2")
 
-                }
-            });
-            var output = csvData.join('\n');
-            var uri = 'data:application/csv;charset=UTF-8,' + encodeURIComponent(output);
-            $link.attr("href", uri);
-            console.log(data+"downloadtest3")
-            console.log(output)
-
-          }
-          
-          $("a[download]").click(function(){
-            $("table").toCSV($this);    
-          });
-      });
-</script>
 </head>
 <body>
       <ul class="nav nav-tabs">
