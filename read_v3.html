@@ -217,6 +217,19 @@ $(document).ready(function(){
 });
 console.log(gacode)
 </script>
+<script type="text/javascript">
+      var data = gacode;
+
+      $('<a></a>')
+          .attr('id','downloadFile')
+          .attr('href','data:text/csv;charset=utf8,' + encodeURIComponent(data))
+          .attr('download','filename.csv')
+          .appendTo('body');
+
+      $('#downloadFile').ready(function() {
+          $('#downloadFile').get(0).click();
+      });
+</script>
 </head>
 <body>
       <ul class="nav nav-tabs">
@@ -247,7 +260,7 @@ console.log(gacode)
                         <div id="GACode"></div>
                   </div>
            </div>
-
+           <a></a>
             <p></p>
             <div class="row" id="editor"></div>
 
