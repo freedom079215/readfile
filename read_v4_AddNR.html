@@ -80,8 +80,9 @@ $(document).ready(function(){
 
                   // if(link[i].match(/<button.*?/))
                   // {
-                button_ID[i] = link[i].match(/<.*? /g)
-                console.log( i + "OK-new" + button_ID[i])
+                link_ID[i] = link[i].match(/<.*? /g)
+                link_ID[i] = link[i].replace(/</g,"")
+                console.log( i + "OK-new" + link_ID[i])
 
                   // }
                   // else
