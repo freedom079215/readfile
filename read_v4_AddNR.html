@@ -81,6 +81,8 @@ $(document).ready(function(){
                   // if(link[i].match(/<button.*?/))
                   // {
                 link_ID[i] = link[i].match(/<.*? /g)
+                console.log( i + "new" + link_ID[i])
+
                 link_ID[i] = link_ID[i].replace(/</,"")
                 console.log( i + "OK-new" + link_ID[i])
 
