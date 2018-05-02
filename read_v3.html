@@ -226,12 +226,14 @@ console.log(gacode)
           link.setAttribute('download', filename);
           link.setAttribute('href', 'data:' + mimeType  +  ';charset=utf-8,' + encodeURIComponent(elHtml));
           link.click(); 
+          console.log('click_success')
       }
 
       var fileName =  'tags.html'; // You can use the .txt extension if you want
 
       $('#downloadLink').click(function(){
           downloadInnerHtml(fileName, 'main','text/html');
+          console.log('click')
       });
 </script>
 
@@ -273,7 +275,7 @@ console.log(gacode)
       <div id="main">
           <span>Hey there</span>
       </div>
-      <a href="#" id="downloadLink">Download the inner html</a>
+      
 
 </body>
 
