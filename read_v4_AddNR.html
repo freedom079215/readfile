@@ -232,7 +232,7 @@ console.log(gacode)
 </script>
 <script type="text/javascript">
       function downloadInnerHtml(filename, elId, mimeType) {
-          var elHtml = document.getElementById(elId).innerHTML;
+          var elHtml = document.getElementById(elId).text();
           var link = document.createElement('a');
           mimeType = mimeType || 'text/plain';
 
