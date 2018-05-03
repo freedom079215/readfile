@@ -59,6 +59,7 @@ jQuery.fn.extend({
     getPath: function () {
       $(this).click(function(){
         var path, node = this;
+        console.log(this);
         while (node.length) {
             var realNode = node[0], name = realNode.localName;
             if (!name) break;
