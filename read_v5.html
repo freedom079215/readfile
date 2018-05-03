@@ -57,7 +57,6 @@ $(document).ready(function(){
 
 jQuery.fn.extend({
     getPath: function () {
-      $(this).click(function(){
         var path, node = this;
         console.log(this);
         console.log(path);
@@ -86,7 +85,6 @@ jQuery.fn.extend({
         }
         console.log(path)
         return path;
-      })
     }
 });
 
@@ -157,5 +155,6 @@ jQuery.fn.extend({
     //   });
     //$( "body" ).prepend( "<h3>" + elementCount + " elements found</h3>" );
   })
-  $("#analyze2").getPath();
+  var path = $("#analyze2").getPath();
+  console.log(path)
 </script>
