@@ -64,6 +64,9 @@ jQuery.fn.extend({
         console.log(node);
         while (node.length) {
             var realNode = node[0], name = realNode.localName;
+            console.log(realNode)
+            console.log(realNode.localName)
+
             if (!name) break;
             name = name.toLowerCase();
 
