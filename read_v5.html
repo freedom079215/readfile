@@ -60,6 +60,8 @@ jQuery.fn.extend({
       $(this).click(function(){
         var path, node = this;
         console.log(this);
+        console.log(path);
+        console.log(node);
         while (node.length) {
             var realNode = node[0], name = realNode.localName;
             if (!name) break;
