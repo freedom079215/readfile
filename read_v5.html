@@ -57,6 +57,7 @@ $(document).ready(function(){
 
 jQuery.fn.extend({
     getPath: function () {
+      $(this).click(function(){
         var path, node = this;
         while (node.length) {
             var realNode = node[0], name = realNode.localName;
@@ -77,8 +78,9 @@ jQuery.fn.extend({
             path = name + (path ? '>' + path : '');
             node = parent;
         }
-
+        console.log(path)
         return path;
+      })
     }
 });
 
@@ -142,11 +144,11 @@ jQuery.fn.extend({
 <script type="text/javascript">
   $("#analyze2").click(function(){
 
-    $( "#GACode" ).find( "*" )
-      .css({"border-style": "solid","border-color": "coral"})
-      .click(function(){
-        alert('ok')
-      });
+    // $( "#GACode" ).find( "*" )
+    //   .css({"border-style": "solid","border-color": "coral"})
+    //   .click(function(){
+    //     alert('ok')
+    //   });
     //$( "body" ).prepend( "<h3>" + elementCount + " elements found</h3>" );
   })
   $("#GACode").getPath();
