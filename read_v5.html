@@ -47,26 +47,9 @@ var gacode = new Array;
 var gacode_str = new String;
 $(document).ready(function(){
 
-      // $.get("ts.htm", function(data, status){
-      //       var link = data.match(/<a.*?a>/g)
-      //       for (var i = 0; i < link.length; i++) {
-      //             var select = '<form> \n\
-      //              Event_Category : \n\
-      //             <input type="text" name="Event_Category"> <br>\n\
-      //             Event_Action : \n\
-      //             <input type="text" name="Event_Action"> <br>\n\
-      //                Event_Label<select name="Event_label" id="event_label" size="4">\n\
-      //                  <option>form</option>\n\
-      //                  <option>questionnaire</option>\n\
-      //                  <option>button</option>\n\
-      //                  <option>others</option>\n\
-      //                </select>\n\
-      //             <input id=' + link_ID[i]+ '2' + ' type="button" value="確認"> <br>\n\
-      //              </form>'
-      //             $("#"+link_ID[i]).append(select + '<br>')
-      //       }
-      // }
-      $("#analyze").click(function(){
+     $("#analyze").click(function(){
+      $( "#GACode" ).load( "ajax/ts.htm" );
+
           console.log('test')
           $.get("ts.htm");
       })
