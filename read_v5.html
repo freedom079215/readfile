@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<script>        
+  var file_text = new String
+  function handleFileSelect()
+  {               
+    if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {
+      alert('The File APIs are not fully supported in this browser.');
+      return;
+    }   
+
+    input = document.getElementById('fileinput');
+    if (!input) {
+      alert("Um, couldn't find the fileinput element.");
+    }
+    else if (!input.files) {
+      alert("This browser doesn't seem to support the `files` property of file inputs.");
+    }
+    else if (!input.files[0]) {
+      alert("Please select a file before clicking 'Load'");               
+    }
+    else {
+      file = input.files[0];
+      fr = new FileReader();
+      fr.onload = receivedText;
+      fr.readAsText(file);
+      //fr.readAsDataURL(file);
+      file_text = fr.result
+    }
+  }
+
+  function receivedText() {
+    document.getElementById('editor').appendChild(document.createTextNode(fr.result));
+
+  }           
+
+</script>
+
+<script>
+var link_ID = new Array;
+var button_ID = new Array;
+var gacode = new Array;
+var gacode_str = new String;
+$(document).ready(function(){
+
+      // $.get("ts.htm", function(data, status){
+      //       var link = data.match(/<a.*?a>/g)
+      //       for (var i = 0; i < link.length; i++) {
+      //             var select = '<form> \n\
+      //              Event_Category : \n\
+      //             <input type="text" name="Event_Category"> <br>\n\
+      //             Event_Action : \n\
+      //             <input type="text" name="Event_Action"> <br>\n\
+      //                Event_Label<select name="Event_label" id="event_label" size="4">\n\
+      //                  <option>form</option>\n\
+      //                  <option>questionnaire</option>\n\
+      //                  <option>button</option>\n\
+      //                  <option>others</option>\n\
+      //                </select>\n\
+      //             <input id=' + link_ID[i]+ '2' + ' type="button" value="確認"> <br>\n\
+      //              </form>'
+      //             $("#"+link_ID[i]).append(select + '<br>')
+      //       }
+      // }
+      $("#analyze").click(function(){
+          $.get("ts.htm");
+      })
+  })
+</script>
+</head>
+<body>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">數位足跡追蹤碼產生器</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">說明</a>
+        </li>
+      </ul>
+      <div class="container" id='bodycontainer'>
+            <div class="row">
+              <div class="col-sm">
+                  <label>選擇網頁檔案: </label><input type="file" id="fileinput"/>
+                  <button class="btn btn-secondary" id='btnLoad' onclick='handleFileSelect();'>LOAD</button>
+              </div>   
+              <div class="col-sm">
+                  <button id="analyze" class="btn btn-primary">分析網頁資料</button>
+              </div>
+              <div class="col-sm">
+                  <button id='send' class="btn btn-primary">產出GACode</button>
+              </div>
+              <div class="col-sm">
+                  <button class="btn btn-light"><a href="#" id="downloadLink">下載GA追蹤碼js</a></button>
+              </div>
+
+            </div>
+
+           <div class="row">
+                  <div class="col">
+                        <div id="GACode">testetsetset<br></div>
+                  </div>
+           </div>
+            <p></p>
+            <div class="row" id="editor"></div>
+            <div id="main">
+                <span>讀入網頁代碼</span>
+            </div>
+      </div>
+
+
+</body>
+
+</html>
+<script type="text/javascript">
+      var fileName =  'GACode.js'; // You can use the .txt extension if you want
+
+      $('#downloadLink').click(function(){
+          downloadInnerHtml(fileName, 'GACode','text/html');
+          console.log('click')
+      });
+</script>
