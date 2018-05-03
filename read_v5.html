@@ -154,14 +154,13 @@ jQuery.fn.extend({
     //     alert('ok')
     //   });
     //$( "body" ).prepend( "<h3>" + elementCount + " elements found</h3>" );
-
-  $( "*" )
-    .click(function(){
-        alert("okok")
-        console.log('test')
-        console.log(this)
-        var path = $(this).getPath();
-        console.log(path)
+    $( window ).click(function ( e ) {
+      console.log('test')
+      console.log(this)
+      var path = $( e.target ).getPath();
+      console.log(path)
+      $( e.target ).toggleClass( 'debug' );
     });
+
   //})
 </script>
