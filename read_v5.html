@@ -155,9 +155,10 @@ jQuery.fn.extend({
     //   });
     //$( "body" ).prepend( "<h3>" + elementCount + " elements found</h3>" );
   })
-  $("#GACode > *").click(function{
-      var path = $(this).getPath();
+  $( "#GACode" ).find( "*" )
+    .click(function{
+        var path = $(this).getPath();
       console.log(path)
-  })
+    });
 
 </script>
