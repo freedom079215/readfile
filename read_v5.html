@@ -107,3 +107,9 @@ $(document).ready(function(){
           console.log('click')
       });
 </script>
+<script type="text/javascript">
+  <script>
+  var elementCount = $( "#GACode" ).find( "*" ).css( "border", "3px solid red" ).length;
+  $( "body" ).prepend( "<h3>" + elementCount + " elements found</h3>" );
+  </script>
+</script>
