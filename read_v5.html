@@ -51,8 +51,11 @@ $(document).ready(function(){
       
 
           console.log('test')
-          var str = $.get("ts.htm");
-          $( "#GACode" ).html( str );
+          var str = $.get("ts.htm", function(datal, status){
+            $( "#GACode" ).html( data );
+
+
+          });
       })
   })
 
