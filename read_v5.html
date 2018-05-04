@@ -159,7 +159,7 @@ jQuery.fn.extend({
       console.log('test')
       console.log(this)
       console.log( e.target )
-      var path = $( e.target ).getPath();
+      var path = jQuery( e.target ).getPath();
       console.log(path)
       $( e.target ).toggleClass( 'debug' );
     });
