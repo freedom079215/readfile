@@ -48,11 +48,11 @@ var gacode_str = new String;
 $(document).ready(function(){
 
      $("#analyze").click(function(){
-      $( "#GACode" ).load( "ts.htm" );
+      
 
           console.log('test')
           var str = $.get("ts.htm");
-          console.log(str)
+          $( "#GACode" ).html( str );
       })
   })
 
