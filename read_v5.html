@@ -75,7 +75,6 @@ $(document).ready(function(){
                         path = name + (path ? '>' + path : '');
                         node = parent;
                     }
-                    console.log(path)
                     return path;
                 }
             });
@@ -193,7 +192,6 @@ $(document).ready(function(){
     $( window ).on('click', function ( e ) {
       e.preventDefault();
       e.stopPropagation();
-      console.log(e)
 
       // setTimeout(function(){
         var path = $( e.target ).getPath();
@@ -201,7 +199,7 @@ $(document).ready(function(){
         {
           if(button_ID[i] != null)
           button_ID[i] = path;
-          console.log(button_ID[i] + "," + i)
+          console.log(path +","+button_ID[i] + "," + i)
         }
         $( e.target ).css({"border-style": "solid","border-color": "coral"})    
       // },4000)
