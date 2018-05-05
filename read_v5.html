@@ -188,11 +188,12 @@ $(document).ready(function(){
     //     alert('ok')
     //   });
     //$( "body" ).prepend( "<h3>" + elementCount + " elements found</h3>" );
-    $( window ).mouseover(function ( e ) {
-      setTimeout(function(){
+    $( window ).click(function ( e ) {
+      e.preventDefault();
+      // setTimeout(function(){
         var path = $( e.target ).getPath();
         $( e.target ).css({"border-style": "solid","border-color": "coral"})    
-      },4000)
+      // },4000)
       //$( e.target ).toggleClass( 'debug' );
     });
 
