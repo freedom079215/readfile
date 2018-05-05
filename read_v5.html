@@ -56,14 +56,10 @@ $(document).ready(function(){
             jQuery.fn.extend({
                 getPath: function () {
                     var path, node = this;
-                    console.log(this);
-                    console.log(path);
-                    console.log(node.length);
+
                     while (node.length) {
                         var realNode = node[0], name = realNode.localName;
-                        console.log(realNode)
-                        console.log(realNode.localName)
-
+    
                         if (!name) break;
                         name = name.toLowerCase();
 
@@ -178,7 +174,6 @@ $(document).ready(function(){
 
       $('#downloadLink').click(function(){
           downloadInnerHtml(fileName, 'GACode','text/html');
-          console.log('click')
       });
 </script>
 <script type="text/javascript">
@@ -191,11 +186,8 @@ $(document).ready(function(){
     //   });
     //$( "body" ).prepend( "<h3>" + elementCount + " elements found</h3>" );
     $( window ).click(function ( e ) {
-      console.log('test')
-      console.log(this)
-      console.log( e.target )
+
       var path = $( e.target ).getPath();
-      console.log(path)
       //$( e.target ).toggleClass( 'debug' );
     });
 
