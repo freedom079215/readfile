@@ -201,7 +201,7 @@ $(document).ready(function(){
         for(i = 0 ; i < length+1 ;i++)
         {
           console.log(i)
-          if(button_ID[i] == '')
+          if(typeof(button_ID[i]) == 'undefined')
           {
           console.log('store')
           button_ID[i] = path;
