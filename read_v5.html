@@ -49,8 +49,6 @@ $(document).ready(function(){
 
      $("#analyze").click(function(){
       
-
-          console.log('test')
           var str = $.get("ts3.htm", function(data, status){
             $( "#GACode" ).html( data );
             jQuery.fn.extend({
@@ -177,6 +175,12 @@ $(document).ready(function(){
       });
 </script>
 <script type="text/javascript">
+
+  var set_getPath = function(x){
+    var path = $( x.target ).getPath();
+    $( x.target ).css({"border-style": "solid","border-color": "coral"})
+
+  }
   $("#analyze2").click(function(){
 
     // $( "#GACode" ).find( "*" )
@@ -185,9 +189,8 @@ $(document).ready(function(){
     //     alert('ok')
     //   });
     //$( "body" ).prepend( "<h3>" + elementCount + " elements found</h3>" );
-    $( window ).click(function ( e ) {
-
-      var path = $( e.target ).getPath();
+    $( window ).mouseover(function ( e ) {
+      set_getPath(e)
       //$( e.target ).toggleClass( 'debug' );
     });
 
