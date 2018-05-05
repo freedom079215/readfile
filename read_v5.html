@@ -194,10 +194,10 @@ $(document).ready(function(){
       e.stopPropagation();
 
       // setTimeout(function(){
-        var path = $( e.target ).getPath();
         for(i = 0 ; i < button_ID.length+1 ;i++)
         {
           if(button_ID[i] != null)
+          var path = $( e.target ).getPath();
           button_ID[i] = path;
           console.log(path +","+button_ID[i] + "," + i)
         }
