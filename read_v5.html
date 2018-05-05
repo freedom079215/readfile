@@ -210,7 +210,10 @@ $(document).ready(function(){
         }
         console.log(button_ID[i] + "," + i)
 
-        $( e.target ).css({"border-style": "solid","border-color": "coral"})    
+        $( e.target )
+          .css({"border-style": "solid","border-color": "coral"}) 
+          .after($('<select name=test><option>form</option><option>form</option></select>'));
+
       // },4000)
       //$( e.target ).toggleClass( 'debug' );
     });
