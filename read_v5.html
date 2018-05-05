@@ -188,7 +188,7 @@ $(document).ready(function(){
     //     alert('ok')
     //   });
     //$( "body" ).prepend( "<h3>" + elementCount + " elements found</h3>" );
-    $( window ).on('click', '*', function ( e ) {
+    $( window ).on('click', function ( e ) {
       e.preventDefault();
       e.stopPropagation();
       console.log(e)
