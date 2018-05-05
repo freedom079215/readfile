@@ -191,6 +191,7 @@ $(document).ready(function(){
     $( window ).click(function ( e ) {
       console.log(e)
       e.preventDefault();
+      e.stopPropagation();
       // setTimeout(function(){
         var path = $( e.target ).getPath();
         $( e.target ).css({"border-style": "solid","border-color": "coral"})    
