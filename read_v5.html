@@ -189,7 +189,7 @@ $(document).ready(function(){
     //     alert('ok')
     //   });
     //$( "body" ).prepend( "<h3>" + elementCount + " elements found</h3>" );
-    $( window ).on('click', function ( e ) {
+    $( '#GACode' ).on('click', '*',function ( e ) {
       e.preventDefault();
       e.stopPropagation();
       var path = $( e.target ).getPath();
