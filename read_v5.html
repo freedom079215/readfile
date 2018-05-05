@@ -192,14 +192,16 @@ $(document).ready(function(){
     $( window ).on('click', function ( e ) {
       e.preventDefault();
       e.stopPropagation();
+      var path = $( e.target ).getPath();
 
       // setTimeout(function(){
         for(i = 0 ; i < button_ID.length+1 ;i++)
         {
           if(button_ID[i] != null)
-          var path = $( e.target ).getPath();
+          {
           button_ID[i] = path;
           console.log(path +","+button_ID[i] + "," + i)
+          }
         }
         $( e.target ).css({"border-style": "solid","border-color": "coral"})    
       // },4000)
