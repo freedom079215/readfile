@@ -198,12 +198,14 @@ $(document).ready(function(){
         var length = button_ID.length;
         for(i = 0 ; i < length+1 ;i++)
         {
-          if(button_ID[i] != '')
+          if(button_ID[i] == '')
           {
           button_ID[i] = path;
-          console.log(button_ID[i] + "," + i)
+          break;
           }
         }
+        console.log(button_ID[i] + "," + i)
+
         $( e.target ).css({"border-style": "solid","border-color": "coral"})    
       // },4000)
       //$( e.target ).toggleClass( 'debug' );
