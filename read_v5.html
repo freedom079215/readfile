@@ -177,8 +177,7 @@ $(document).ready(function(){
 <script type="text/javascript">
 
   var set_getPath = function(x){
-    var path = $( x.target ).getPath();
-    $( x.target ).css({"border-style": "solid","border-color": "coral"})
+    
 
   }
   $("#analyze2").click(function(){
@@ -190,7 +189,10 @@ $(document).ready(function(){
     //   });
     //$( "body" ).prepend( "<h3>" + elementCount + " elements found</h3>" );
     $( window ).mouseover(function ( e ) {
-      setTimeout(set_getPath(e),4000)
+      setTimeout(function(){
+        var path = $( e.target ).getPath();
+        $( e.target ).css({"border-style": "solid","border-color": "coral"})    
+      },4000)
       //$( e.target ).toggleClass( 'debug' );
     });
 
