@@ -3,7 +3,20 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
+<style type="text/css">
+      .row{
+        margin-bottom: 10px;
+      }
+      .row>.col-sm, .col, .bd-example-row, .row>[class^=col-] {
+          padding-top: .75rem;
+          padding-bottom: .75rem;
+          background-color: #fff;
+          border: 1px solid #e2cece;
+      }
+      .row input[type=text]{
+        background: #ece9e9;
+      }
+</style>
 <script>        
   var file_text = new String
   function handleFileSelect()
@@ -50,7 +63,7 @@ $(document).ready(function(){
      $("#analyze").click(function(){
       
           var str = $.get("ts3.htm", function(data, status){
-            $( "#GACode" ).html( data );
+            $( "#main" ).html( data );
             jQuery.fn.extend({
                 getPath: function () {
                     var path, node = this;
@@ -82,7 +95,12 @@ $(document).ready(function(){
             $('a').attr("href","##")
 
 
+
+
+
+
           });
+
       })
   })
 
@@ -131,31 +149,33 @@ $(document).ready(function(){
         </li>
       </ul>
       <div class="container" id='bodycontainer'>
+
+
+
             <div class="row">
-              <div class="col-sm">
+              <div class="col-3">
                   <label>選擇網頁檔案: </label><input type="file" id="fileinput"/>
                   <button class="btn btn-secondary" id='btnLoad' onclick='handleFileSelect();'>LOAD</button>
               </div>   
-              <div class="col-sm">
-                  <button id="analyze" class="btn btn-primary">分析網頁資料</button>
-              <div class="col-sm">
-
-                  <button id="analyze2" class="btn btn-primary">分析網頁資料2</button>
+              <div class="col-3">
+                  <button id="analyze" class="btn btn-primary">讀入網頁資料</button>
+                  <button id="analyze2" class="btn btn-primary">開始追蹤設定</button>
               </div>
-              </div>
-              <div class="col-sm">
+              <div class="col-3">
                   <button id='send' class="btn btn-primary">產出GACode</button>
               </div>
-              <div class="col-sm">
+              <div class="col-3">
                   <button class="btn btn-light"><a href="#" id="downloadLink">下載GA追蹤碼js</a></button>
               </div>
 
             </div>
-
+            <div id='GA' class="row">
+            </div>
            <div class="row">
-                  <div class="col">
-                        <div id="GACode">testetsetset<br></div>
-                  </div>
+              <div class="col-12">設定GA Code</div>
+              <div class="col">
+                    <div id="GACode"><br></div>
+              </div>
            </div>
             <p></p>
             <div class="row" id="editor"></div>
@@ -181,6 +201,7 @@ $(document).ready(function(){
     
 
   }
+
   $("#analyze2").click(function(){
 
     // $( "#GACode" ).find( "*" )
@@ -189,9 +210,20 @@ $(document).ready(function(){
     //     alert('ok')
     //   });
     //$( "body" ).prepend( "<h3>" + elementCount + " elements found</h3>" );
-    $( '#GACode' ).on('click', '*',function ( e ) {
-      e.preventDefault();
-      e.stopPropagation();
+    $('#main')
+      .on('mouseenter','a,button', function (e) {
+        console.log(e)
+          $(this).css({"border-style": "solid","border-color": "coral"}) 
+        })
+      .on('mouseleave','a,button',  function(e){
+          if(!$(this).hasClass('active')) {
+            $( e.target ).removeAttr('style');
+          }
+        });  
+    $( '#main' ).on('click', 'a,button',function ( e ) {
+
+      // e.preventDefault();
+      // e.stopPropagation();
       var path = $( e.target ).getPath();
 
       // setTimeout(function(){
@@ -208,17 +240,32 @@ $(document).ready(function(){
           break;
           }
         }
-        console.log(button_ID[i] + "," + i)
+        if(!$(this).hasClass('active')) {
+          $(this).addClass('active')
+                 .prepend("代碼:"+i)
+          var idiv = document.createElement('div')
+          idiv.id = 'GA'+i;
+          idiv.className = 'col-12'
+          document.getElementById('GACode').appendChild(idiv);
+          $("#"+'GA'+i).append("代碼" + i+ ":" +path);
+          var select = '<form><div class="form-group"> \n\
+              <label>Event_Category : </label>\n\
+             <input type="text" name="Event_Category'+i+'"> <br>\n\
+             <label>Event_Action : </label>\n\
+             <input type="text" name="Event_Action'+i+'"> <br>\n\
+                <label>Event_Label</label><select name="Event_label'+i+'" id="event_label" size="4" class="form-control">\n\
+                  <option>form</option>\n\
+                  <option>questionnaire</option>\n\
+                  <option>button</option>\n\
+                  <option>others</option>\n\
+                </select>\n\
+              </div></form>'
+          $("#"+'GA'+i).append("<br>" + select)
+        }
 
-        $( e.target )
-          .css({"border-style": "solid","border-color": "coral"}) 
-          .before(i)
 
       // },4000)
       //$( e.target ).toggleClass( 'debug' );
-    });
-    $( '#GACode' ).on('hover', '*',function ( e ) {
-      $( '#btn_go' ).css({"border-style": "solid","border-color": "coral"}) 
     })
 
 
