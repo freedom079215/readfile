@@ -8,12 +8,14 @@
 	<a id="link" href="http://www.google.com">google</a>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
-		$(function(){
-			$(window).click(function(e){
-				e.preventDefault();
-			})
-		});
-		$('#link').after($('<select name=test><option>form</option><option>form</option></select>'));
+		// $(function(){
+		// 	$(window).click(function(e){
+		// 		e.preventDefault();
+		// 	})
+		// });
+		$('#link').hover(function(){
+			alert('ok')
+		}, function(){ alert('test')})
 
 	</script>
 </body>
