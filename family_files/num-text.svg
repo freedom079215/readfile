@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1057" height="194" viewBox="0 0 1057 194">
+  <g id="TextNum" fill="none" fill-rule="evenodd" transform="translate(-3 -96)" opacity="0">
+    <text fill="#58ACC6" font-family="MHeiHK-Xbold, MHeiHK" font-size="72" font-weight="bold" letter-spacing="3.525">
+      <tspan x="0" y="283">全台</tspan>
+    </text>
+    <text id="num2" fill="#58ACC6" font-family="MHeiHK-Xbold, MHeiHK" font-size="72" font-weight="bold" letter-spacing="3.525">
+      <tspan x="917" y="283">據點</tspan>
+    </text>
+    <text id="number"  x="162" y="286" fill="#7EC6DD" font-family="" font-size="260" font-weight="700" letter-spacing="12.729">
+      <!-- <text id="number" x="162" y="286">2300</text> -->
+    </text>
+  </g>
+</svg>

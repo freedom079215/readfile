@@ -1,0 +1,98 @@
+.tashin-event .block-two {
+    margin-bottom: -400px;
+}
+
+.tashin-event .layer-block.L4-block .stair-text-block p {
+	max-width: 365px;
+}
+
+.tashin-event #stair-level4 img.L4-notice {
+    width: 421px;
+    position: absolute;
+    z-index: 1;
+    bottom: -85px;
+}
+
+/*.tashin-event .block-inpage.inpage-step-4 .title-block h6 {*/
+.tashin-event .block-inpage .title-block h6 {
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+.tashin-event .block-inpage.inpage-step-4 .inpage-other-block h3 .text {
+    vertical-align: bottom;
+    padding-bottom: 5px;
+}
+
+/*.tashin-event .block-inpage.inpage-step-4 .inpage-other-block .inpage-detail-block {*/
+.tashin-event .block-inpage .inpage-other-block .inpage-detail-block {
+	vertical-align: middle;
+    max-width: none;
+}
+
+.tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list > li p {
+	max-width: none;
+}
+
+@media (max-width: 1199px){
+	.tashin-event .block-two {
+	    margin-bottom: -280px;
+	}
+	.tashin-event .layer-block.L4-block .stair-text-block p {
+		max-width: 290px;
+	}
+	.tashin-event .block-inpage.inpage-step-4 .inpage-other-block .inpage-detail-block .detail-list > li p {
+        max-width: 145px;
+	}
+	.tashin-event #stair-level4 img.L4-notice {
+	    width: 250px;
+	    left: 160px;
+	    bottom: -15px;
+	}
+}
+
+@media (max-width: 1023px){
+	.tashin-event .block-two {
+	    margin-bottom: -200px;
+	}
+	.tashin-event .block-one .nav-btn-block {
+	    max-width: 80%;
+	}
+	.tashin-event .block-inpage.inpage-step-4 .title-block h2 {
+		font-size: 55px;
+	}
+	.tashin-event .layer-block.L4-block .stair-text-block p {
+	    max-width: 250px;
+	}
+	.tashin-event #stair-level4 img.L4-notice {
+	    left: 115px;
+	}
+	.tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list > li p {
+		max-width: 140px;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.tashin-event .block-two {
+	    margin-bottom: -150px;
+	}
+	.tashin-event .layer-block.L4-block .stair-text-block h1 {
+	    max-width: 60%;
+	}
+	.tashin-event .layer-block.L4-block .stair-text-block p {
+		max-width: 80%;
+	}
+	.tashin-event .block-inpage.inpage-step-4 .inpage-other-block .inpage-detail-block .detail-list > li p {
+	    max-width: 170px;
+	}
+	.tashin-event #stair-level4 img.L4-notice {
+	    left: 55px;
+	}
+}
+
+@media (max-width: 500px){
+	.tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list > li p {
+	    max-width: 117px;
+	}
+}

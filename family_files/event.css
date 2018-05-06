@@ -1,0 +1,4470 @@
+@charset "UTF-8";
+/* line 9, ../sass/event.scss */
+html, body {
+  -ms-overflow-style: none;
+}
+/* line 11, ../sass/event.scss */
+html.inpage-mode, body.inpage-mode {
+  overflow: hidden;
+}
+
+/* line 19, ../sass/event.scss */
+#mobileMenuMain {
+  background-color: #e7f9ff;
+}
+/* line 24, ../sass/event.scss */
+#mobileMenuMain .mm-navbar-top {
+  padding: 7px 0;
+  background-color: #FFF;
+  padding: 7px 0;
+  border-bottom: 5px solid #E00000;
+}
+/* line 30, ../sass/event.scss */
+#mobileMenuMain .mm-navbar-top .ga-mobile-menu-nav {
+  padding: 0;
+}
+/* line 34, ../sass/event.scss */
+#mobileMenuMain .mm-navbar-bottom-1 {
+  padding: 20px 0 20px 0;
+  background: #58ACC6;
+  display: none;
+}
+/* line 38, ../sass/event.scss */
+#mobileMenuMain .mm-navbar-bottom-1 .ga-mobile-menu-nav {
+  color: #fff;
+  padding: 0;
+  font-size: 14px;
+  letter-spacing: 0.9px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 45, ../sass/event.scss */
+#mobileMenuMain .mm-navbar-bottom-1 .ga-mobile-menu-nav p {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+/* line 52, ../sass/event.scss */
+#mobileMenuMain .mm-panels > .mm-panel > .mm-listview:first-child {
+  margin-top: 42px;
+}
+/* line 55, ../sass/event.scss */
+#mobileMenuMain #mobileMenuMain .mm-panels > .mm-panel > .mm-listview:first-child {
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 59, ../sass/event.scss */
+#mobileMenuMain .mm-vertical .mm-panel {
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 63, ../sass/event.scss */
+#mobileMenuMain .mm-listview > li > a {
+  border: 1px solid #58ACC6;
+  display: inline-block;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 35px;
+  color: #58ACC6;
+  text-align: center;
+}
+/* line 72, ../sass/event.scss */
+#mobileMenuMain .mm-listview > li > a:active, #mobileMenuMain .mm-listview > li > a:focus {
+  background-color: #58ACC6;
+  color: #fff;
+}
+/* line 81, ../sass/event.scss */
+#mobileMenuMain .mm-listview > li + li {
+  margin-top: 10px;
+}
+/* line 85, ../sass/event.scss */
+#mobileMenuMain .mm-listview > li:not(.mm-divider):after {
+  display: none;
+}
+/* line 88, ../sass/event.scss */
+#mobileMenuMain .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next), #mobileMenuMain .mm-menu .mm-listview > li.mm-selected > span {
+  background-color: transparent;
+}
+
+/* line 95, ../sass/event.scss */
+.mm-menu .mm-listview > li.mm-selected > a:not(.mm-next), .mm-menu .mm-listview > li.mm-selected > span {
+  background-color: transparent;
+}
+
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 101, ../sass/event.scss */
+.tashin-event {
+  position: relative;
+  overflow-x: hidden;
+  /* STAIR */
+  /*----MS Edge Browser CSS Start----*/
+  /*----MS Edge Browser CSS End----*/
+  /* Safari 7.1+ */
+  /* Safari 10.1+ (alternate method) */
+  /* ----------- iPhone 4 and 4S ----------- */
+  /* Portrait and Landscape */
+  /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+  /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+  /* Portrait and Landscape */
+  /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+  /* Portrait and Landscape */
+  /* Safari 6.1-10.0 (10.1 is the latest version of Safari at this time) */
+}
+/* line 16, ../sass/base/_base.scss */
+.tashin-event * {
+  font-family: "微軟正黑體";
+}
+/* line 20, ../sass/base/_base.scss */
+.tashin-event .border-top-line {
+  border-top: 1px solid #d6d6d6;
+}
+/* line 24, ../sass/base/_base.scss */
+.tashin-event .pos-center {
+  text-align: center;
+}
+/* line 27, ../sass/base/_base.scss */
+.tashin-event .pos-left {
+  text-align: left;
+}
+/* line 30, ../sass/base/_base.scss */
+.tashin-event .pos-right {
+  text-align: right;
+}
+/* line 33, ../sass/base/_base.scss */
+.tashin-event .mg-center {
+  margin: 0 auto;
+}
+/* line 36, ../sass/base/_base.scss */
+.tashin-event .float-left {
+  float: left;
+}
+/* line 39, ../sass/base/_base.scss */
+.tashin-event .float-right {
+  float: right;
+}
+/* line 42, ../sass/base/_base.scss */
+.tashin-event .full-height {
+  height: 100%;
+}
+/* line 45, ../sass/base/_base.scss */
+.tashin-event .clearfloat {
+  clear: both;
+}
+/* line 50, ../sass/base/_base.scss */
+.tashin-event .bg-grey {
+  background-color: #f8f9fb;
+}
+/* line 59, ../sass/base/_base.scss */
+.tashin-event .bg-black-opacity {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* line 75, ../sass/base/_base.scss */
+.tashin-event .hidden {
+  display: none;
+}
+/* line 78, ../sass/base/_base.scss */
+.tashin-event .over-hidden {
+  overflow: hidden;
+}
+/* line 81, ../sass/base/_base.scss */
+.tashin-event .same-line {
+  display: inline-block;
+}
+/* line 85, ../sass/base/_base.scss */
+.tashin-event .bg-light-grey {
+  background-color: #fafafa;
+}
+/* line 89, ../sass/base/_base.scss */
+.tashin-event .space-pc-inside-side {
+  padding-left: 70px !important;
+  padding-right: 70px !important;
+}
+/* line 94, ../sass/base/_base.scss */
+.tashin-event .space-pc-outside-side {
+  margin-left: 70px !important;
+  margin-right: 70px !important;
+}
+/* line 101, ../sass/base/_base.scss */
+.tashin-event .space-element-top-default {
+  margin-top: 30px !important;
+}
+/* line 104, ../sass/base/_base.scss */
+.tashin-event .space-element-top-sm {
+  margin-top: 20px !important;
+}
+/* line 107, ../sass/base/_base.scss */
+.tashin-event .space-element-top-little {
+  margin-top: 10px !important;
+}
+/* line 110, ../sass/base/_base.scss */
+.tashin-event .space-element-top-lg {
+  margin-top: 80px !important;
+}
+/* line 113, ../sass/base/_base.scss */
+.tashin-event .space-element-top-md {
+  margin-top: 50px !important;
+}
+/* line 117, ../sass/base/_base.scss */
+.tashin-event .space-element-btm-default {
+  margin-bottom: 30px !important;
+}
+/* line 120, ../sass/base/_base.scss */
+.tashin-event .space-element-btm-inside-default {
+  padding-bottom: 30px !important;
+}
+/* line 123, ../sass/base/_base.scss */
+.tashin-event .space-element-btm-sm {
+  margin-bottom: 20px !important;
+}
+/* line 126, ../sass/base/_base.scss */
+.tashin-event .space-element-btm-little {
+  margin-bottom: 10px !important;
+}
+/* line 129, ../sass/base/_base.scss */
+.tashin-event .space-element-btm-lg {
+  margin-bottom: 80px !important;
+}
+/* line 132, ../sass/base/_base.scss */
+.tashin-event .space-element-btm-md {
+  margin-bottom: 50px !important;
+}
+/* line 137, ../sass/base/_base.scss */
+.tashin-event .space-element-top-inside-sm {
+  padding-top: 20px !important;
+}
+/* line 144, ../sass/base/_base.scss */
+.tashin-event .space-element-btw-md + .space-element-btw-md {
+  margin-top: 50px;
+}
+/* line 149, ../sass/base/_base.scss */
+.tashin-event .space-element-btw-sm + .space-element-btw-sm {
+  margin-top: 20px !important;
+}
+/* line 154, ../sass/base/_base.scss */
+.tashin-event .space-element-btw-little + .space-element-btw-little {
+  margin-top: 10px;
+}
+/* line 159, ../sass/base/_base.scss */
+.tashin-event .space-element-btw-lg + .space-element-btw-lg {
+  margin-top: 80px;
+}
+@media (max-width: 1024px) {
+  /* line 166, ../sass/base/_base.scss */
+  .tashin-event .space-pc-inside-side {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  /* line 170, ../sass/base/_base.scss */
+  .tashin-event .space-nb-inside-side {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 177, ../sass/base/_base.scss */
+  .tashin-event .show-pad-and-mobile {
+    display: none !important;
+  }
+}
+@media (max-width: 992px) {
+  /* line 183, ../sass/base/_base.scss */
+  .tashin-event .space-pc-inside-side {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  /* line 187, ../sass/base/_base.scss */
+  .tashin-event .space-pc-outside-side {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  /* line 191, ../sass/base/_base.scss */
+  .tashin-event .space-nb-inside-side {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 198, ../sass/base/_base.scss */
+  .tashin-event .show-pad {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 203, ../sass/base/_base.scss */
+  .tashin-event .show-pad {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  /* line 208, ../sass/base/_base.scss */
+  .tashin-event .show-mobile {
+    display: none !important;
+  }
+}
+@media (max-width: 1023px) {
+  /* line 214, ../sass/base/_base.scss */
+  .tashin-event .show-pc {
+    display: none !important;
+  }
+  /* line 218, ../sass/base/_base.scss */
+  .tashin-event .space-element-btm-footer {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 224, ../sass/base/_base.scss */
+  .tashin-event .space-pad-inside-side {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    box-sizing: border-box;
+  }
+  /* line 229, ../sass/base/_base.scss */
+  .tashin-event .space-pad-outside-side {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+}
+@media (max-width: 1023px) {
+  /* line 241, ../sass/base/_base.scss */
+  .tashin-event .show-pc-and-mobile {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 250, ../sass/base/_base.scss */
+  .tashin-event .show-pc-and-pad {
+    display: none !important;
+  }
+  /* line 253, ../sass/base/_base.scss */
+  .tashin-event .show-pc-and-mobile {
+    display: block !important;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 261, ../sass/base/_base.scss */
+  .tashin-event .pc-unsee {
+    visibility: hidden;
+    position: absolute;
+  }
+  /* line 265, ../sass/base/_base.scss */
+  .tashin-event .show-pc-and-mobile {
+    display: block;
+  }
+}
+@media (max-width: 667px) {
+  /* line 276, ../sass/base/_base.scss */
+  .tashin-event .space-pad-inside-side {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  /* line 280, ../sass/base/_base.scss */
+  .tashin-event .space-pad-outside-side {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  /* line 284, ../sass/base/_base.scss */
+  .tashin-event .space-mobile-inside-side {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    box-sizing: border-box;
+  }
+  /* line 290, ../sass/base/_base.scss */
+  .tashin-event .space-mobile-outside-side {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  /* line 296, ../sass/base/_base.scss */
+  .tashin-event .show-pad {
+    display: none !important;
+  }
+}
+/* line 3, ../sass/helper/_gas-form-grid.scss */
+.tashin-event .form-item {
+  font-size: 0;
+}
+/* line 6, ../sass/helper/_gas-form-grid.scss */
+.tashin-event [class^="form-col-"] {
+  display: inline-block;
+  vertical-align: top;
+  vertical-align: middle;
+  font-size: 14px;
+}
+/* line 10, ../sass/helper/_gas-form-grid.scss */
+.tashin-event [class^="form-col-"] + [class^="form-col-"] {
+  margin-left: 2%;
+}
+/* line 15, ../sass/helper/_gas-form-grid.scss */
+.tashin-event .form-col-1 {
+  width: 6.5%;
+}
+/* line 18, ../sass/helper/_gas-form-grid.scss */
+.tashin-event .form-col-2 {
+  width: 15%;
+}
+/* line 21, ../sass/helper/_gas-form-grid.scss */
+.tashin-event .form-col-3 {
+  width: 23.5%;
+}
+/* line 24, ../sass/helper/_gas-form-grid.scss */
+.tashin-event .form-col-4 {
+  width: 32%;
+}
+/* line 27, ../sass/helper/_gas-form-grid.scss */
+.tashin-event .form-col-5 {
+  width: 40.5%;
+}
+/* line 30, ../sass/helper/_gas-form-grid.scss */
+.tashin-event .form-col-6 {
+  width: 49%;
+}
+/* line 33, ../sass/helper/_gas-form-grid.scss */
+.tashin-event .form-col-7 {
+  width: 57.5%;
+}
+/* line 36, ../sass/helper/_gas-form-grid.scss */
+.tashin-event .form-col-8 {
+  width: 66%;
+}
+/* line 39, ../sass/helper/_gas-form-grid.scss */
+.tashin-event .form-col-9 {
+  width: 74.5%;
+}
+/* line 42, ../sass/helper/_gas-form-grid.scss */
+.tashin-event .form-col-10 {
+  width: 83%;
+}
+/* line 45, ../sass/helper/_gas-form-grid.scss */
+.tashin-event .form-col-11 {
+  width: 91.5%;
+}
+/* line 48, ../sass/helper/_gas-form-grid.scss */
+.tashin-event .form-col-12 {
+  width: 100%;
+}
+/* line 51, ../sass/helper/_gas-form-grid.scss */
+.tashin-event .form-col-auto {
+  width: auto;
+}
+/* line 22, ../sass/component/_gas-form-layout.scss */
+.tashin-event .gas-layout-inpage-b .gas-layout-form {
+  width: 750px;
+  margin: 0 auto;
+}
+/* line 29, ../sass/component/_gas-form-layout.scss */
+.tashin-event .gas-layout-form {
+  text-align: left;
+}
+/* line 34, ../sass/component/_gas-form-layout.scss */
+.tashin-event .gas-layout-form .form-row {
+  font-size: 0;
+  display: table;
+  width: 100%;
+}
+/* line 38, ../sass/component/_gas-form-layout.scss */
+.tashin-event .gas-layout-form .form-row + .form-row {
+  margin-top: 20px;
+}
+/* line 40, ../sass/component/_gas-form-layout.scss */
+.tashin-event .gas-layout-form .form-row + .form-row.form-only-p {
+  margin-top: 15px;
+}
+/* line 46, ../sass/component/_gas-form-layout.scss */
+.tashin-event .gas-layout-form .form-row.form-only-p + .form-only-p {
+  margin-top: 15px;
+}
+/* line 50, ../sass/component/_gas-form-layout.scss */
+.tashin-event .gas-layout-form .form-row.form-only-p .form-left-part p, .tashin-event .gas-layout-form .form-row.form-only-p .form-right-part p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 61, ../sass/component/_gas-form-layout.scss */
+.tashin-event .gas-layout-form .form-row .form-item {
+  display: table;
+  width: 100%;
+}
+/* line 67, ../sass/component/_gas-form-layout.scss */
+.tashin-event .gas-layout-form .form-left-part {
+  display: table-cell;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 15%;
+  font-weight: 700;
+  text-align: right;
+  padding-right: 10px;
+  color: #4A4A4A;
+}
+/* line 77, ../sass/component/_gas-form-layout.scss */
+.tashin-event .gas-layout-form .form-left-part p {
+  margin: 0;
+  margin-top: 10px;
+}
+/* line 84, ../sass/component/_gas-form-layout.scss */
+.tashin-event .gas-layout-form .form-right-part {
+  display: table-cell;
+  vertical-align: middle;
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 85%;
+}
+/* line 90, ../sass/component/_gas-form-layout.scss */
+.tashin-event .gas-layout-form .form-right-part p {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  /* line 102, ../sass/component/_gas-form-layout.scss */
+  .tashin-event .gas-layout-inpage-b .gas-layout-form {
+    width: 100%;
+  }
+  /* line 110, ../sass/component/_gas-form-layout.scss */
+  .tashin-event .gas-layout-form .form-left-part {
+    width: 100%;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  /* line 115, ../sass/component/_gas-form-layout.scss */
+  .tashin-event .gas-layout-form .form-left-part p {
+    padding-left: 0;
+  }
+  /* line 119, ../sass/component/_gas-form-layout.scss */
+  .tashin-event .gas-layout-form .form-right-part {
+    width: 100%;
+    display: block;
+  }
+  /* line 126, ../sass/component/_gas-form-layout.scss */
+  .tashin-event .gas-layout-form .form-row.form-only-p .form-left-part p {
+    padding-left: 0;
+  }
+}
+/* line 50, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form {
+  font-family: "微軟正黑體";
+}
+/* line 53, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form input[type="text"],
+.tashin-event .gas-layout-form input[type="password"],
+.tashin-event .gas-layout-form textarea,
+.tashin-event .gas-layout-form select {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "微軟正黑體";
+  font-size: 14px;
+  padding-left: 10px;
+  height: 50px;
+  border: solid 1px #58ACC6;
+  border-radius: 5px;
+  outline: none;
+  display: inline-block;
+}
+/* line 73, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .checkbox-block .checkbox-style {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #58ACC6;
+  box-sizing: border-box;
+}
+/* line 83, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form input[type="checkbox"] {
+  display: none;
+}
+/* line 90, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form input[type="checkbox"]:checked + label .checkbox-style1 {
+  background-image: url(../images/checkbox-checked.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: top 50% left 50%;
+  border-radius: 5px;
+}
+/* line 98, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form input[type="checkbox"]:checked + label .checkbox-style2 {
+  background-color: #00965e;
+  background-image: url(../images/checkbox-checked-white.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: top 50% left 50%;
+  border: 1px solid transparent;
+}
+/* line 112, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .radio-block .radio-style {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #58ACC6;
+  vertical-align: middle;
+  border-radius: 50%;
+  position: relative;
+  box-sizing: border-box;
+}
+/* line 124, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form input[type="radio"] {
+  display: none;
+}
+/* line 128, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form input[type="radio"]:checked + label .radio-style1 {
+  background-image: url(../images/checkbox-checked.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: top 50% left 50%;
+}
+/* line 134, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form input[type="radio"]:checked + label .radio-style2 {
+  background-image: url(../images/checkbox-checked-white.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: top 50% left 50%;
+  background-color: #00965e;
+  border: 1px solid transparent;
+}
+/* line 143, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form input[type="radio"]:checked + label .radio-style3 {
+  display: inline-block;
+}
+/* line 145, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form input[type="radio"]:checked + label .radio-style3 .checked {
+  background-color: #00965e;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  text-align: center;
+  margin: 0 auto;
+  transform: translateY(-50%);
+}
+/* line 160, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form input[type="radio"]:checked + label .radio-style4 {
+  display: inline-block;
+  border: 2px solid #00965e;
+}
+/* line 163, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form input[type="radio"]:checked + label .radio-style4 .checked {
+  background-color: #00965e;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  text-align: center;
+  margin: 0 auto;
+  transform: translateY(-50%);
+}
+/* line 184, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .radio-block.option-inline, .tashin-event .gas-layout-form .checkbox-block.option-inline {
+  display: inline-block;
+  margin-right: 20px;
+}
+/* line 187, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .radio-block.option-inline:last-of-type, .tashin-event .gas-layout-form .checkbox-block.option-inline:last-of-type {
+  margin-right: 0;
+}
+/* line 192, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .radio-block.option-wd, .tashin-event .gas-layout-form .checkbox-block.option-wd {
+  width: 49%;
+  margin-right: 0;
+}
+/* line 197, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .choose-tag {
+  padding-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+/* line 203, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form textarea {
+  height: 120px;
+}
+/* line 206, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form select {
+  appearance: none;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  background-image: url("../images/select-arrow-white.png");
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position: center right;
+  background-color: #fff;
+}
+/* line 218, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .form-item + .form-item {
+  margin-top: 10px;
+}
+/* line 220, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .form-item + .form-item p {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* line 225, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .form-item p {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+}
+/* line 62, ../sass/base/_mixin.scss */
+.tashin-event .gas-layout-form ::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #9b9b9b;
+  font-size: 14px;
+  font-family: "微軟正黑體";
+  letter-spacing: 1px;
+}
+/* line 69, ../sass/base/_mixin.scss */
+.tashin-event .gas-layout-form input::-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #9b9b9b;
+  font-size: 14px;
+  font-family: "微軟正黑體";
+  letter-spacing: 1px;
+  opacity: 1;
+}
+/* line 77, ../sass/base/_mixin.scss */
+.tashin-event .gas-layout-form textarea::-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #9b9b9b;
+  font-size: 14px;
+  font-family: "微軟正黑體";
+  letter-spacing: 1px;
+  opacity: 1;
+}
+/* line 85, ../sass/base/_mixin.scss */
+.tashin-event .gas-layout-form ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #9b9b9b;
+  font-size: 14px;
+  font-family: "微軟正黑體";
+  letter-spacing: 1px;
+}
+/* line 92, ../sass/base/_mixin.scss */
+.tashin-event .gas-layout-form :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #9b9b9b;
+  font-size: 14px;
+  font-family: "微軟正黑體";
+  letter-spacing: 1px;
+}
+/* line 99, ../sass/base/_mixin.scss */
+.tashin-event .gas-layout-form ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #9b9b9b;
+  font-size: 14px;
+  font-family: "微軟正黑體";
+  letter-spacing: 1px;
+}
+/* line 238, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .form-ps {
+  font-size: 14px;
+  color: #00965e;
+}
+/* line 242, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .form-tag {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 246, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .form-tag + .input-block {
+  display: inline-block;
+  padding-left: 5px;
+}
+/* line 250, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .form-tag + select {
+  display: inline-block;
+  margin-left: 5px;
+}
+/* line 256, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .form-group {
+  display: inline-block;
+}
+/* line 258, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .form-group .input-block {
+  display: inline-block;
+  width: auto;
+}
+/* line 262, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .form-group select {
+  display: inline-block;
+  width: auto;
+}
+/* line 266, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .form-group .form-ps {
+  display: inline-block;
+  width: auto;
+}
+/* line 274, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .input-block.short {
+  width: 100px;
+}
+/* line 277, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .input-block.md {
+  width: 144px;
+}
+/* line 280, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .input-block + .form-tag {
+  padding-left: 5px;
+}
+/* line 285, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form select.short {
+  width: 100px;
+}
+/* line 288, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form select.md {
+  width: 144px;
+}
+/* line 291, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form select + .form-tag {
+  padding-left: 5px;
+}
+/* line 298, ../sass/component/_gas-form-component.scss */
+.tashin-event .gas-layout-form .form-row.form-only-p p {
+  padding-left: 10px;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* line 316, ../sass/component/_gas-form-component.scss */
+  .tashin-event .gas-layout-form select {
+    background-image: none;
+  }
+}
+/* line 1, ../sass/component/_btns.scss */
+.tashin-event .btn-default {
+  height: 48px;
+  display: inline-block;
+  width: 188px;
+  border: 1px solid #4a4a4a;
+  border-radius: 25px;
+  line-height: 48px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+/* line 13, ../sass/component/_btns.scss */
+.tashin-event .btn-color-pink {
+  color: #FF8080;
+  border-color: #FF8080;
+}
+/* line 17, ../sass/component/_btns.scss */
+.tashin-event .btn-color-pink-full {
+  background-color: #FF8080;
+  color: #fff;
+  border: none;
+}
+/* line 22, ../sass/component/_btns.scss */
+.tashin-event .btn-color-yellow-full {
+  background-color: #FFB03D;
+  color: #fff;
+  border: none;
+}
+/* line 27, ../sass/component/_btns.scss */
+.tashin-event .btn-color-main {
+  color: #58ACC6;
+  border-color: #58ACC6;
+}
+/* line 32, ../sass/component/_btns.scss */
+.tashin-event .btn-inline {
+  width: 48%;
+}
+/* line 34, ../sass/component/_btns.scss */
+.tashin-event .btn-inline + .btn-inline {
+  float: right;
+}
+@media (max-width: 767px) {
+  /* line 40, ../sass/component/_btns.scss */
+  .tashin-event .btn-inline {
+    width: 48%;
+    display: block;
+    text-align: center;
+    margin: 2% auto;
+  }
+  /* line 45, ../sass/component/_btns.scss */
+  .tashin-event .btn-inline + .btn-inline {
+    float: none;
+  }
+  /* line 51, ../sass/component/_btns.scss */
+  .tashin-event .layer-block .btn-inline {
+    width: 62%;
+  }
+}
+/* line 1, ../sass/component/_page.scss */
+.tashin-event .pagination {
+  text-align: center;
+  width: 100%;
+}
+/* line 3, ../sass/component/_page.scss */
+.tashin-event .pagination a {
+  text-decoration: none;
+  color: #58ACC6;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
+/* line 10, ../sass/component/_page.scss */
+.tashin-event .pagination .page_control {
+  margin: 40px 10px;
+}
+/* line 14, ../sass/component/_page.scss */
+.tashin-event .pagination .pageNumber {
+  max-width: 250px;
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 0;
+}
+/* line 20, ../sass/component/_page.scss */
+.tashin-event .pagination .pageNumber > li {
+  font-weight: light;
+  display: inline-block;
+}
+/* line 23, ../sass/component/_page.scss */
+.tashin-event .pagination .pageNumber > li.active {
+  font-weight: 700;
+  border-radius: 50px;
+}
+/* line 31, ../sass/component/_page.scss */
+.tashin-event .pagination .pageNumber > li.active a {
+  text-align: center;
+  font-size: 24px;
+  color: #58ACC6;
+  text-decoration: underline;
+}
+/* line 39, ../sass/component/_page.scss */
+.tashin-event .pagination .pageNumber > li a {
+  font-size: 18px;
+}
+/* line 43, ../sass/component/_page.scss */
+.tashin-event .pagination .pageNumber > li + li {
+  margin-left: 10%;
+}
+/* line 1, ../sass/layout/_header-footer.scss */
+.tashin-event .header {
+  clear: both;
+  overflow: hidden;
+  background-color: #fff;
+  border-bottom: solid 5px #ED0000;
+  padding: 10px 5%;
+  box-sizing: border-box;
+}
+/* line 9, ../sass/layout/_header-footer.scss */
+.tashin-event .header .logo-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 13, ../sass/layout/_header-footer.scss */
+.tashin-event .header .logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 17, ../sass/layout/_header-footer.scss */
+.tashin-event .header .logo img {
+  max-width: 147px;
+  width: auto;
+}
+/* line 22, ../sass/layout/_header-footer.scss */
+.tashin-event .header .mobile-nav-btn {
+  display: none;
+}
+/* line 27, ../sass/layout/_header-footer.scss */
+.tashin-event .header-hidden-block {
+  display: none;
+}
+/* line 30, ../sass/layout/_header-footer.scss */
+.tashin-event .footer {
+  background-color: #E00000;
+  text-align: center;
+  width: 100%;
+  font-size: 0;
+}
+/* line 35, ../sass/layout/_header-footer.scss */
+.tashin-event .footer .copyright {
+  padding: 5px 5px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+  box-sizing: border-box;
+}
+/* line 43, ../sass/layout/_header-footer.scss */
+.tashin-event .footer .footer-logo {
+  padding: 5px 5px;
+  height: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10%;
+  background-color: #888887;
+}
+/* line 51, ../sass/layout/_header-footer.scss */
+.tashin-event .footer .footer-logo img {
+  max-width: 139px;
+  width: 100%;
+}
+/* line 57, ../sass/layout/_header-footer.scss */
+.tashin-event .footer p {
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+  letter-spacing: 1.1px;
+  font-size: 11px;
+  line-height: normal;
+}
+@media (max-width: 1023px) {
+  /* line 69, ../sass/layout/_header-footer.scss */
+  .tashin-event .footer {
+    height: 50px;
+    position: relative;
+    display: table;
+  }
+  /* line 73, ../sass/layout/_header-footer.scss */
+  .tashin-event .footer .copyright {
+    width: 80%;
+    height: 100%;
+    vertical-align: middle;
+    line-height: normal;
+    display: table-cell;
+  }
+  /* line 82, ../sass/layout/_header-footer.scss */
+  .tashin-event .footer .footer-logo {
+    width: 20%;
+    height: 100%;
+    line-height: normal;
+    display: table-cell;
+  }
+}
+@media (max-width: 767px) {
+  /* line 92, ../sass/layout/_header-footer.scss */
+  .tashin-event .header-hidden-block {
+    display: inline-block;
+    height: 59px;
+    visibility: hidden;
+    width: 100%;
+    position: relative;
+  }
+  /* line 99, ../sass/layout/_header-footer.scss */
+  .tashin-event .header {
+    position: fixed;
+    width: 100%;
+    z-index: 14;
+  }
+  /* line 106, ../sass/layout/_header-footer.scss */
+  .tashin-event .header .mobile-nav-btn {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 4px;
+    float: right;
+  }
+  /* line 114, ../sass/layout/_header-footer.scss */
+  .tashin-event .footer {
+    height: 60px;
+  }
+  /* line 116, ../sass/layout/_header-footer.scss */
+  .tashin-event .footer .copyright {
+    width: 70%;
+    text-align: left;
+    padding: 10px 2%;
+    line-height: normal;
+  }
+  /* line 123, ../sass/layout/_header-footer.scss */
+  .tashin-event .footer .footer-logo {
+    width: 30%;
+  }
+  /* line 127, ../sass/layout/_header-footer.scss */
+  .tashin-event .footer p {
+    font-size: 11px;
+  }
+}
+/* line 2, ../sass/layout/_layout-block.scss */
+.tashin-event .page-content {
+  position: relative;
+  min-height: 100%;
+  height: auto;
+}
+/* line 6, ../sass/layout/_layout-block.scss */
+.tashin-event .page-content .block-one, .tashin-event .page-content .block-two, .tashin-event .page-content .block-three, .tashin-event .page-content .block-four {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 11, ../sass/layout/_layout-block.scss */
+.tashin-event .page-content .block-three {
+  margin-top: -340px;
+}
+/* line 16, ../sass/layout/_layout-block.scss */
+.tashin-event .block-two {
+  margin-bottom: -400px;
+}
+/* line 21, ../sass/layout/_layout-block.scss */
+.tashin-event .layout-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+/* line 32, ../sass/layout/_layout-block.scss */
+.tashin-event .L2-block {
+  top: -210px;
+}
+/* line 35, ../sass/layout/_layout-block.scss */
+.tashin-event .L3-block {
+  top: -380px;
+}
+/* line 38, ../sass/layout/_layout-block.scss */
+.tashin-event .L4-block {
+  top: -630px;
+}
+/* line 40, ../sass/layout/_layout-block.scss */
+.tashin-event .L4-block .text-detail-block {
+  margin-top: 180px;
+}
+/* line 45, ../sass/layout/_layout-block.scss */
+.tashin-event .L5-block {
+  top: -390px;
+}
+/* line 47, ../sass/layout/_layout-block.scss */
+.tashin-event .L5-block .text-detail-block {
+  margin-top: 180px;
+  width: 98%;
+  max-width: 528px;
+}
+/* line 54, ../sass/layout/_layout-block.scss */
+.tashin-event #page-banner {
+  clear: both;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -65px;
+}
+/* line 63, ../sass/layout/_layout-block.scss */
+.tashin-event #first-page, .tashin-event [id^="stair-level"], .tashin-event #B3-bg, .tashin-event #B3-P1, .tashin-event #B3-P2, .tashin-event #B3-Text {
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+/* line 67, ../sass/layout/_layout-block.scss */
+.tashin-event #first-page svg, .tashin-event [id^="stair-level"] svg, .tashin-event #B3-bg svg, .tashin-event #B3-P1 svg, .tashin-event #B3-P2 svg, .tashin-event #B3-Text svg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+}
+/* line 75, ../sass/layout/_layout-block.scss */
+.tashin-event #first-page img, .tashin-event [id^="stair-level"] img, .tashin-event #B3-bg img, .tashin-event #B3-P1 img, .tashin-event #B3-P2 img, .tashin-event #B3-Text img {
+  width: 100%;
+}
+/* line 81, ../sass/layout/_layout-block.scss */
+.tashin-event #stair-level4 img {
+  width: 87%;
+}
+/* line 87, ../sass/layout/_layout-block.scss */
+.tashin-event #stair-level5 img {
+  width: 87%;
+}
+/* line 92, ../sass/layout/_layout-block.scss */
+.tashin-event #stair-level1, .tashin-event #stair-level3, .tashin-event #stair-level5 {
+  width: 60%;
+  float: right;
+  position: relative;
+  right: 0;
+}
+/* line 98, ../sass/layout/_layout-block.scss */
+.tashin-event #stair-level2, .tashin-event #stair-level4 {
+  width: 68%;
+  float: left;
+  position: relative;
+  right: 0;
+}
+/* line 105, ../sass/layout/_layout-block.scss */
+.tashin-event #stair-level4 {
+  top: 71px;
+  z-index: 9;
+}
+/* line 109, ../sass/layout/_layout-block.scss */
+.tashin-event #stair-level4-sub {
+  clear: left;
+}
+/* line 112, ../sass/layout/_layout-block.scss */
+.tashin-event #stair-level5 {
+  top: 71px;
+  z-index: 9;
+}
+/* line 116, ../sass/layout/_layout-block.scss */
+.tashin-event #stair-level5-sub {
+  clear: both;
+}
+/* line 120, ../sass/layout/_layout-block.scss */
+.tashin-event #B3-P1 {
+  display: inline-block;
+  width: 20%;
+  float: left;
+}
+/* line 125, ../sass/layout/_layout-block.scss */
+.tashin-event #B3-P2 {
+  display: inline-block;
+  width: 25%;
+  float: right;
+}
+/* line 130, ../sass/layout/_layout-block.scss */
+.tashin-event #B3-Text {
+  display: inline-block;
+  width: 100%;
+  max-width: 450px;
+}
+/* line 134, ../sass/layout/_layout-block.scss */
+.tashin-event #B3-Text svg {
+  left: 0;
+}
+/* line 140, ../sass/layout/_layout-block.scss */
+.tashin-event #B3-bg svg, .tashin-event #B3-P1 svg, .tashin-event #B3-P2 svg, .tashin-event #B3-Text svg {
+  left: 0;
+}
+/* line 145, ../sass/layout/_layout-block.scss */
+.tashin-event .page-hide {
+  opacity: 0;
+}
+@media (max-width: 1366px) {
+  /* line 150, ../sass/layout/_layout-block.scss */
+  .tashin-event .layout-content {
+    padding: 30px;
+  }
+  /* line 157, ../sass/layout/_layout-block.scss */
+  .tashin-event .L2-block {
+    top: -150px;
+  }
+  /* line 160, ../sass/layout/_layout-block.scss */
+  .tashin-event .L3-block {
+    top: -250px;
+  }
+  /* line 163, ../sass/layout/_layout-block.scss */
+  .tashin-event .L4-block {
+    top: -644px;
+  }
+  /* line 166, ../sass/layout/_layout-block.scss */
+  .tashin-event .L5-block {
+    top: -644px;
+  }
+  /* line 169, ../sass/layout/_layout-block.scss */
+  .tashin-event .block-two {
+    margin-bottom: -900px;
+  }
+  /* line 175, ../sass/layout/_layout-block.scss */
+  .tashin-event .page-content .block-three {
+    margin-top: -50px;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 183, ../sass/layout/_layout-block.scss */
+  .tashin-event .L4-block {
+    top: -444px;
+  }
+  /* line 185, ../sass/layout/_layout-block.scss */
+  .tashin-event .L4-block .text-detail-block {
+    margin-top: 0;
+  }
+  /* line 189, ../sass/layout/_layout-block.scss */
+  .tashin-event .block-two {
+    margin-bottom: -280px;
+  }
+  /* line 192, ../sass/layout/_layout-block.scss */
+  .tashin-event #stair-level4 {
+    top: 56px;
+    z-index: 9;
+    left: -162px;
+    width: 78%;
+  }
+  /* line 198, ../sass/layout/_layout-block.scss */
+  .tashin-event #stair-level5 {
+    top: 56px;
+    z-index: 9;
+    left: -162px;
+    width: 78%;
+  }
+}
+@media (max-width: 1023px) {
+  /* line 207, ../sass/layout/_layout-block.scss */
+  .tashin-event .layout-content {
+    padding: 30px;
+  }
+  /* line 214, ../sass/layout/_layout-block.scss */
+  .tashin-event .L2-block {
+    top: -100px;
+  }
+  /* line 217, ../sass/layout/_layout-block.scss */
+  .tashin-event .L3-block {
+    top: -180px;
+  }
+  /* line 220, ../sass/layout/_layout-block.scss */
+  .tashin-event .L4-block {
+    top: -300px;
+  }
+  /* line 223, ../sass/layout/_layout-block.scss */
+  .tashin-event .block-two {
+    margin-bottom: -200px;
+  }
+  /* line 226, ../sass/layout/_layout-block.scss */
+  .tashin-event #stair-level4 {
+    left: -117px;
+  }
+  /* line 229, ../sass/layout/_layout-block.scss */
+  .tashin-event #stair-level5 {
+    left: -117px;
+  }
+  /* line 232, ../sass/layout/_layout-block.scss */
+  .tashin-event .stair-text-block {
+    margin-top: 20px;
+  }
+  /* line 235, ../sass/layout/_layout-block.scss */
+  .tashin-event .stair-text-block.stair-text-right .text-detail-block {
+    margin-top: 50px;
+  }
+  /* line 241, ../sass/layout/_layout-block.scss */
+  .tashin-event .anchor:before {
+    content: ' ';
+    height: 59px;
+    /*same height as header*/
+    margin-top: -59px;
+    /*same height as header*/
+    visibility: hidden;
+    position: relative;
+  }
+}
+@media (max-width: 767px) {
+  /* line 255, ../sass/layout/_layout-block.scss */
+  .tashin-event #stair-level1, .tashin-event #stair-level2, .tashin-event #stair-level3 {
+    position: relative;
+    width: 100%;
+    float: none;
+  }
+  /* line 261, ../sass/layout/_layout-block.scss */
+  .tashin-event #stair-level4 {
+    width: 150%;
+    left: -56px;
+  }
+  /* line 265, ../sass/layout/_layout-block.scss */
+  .tashin-event #stair-level5 {
+    width: 150%;
+    left: -56px;
+  }
+  /* line 270, ../sass/layout/_layout-block.scss */
+  .tashin-event .page-content .block-one {
+    margin-top: 59px;
+  }
+  /* line 275, ../sass/layout/_layout-block.scss */
+  .tashin-event .layout-content {
+    padding: 10px;
+  }
+  /* line 278, ../sass/layout/_layout-block.scss */
+  .tashin-event #page-banner {
+    margin-bottom: 0;
+    height: 100%;
+    padding-bottom: 250px;
+  }
+  /* line 288, ../sass/layout/_layout-block.scss */
+  .tashin-event .L4-block {
+    top: -250px;
+  }
+  /* line 291, ../sass/layout/_layout-block.scss */
+  .tashin-event .block-two {
+    margin-bottom: -170px;
+  }
+  /* line 296, ../sass/layout/_layout-block.scss */
+  .tashin-event .stair-text-block.stair-text-right .text-detail-block {
+    margin-top: 0;
+  }
+  /* line 303, ../sass/layout/_layout-block.scss */
+  .tashin-event .L5-block {
+    top: -250px;
+  }
+  /* line 311, ../sass/layout/_layout-block.scss */
+  .tashin-event .stair-text-block.stair-text-right .text-detail-block {
+    margin-top: 0;
+  }
+}
+@media (max-width: 500px) {
+  /* line 325, ../sass/layout/_layout-block.scss */
+  .tashin-event #page-banner {
+    padding-bottom: 0;
+  }
+}
+/* line 1, ../sass/layout/_fix-nav.scss */
+.tashin-event .fix-nav-block {
+  width: 100%;
+  display: inline-block;
+  color: #58ACC6;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 9, ../sass/layout/_fix-nav.scss */
+.tashin-event .fix-nav-block .active-color {
+  background-color: #58ACC6;
+  color: #fff;
+  border-radius: 80px;
+  position: relative;
+}
+/* line 17, ../sass/layout/_fix-nav.scss */
+.tashin-event .fix-nav-block .scroll-top-btn {
+  position: absolute;
+  right: -85px;
+  cursor: pointer;
+  box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  display: none;
+  top: 0;
+}
+/* line 27, ../sass/layout/_fix-nav.scss */
+.tashin-event .fix-nav-block .fix-nav-list {
+  font-size: 0;
+  max-width: 1120px;
+  background-color: #F9F9F9;
+  width: 100%;
+  border-radius: 80px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+  max-width: 80%;
+}
+/* line 39, ../sass/layout/_fix-nav.scss */
+.tashin-event .fix-nav-block .fix-nav-list.top-fix {
+  position: fixed;
+  visibility: visible;
+  transition: .8s;
+  top: 0;
+  z-index: 14;
+  left: 0;
+  right: 0;
+  max-width: 80%;
+  opacity: 1;
+}
+/* line 52, ../sass/layout/_fix-nav.scss */
+.tashin-event .fix-nav-block .fix-nav-list > li {
+  display: inline-block;
+  width: 20%;
+}
+/* line 56, ../sass/layout/_fix-nav.scss */
+.tashin-event .fix-nav-block .fix-nav-list > li a {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  color: #58ACC6;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  font-weight: bold;
+  box-sizing: border-box;
+  height: 48px;
+  line-height: 48px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-transition: background-color 1000ms linear;
+  -moz-transition: background-color 1000ms linear;
+  -o-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+/* line 77, ../sass/layout/_fix-nav.scss */
+.tashin-event .fix-nav-block .fix-nav-list > li:hover {
+  transition: .9s;
+  background-color: #58ACC6;
+  border-radius: 86px;
+  -webkit-transition: background-color 1000ms linear;
+  -moz-transition: background-color 1000ms linear;
+  -o-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+/* line 86, ../sass/layout/_fix-nav.scss */
+.tashin-event .fix-nav-block .fix-nav-list > li:hover a {
+  color: #fff;
+}
+/* line 92, ../sass/layout/_fix-nav.scss */
+.tashin-event .fix-nav-block .fix-nav-list > li.active-bg {
+  background-color: #58ACC6;
+  position: absolute;
+  left: 0;
+  width: 20%;
+  height: 48px;
+  border-radius: 80px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 48px;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  /* line 112, ../sass/layout/_fix-nav.scss */
+  .tashin-event .fix-nav-block {
+    text-align: left;
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  /* line 118, ../sass/layout/_fix-nav.scss */
+  .tashin-event .fix-nav-block .scroll-top-btn {
+    right: -10%;
+  }
+  /* line 121, ../sass/layout/_fix-nav.scss */
+  .tashin-event .fix-nav-block .fix-nav-list {
+    max-width: 700px;
+  }
+  /* line 124, ../sass/layout/_fix-nav.scss */
+  .tashin-event .fix-nav-block .fix-nav-list > li a {
+    font-size: 14px;
+  }
+  /* line 127, ../sass/layout/_fix-nav.scss */
+  .tashin-event .fix-nav-block .fix-nav-list > li.active-bg {
+    font-size: 14px;
+  }
+  /* line 131, ../sass/layout/_fix-nav.scss */
+  .tashin-event .fix-nav-block .fix-nav-list.top-fix {
+    max-width: 700px;
+  }
+}
+@media (max-width: 1023px) {
+  /* line 141, ../sass/layout/_fix-nav.scss */
+  .tashin-event .fix-nav-block .fix-nav-list {
+    max-width: 620px;
+  }
+  /* line 144, ../sass/layout/_fix-nav.scss */
+  .tashin-event .fix-nav-block .fix-nav-list > li a {
+    font-size: 14px;
+  }
+  /* line 147, ../sass/layout/_fix-nav.scss */
+  .tashin-event .fix-nav-block .fix-nav-list > li.active-bg {
+    font-size: 14px;
+  }
+  /* line 151, ../sass/layout/_fix-nav.scss */
+  .tashin-event .fix-nav-block .fix-nav-list.top-fix {
+    max-width: 620px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 160, ../sass/layout/_fix-nav.scss */
+  .tashin-event .fix-nav-block {
+    visibility: hidden;
+  }
+  /* line 162, ../sass/layout/_fix-nav.scss */
+  .tashin-event .fix-nav-block .fix-nav-list {
+    opacity: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* line 170, ../sass/layout/_fix-nav.scss */
+  .tashin-event .fix-nav-block {
+    display: none;
+  }
+}
+/* line 2, ../sass/page/_main-vision.scss */
+.tashin-event .block-one #p1 {
+  display: inline-block;
+  float: left;
+  width: 22%;
+  position: relative;
+}
+/* line 8, ../sass/page/_main-vision.scss */
+.tashin-event .block-one #p2 {
+  display: inline-block;
+  float: right;
+  width: 25%;
+  position: relative;
+  margin-left: 40%;
+  margin-bottom: 190px;
+}
+/* line 16, ../sass/page/_main-vision.scss */
+.tashin-event .block-one #p3 {
+  display: inline-block;
+  width: 27%;
+  position: relative;
+  float: left;
+  top: -130px;
+  left: 20px;
+}
+/* line 24, ../sass/page/_main-vision.scss */
+.tashin-event .block-one #p4 {
+  display: inline-block;
+  width: 60%;
+  position: relative;
+  float: right;
+  margin-top: 0;
+  top: -80px;
+}
+/* line 32, ../sass/page/_main-vision.scss */
+.tashin-event .block-one #Num {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 46px;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 42, ../sass/page/_main-vision.scss */
+.tashin-event .block-one #Num .text-num-desc {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10%;
+  color: #58ACC6;
+  font-size: 72px;
+  letter-spacing: 3.2px;
+}
+/* line 51, ../sass/page/_main-vision.scss */
+.tashin-event .block-one #Num svg {
+  left: 0;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 62, ../sass/page/_main-vision.scss */
+.tashin-event .block-one #number {
+  font-family: Arial, 'Arial-BoldMT' !important;
+  font-family: Arial, 'Arial Black', 'ArialMT', 'Arial Rounded MT Bold', sans-serif !important;
+}
+/* line 66, ../sass/page/_main-vision.scss */
+.tashin-event .block-one .quick-nav {
+  position: relative;
+  top: 80px;
+  opacity: 0;
+}
+/* line 71, ../sass/page/_main-vision.scss */
+.tashin-event .block-one .nav-btn-block {
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+/* line 77, ../sass/page/_main-vision.scss */
+.tashin-event .block-one .nav-btn-block > li {
+  display: inline-block;
+  max-width: 22%;
+  width: 100%;
+  vertical-align: middle;
+}
+/* line 83, ../sass/page/_main-vision.scss */
+.tashin-event .block-one .nav-btn-block > li a {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  transition: .8s;
+}
+/* line 89, ../sass/page/_main-vision.scss */
+.tashin-event .block-one .nav-btn-block > li a:hover, .tashin-event .block-one .nav-btn-block > li a:focus {
+  background-color: #58ACC6;
+  color: #FFF;
+}
+/* line 96, ../sass/page/_main-vision.scss */
+.tashin-event .block-one .nav-btn-block > li + li {
+  margin-left: 1%;
+}
+/* line 101, ../sass/page/_main-vision.scss */
+.tashin-event .block-one .B1-Text {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  text-align: center;
+  margin-top: 60px;
+}
+/* line 107, ../sass/page/_main-vision.scss */
+.tashin-event .block-one .B1-Text h1 {
+  color: #FF8080;
+  font-size: 119px;
+  letter-spacing: 5.8px;
+  font-weight: 700;
+  opacity: 0;
+  position: relative;
+  top: 90px;
+}
+/* line 116, ../sass/page/_main-vision.scss */
+.tashin-event .block-one .B1-Text .icon-cross {
+  display: inline-block;
+  vertical-align: middle;
+  width: 110px;
+}
+/* line 121, ../sass/page/_main-vision.scss */
+.tashin-event .block-one .B1-Text h2 {
+  font-size: 44px;
+  letter-spacing: 2.5px;
+  color: #FF8080;
+  font-weight: 700;
+  margin-top: 30px;
+  position: relative;
+  top: 120px;
+  opacity: 0;
+}
+@media (max-width: 1335px) {
+  /* line 138, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #Num svg {
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  /* line 147, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text h1 {
+    font-size: 100px;
+    letter-spacing: 4.2px;
+    font-weight: 700;
+  }
+  /* line 153, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text .icon-cross {
+    width: 100px;
+  }
+  /* line 156, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text h2 {
+    font-size: 40px;
+    letter-spacing: 2.1px;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 167, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text h1 {
+    font-size: 86px;
+    letter-spacing: 4.2px;
+    font-weight: 700;
+  }
+  /* line 173, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text .icon-cross {
+    width: 86px;
+  }
+  /* line 176, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text h2 {
+    font-size: 36px;
+    letter-spacing: 2.1px;
+  }
+  /* line 181, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #p3 {
+    width: 27%;
+    top: 0;
+  }
+  /* line 185, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #p4 {
+    top: 0;
+  }
+  /* line 188, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #Num {
+    margin-top: 30px;
+    padding-right: 50px;
+    box-sizing: border-box;
+  }
+  /* line 193, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .nav-btn-block {
+    padding-left: 19%;
+  }
+}
+@media (max-width: 1023px) {
+  /* line 200, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text {
+    margin-top: 137px;
+  }
+  /* line 202, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text h1 {
+    font-size: 69px;
+    letter-spacing: 3.4px;
+    font-weight: 700;
+  }
+  /* line 208, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text .icon-cross {
+    width: 69px;
+  }
+  /* line 211, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text h2 {
+    font-size: 29px;
+    letter-spacing: 1.7px;
+  }
+  /* line 217, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .nav-btn-block {
+    max-width: 70%;
+    margin-top: 85px;
+    float: right;
+  }
+  /* line 222, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #Num {
+    margin-top: 30px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    width: 70%;
+    float: right;
+  }
+  /* line 231, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #p3 {
+    width: 29%;
+    top: 0;
+  }
+  /* line 238, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #p4 {
+    margin-top: 17%;
+    top: 0;
+  }
+  /* line 242, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .nav-btn-block {
+    padding-left: 19%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 248, ../sass/page/_main-vision.scss */
+  .tashin-event #P3-5 {
+    opacity: 0 !important;
+  }
+  /* line 251, ../sass/page/_main-vision.scss */
+  .tashin-event #Num {
+    max-width: 600px;
+    width: 75%;
+  }
+  /* line 256, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #p1 {
+    width: 35%;
+  }
+  /* line 259, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #p2 {
+    width: 52%;
+    margin-left: 5%;
+  }
+  /* line 264, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #p3 {
+    width: 52%;
+    left: -22px;
+    margin-top: 180px;
+    top: 0;
+  }
+  /* line 269, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #p3 #P2-5 {
+    opacity: 0 !important;
+  }
+  /* line 273, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #p4 {
+    margin-top: 0;
+    width: 68%;
+    top: -265px;
+    position: relative;
+    right: -10px;
+  }
+  /* line 280, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #p4 svg {
+    right: -40px;
+  }
+  /* line 284, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #Num {
+    padding: 0;
+    margin-top: 30px;
+    width: 100%;
+    float: none;
+  }
+  /* line 293, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text {
+    margin-top: 320px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* line 298, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text h1 {
+    font-size: 52px;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  /* line 303, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text h1 .text-brand {
+    letter-spacing: 3.2px;
+  }
+  /* line 307, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text .icon-cross {
+    width: 42px;
+  }
+  /* line 310, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text h2 {
+    font-size: 24px;
+    letter-spacing: 1.2px;
+  }
+  /* line 316, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .nav-btn-block {
+    margin-top: 15px;
+    font-size: 0;
+    padding-left: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  /* line 324, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .nav-btn-block > li {
+    max-width: 48%;
+    font-size: 18px;
+  }
+  /* line 327, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .nav-btn-block > li:nth-of-type(2), .tashin-event .block-one .nav-btn-block > li:nth-of-type(4) {
+    margin-left: 5px;
+  }
+  /* line 330, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .nav-btn-block > li:nth-of-type(3), .tashin-event .block-one .nav-btn-block > li:nth-of-type(4) {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 342, ../sass/page/_main-vision.scss */
+  .tashin-event #P3-5 {
+    opacity: 0 !important;
+  }
+  /* line 346, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .btn-default {
+    height: 35px;
+    line-height: 35px;
+  }
+  /* line 350, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #p1 {
+    width: 28%;
+  }
+  /* line 353, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #p2 {
+    width: 44%;
+    margin-left: 5%;
+  }
+  /* line 358, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #p3 {
+    width: 52%;
+    left: -22px;
+    margin-top: 50px;
+    top: 0;
+  }
+  /* line 363, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #p3 #P2-5 {
+    opacity: 0 !important;
+  }
+  /* line 367, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #p4 {
+    margin-top: 0;
+    width: 70%;
+    top: -193px;
+    right: 8px;
+  }
+  /* line 373, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #p4 svg {
+    right: -40px;
+  }
+  /* line 377, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one #Num {
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  /* line 386, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text {
+    margin-top: 150px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* line 391, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  /* line 396, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text h1 .text-brand {
+    letter-spacing: 3.2px;
+  }
+  /* line 400, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text .icon-cross {
+    width: 42px;
+  }
+  /* line 403, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .B1-Text h2 {
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    margin-top: 10px;
+  }
+  /* line 410, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .nav-btn-block {
+    margin-top: 15px;
+    font-size: 0;
+    padding-left: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  /* line 418, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .nav-btn-block > li {
+    max-width: 48%;
+    font-size: 18px;
+  }
+  /* line 421, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .nav-btn-block > li:nth-of-type(2), .tashin-event .block-one .nav-btn-block > li:nth-of-type(4) {
+    margin-left: 5px;
+  }
+  /* line 424, ../sass/page/_main-vision.scss */
+  .tashin-event .block-one .nav-btn-block > li:nth-of-type(3), .tashin-event .block-one .nav-btn-block > li:nth-of-type(4) {
+    margin-top: 15px;
+  }
+}
+/* line 3, ../sass/page/_layers.scss */
+.tashin-event .layer-block {
+  font-size: 0;
+  opacity: 0;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+/* line 12, ../sass/page/_layers.scss */
+.tashin-event .stair-text-block {
+  display: inline-block;
+  width: 100%;
+  padding-top: 90px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  padding-left: 120px;
+}
+/* line 22, ../sass/page/_layers.scss */
+.tashin-event .stair-text-block h1 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+  color: #58ACC6;
+  letter-spacing: 3px;
+  font-size: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 700;
+}
+/* line 32, ../sass/page/_layers.scss */
+.tashin-event .stair-text-block h1.title-long {
+  font-size: 48px;
+}
+/* line 34, ../sass/page/_layers.scss */
+.tashin-event .stair-text-block h1.title-long .title-sm {
+  font-size: 35px;
+}
+/* line 39, ../sass/page/_layers.scss */
+.tashin-event .stair-text-block h6 {
+  font-size: 64px;
+  letter-spacing: 3.1px;
+  display: inline-block;
+  font-weight: 700;
+  vertical-align: top;
+  margin-right: 20px;
+}
+/* line 49, ../sass/page/_layers.scss */
+.tashin-event .stair-text-block p {
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  color: #4a4a4a;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  max-width: 360px;
+  width: 100%;
+  line-height: normal;
+  vertical-align: top;
+}
+/* line 61, ../sass/page/_layers.scss */
+.tashin-event .stair-text-block .sm-text {
+  color: #979797;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: block;
+  max-width: 360px;
+  width: 100%;
+  line-height: normal;
+  vertical-align: top;
+  padding-left: 67px;
+  margin-top: 10px;
+}
+/* line 74, ../sass/page/_layers.scss */
+.tashin-event .stair-text-block .text-list-q h6 {
+  color: #58ACC6;
+}
+/* line 78, ../sass/page/_layers.scss */
+.tashin-event .stair-text-block .text-list-a {
+  margin-top: 55px;
+}
+/* line 80, ../sass/page/_layers.scss */
+.tashin-event .stair-text-block .text-list-a h6 {
+  color: #FF8080;
+}
+/* line 84, ../sass/page/_layers.scss */
+.tashin-event .stair-text-block .btn-block {
+  margin-top: 60px;
+}
+/* line 90, ../sass/page/_layers.scss */
+.tashin-event .stair-text-block.stair-text-right {
+  right: 0;
+  left: auto;
+  padding-left: 0;
+}
+/* line 95, ../sass/page/_layers.scss */
+.tashin-event .stair-text-block.stair-text-right .text-detail-block {
+  position: absolute;
+  right: 0;
+  padding-right: 120px;
+}
+/* line 104, ../sass/page/_layers.scss */
+.tashin-event .L2-block {
+  padding-top: 100px;
+}
+/* line 108, ../sass/page/_layers.scss */
+.tashin-event .L2-block .stair-text-block.stair-text-right .text-detail-block {
+  margin-top: 90px;
+}
+/* line 115, ../sass/page/_layers.scss */
+.tashin-event .sub-title-block {
+  position: relative;
+}
+/* line 117, ../sass/page/_layers.scss */
+.tashin-event .sub-title-block h6.sub-title {
+  font-size: 30px;
+  color: #FF8080;
+  padding-bottom: 20px;
+  padding-left: 82px;
+  letter-spacing: 1.2px;
+}
+/* line 124, ../sass/page/_layers.scss */
+.tashin-event .sub-title-block .semi-circle {
+  position: relative;
+  top: 31px;
+  padding-left: 60px;
+}
+/* line 134, ../sass/page/_layers.scss */
+.tashin-event #stair-level5-sub .btn-block {
+  text-align: center;
+  z-index: 5;
+  position: absolute;
+  right: 0;
+  bottom: 303px;
+  left: 0;
+}
+/* line 146, ../sass/page/_layers.scss */
+.tashin-event .level5-sub-bg {
+  text-align: center;
+  overflow: hidden;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* line 152, ../sass/page/_layers.scss */
+.tashin-event .level5-sub-bg .desc-block {
+  z-index: 9;
+  position: relative;
+  margin-top: 100px;
+}
+/* line 156, ../sass/page/_layers.scss */
+.tashin-event .level5-sub-bg .desc-block h2 {
+  font-size: 72px;
+  color: #FF8080;
+  letter-spacing: 3.9px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+/* line 163, ../sass/page/_layers.scss */
+.tashin-event .level5-sub-bg .desc-block h5.date {
+  font-size: 28px;
+  color: #FF8080;
+  letter-spacing: 1.75px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* line 170, ../sass/page/_layers.scss */
+.tashin-event .level5-sub-bg .desc-block .text-detail {
+  font-size: 30px;
+  color: #000;
+  letter-spacing: 1.88px;
+  font-weight: bold;
+  line-height: normal;
+}
+/* line 177, ../sass/page/_layers.scss */
+.tashin-event .level5-sub-bg .desc-block .text-detail p {
+  line-height: normal;
+}
+/* line 186, ../sass/page/_layers.scss */
+.tashin-event .coupon-block .text-give {
+  max-width: 432px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  left: -20px;
+  bottom: -20px;
+  z-index: 9;
+}
+/* line 195, ../sass/page/_layers.scss */
+.tashin-event .coupon-block .text-give p {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+  color: #fff;
+  background-color: #FFB03D;
+  transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  /* IE 9 */
+  -moz-transform: rotate(-15deg);
+  /* Firefox */
+  -webkit-transform: rotate(-15deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(-15deg);
+  /* Opera */
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  line-height: 65px;
+  text-align: center;
+}
+/* line 208, ../sass/page/_layers.scss */
+.tashin-event .coupon-block .text-give p:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 10px 0 10px;
+  border-color: #FFB03D transparent transparent transparent;
+  display: inline-block;
+  vertical-align: middle;
+  transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  /* IE 9 */
+  -moz-transform: rotate(-15deg);
+  /* Firefox */
+  -webkit-transform: rotate(-15deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(-15deg);
+  /* Opera */
+  content: ' ';
+  position: absolute;
+  bottom: -8px;
+  left: 24px;
+  right: 0;
+  margin: 0 auto;
+}
+/* line 221, ../sass/page/_layers.scss */
+.tashin-event .coupon-block .coupon-paper {
+  display: inline-block;
+  max-width: 432px;
+  width: 100%;
+  border: 3px solid #00B820;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+/* line 230, ../sass/page/_layers.scss */
+.tashin-event .coupon-block .coupon-paper .coupon-text {
+  font-size: 48px;
+  color: #000;
+  letter-spacing: 6.35px;
+  max-width: 354px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 238, ../sass/page/_layers.scss */
+.tashin-event .coupon-block .coupon-paper .sm-text {
+  font-size: 20px;
+  margin-top: 20px;
+  letter-spacing: 2.35px;
+  color: #00B820;
+  font-weight: bold;
+}
+/* line 248, ../sass/page/_layers.scss */
+.tashin-event #sub-p-top {
+  display: inline-block;
+  width: 20%;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 90px;
+}
+/* line 257, ../sass/page/_layers.scss */
+.tashin-event #sub-p-left {
+  display: inline-block;
+  width: 40%;
+  float: left;
+  position: relative;
+  max-width: 85px;
+  top: -434px;
+}
+/* line 266, ../sass/page/_layers.scss */
+.tashin-event #sub-p-left-2 {
+  display: inline-block;
+  width: 40%;
+  float: left;
+  position: relative;
+  max-width: 133px;
+  top: -200px;
+}
+/* line 275, ../sass/page/_layers.scss */
+.tashin-event #sub-p-right {
+  display: inline-block;
+  width: 40%;
+  float: right;
+  position: relative;
+  max-width: 54px;
+  top: -404px;
+  right: 265px;
+}
+/* line 285, ../sass/page/_layers.scss */
+.tashin-event #sub-p-right-2 {
+  display: inline-block;
+  width: 40%;
+  float: right;
+  position: relative;
+  max-width: 233px;
+  top: -304px;
+  right: 165px;
+}
+@media (min-width: 1918px) {
+  /* line 297, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-left {
+    left: 23%;
+  }
+}
+@media (max-width: 1800px) {
+  /* line 302, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-left {
+    left: 8%;
+  }
+}
+@media (max-width: 1366px) {
+  /* line 311, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block {
+    padding-left: 5%;
+  }
+  /* line 315, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block.stair-text-right .text-detail-block {
+    padding-right: 5%;
+  }
+  /* line 319, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block h6 {
+    vertical-align: middle;
+  }
+  /* line 322, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block p {
+    font-size: 18px;
+    vertical-align: middle;
+  }
+  /* line 327, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-left {
+    left: 8%;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 334, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block {
+    padding-left: 5%;
+    margin-top: 20px;
+  }
+  /* line 339, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block.stair-text-right .text-detail-block {
+    padding-right: 5%;
+  }
+  /* line 343, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block h6 {
+    vertical-align: middle;
+  }
+  /* line 346, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block p {
+    font-size: 18px;
+    vertical-align: middle;
+  }
+  /* line 352, ../sass/page/_layers.scss */
+  .tashin-event #stair-level5-sub {
+    top: -98px;
+  }
+  /* line 356, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-left {
+    left: 10px;
+  }
+  /* line 359, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-left-2 {
+    left: -90px;
+  }
+  /* line 362, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-right {
+    right: 125px;
+  }
+  /* line 365, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-right-2 {
+    right: 70px;
+  }
+  /* line 368, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-top {
+    top: 80px;
+    left: -25px;
+  }
+  /* line 373, ../sass/page/_layers.scss */
+  .tashin-event .level5-sub-bg {
+    background-size: initial;
+  }
+}
+@media (max-width: 1023px) {
+  /* line 384, ../sass/page/_layers.scss */
+  .tashin-event .L2-block .stair-text-block.stair-text-right .text-detail-block {
+    padding-right: 3%;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  /* line 393, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block {
+    padding-left: 3%;
+    padding-top: 0;
+  }
+  /* line 396, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block .text-list-a {
+    margin-top: 33px;
+  }
+  /* line 399, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block .btn-block {
+    margin-top: 30px;
+  }
+  /* line 403, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  /* line 406, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block h1.title-long {
+    font-size: 40px;
+    letter-spacing: 1.86px;
+  }
+  /* line 409, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block h1.title-long .title-sm {
+    font-size: 30px;
+    letter-spacing: 1.86px;
+  }
+  /* line 415, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block h6 {
+    font-size: 48px;
+  }
+  /* line 418, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block p {
+    font-size: 16px;
+    max-width: 250px;
+    width: 100%;
+  }
+  /* line 423, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block .sm-text {
+    padding-left: 59px;
+  }
+  /* line 429, ../sass/page/_layers.scss */
+  .tashin-event .level5-sub-bg .desc-block {
+    margin-top: 70px;
+  }
+  /* line 431, ../sass/page/_layers.scss */
+  .tashin-event .level5-sub-bg .desc-block h2 {
+    font-size: 50px;
+    letter-spacing: 2.45px;
+  }
+  /* line 435, ../sass/page/_layers.scss */
+  .tashin-event .level5-sub-bg .desc-block h5.date {
+    font-size: 28px;
+    letter-spacing: 1.75px;
+  }
+  /* line 439, ../sass/page/_layers.scss */
+  .tashin-event .level5-sub-bg .desc-block .text-detail {
+    font-size: 24px;
+    color: #000;
+    letter-spacing: 1.5px;
+  }
+  /* line 451, ../sass/page/_layers.scss */
+  .tashin-event #stair-level5-sub .btn-block {
+    bottom: 143px;
+  }
+  /* line 455, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-top {
+    top: 50px;
+  }
+  /* line 459, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-left-2 {
+    left: -120px;
+    max-width: 143px;
+  }
+  /* line 463, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-left {
+    max-width: 75px;
+    top: -480px;
+    left: -20px;
+  }
+  /* line 468, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-right {
+    max-width: 41px;
+    right: 72px;
+    top: -300px;
+  }
+  /* line 473, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-right-2 {
+    right: 37px;
+    top: -200px;
+    max-width: 160px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 482, ../sass/page/_layers.scss */
+  .tashin-event .L2-block .stair-text-block {
+    margin-bottom: 40px;
+  }
+  /* line 484, ../sass/page/_layers.scss */
+  .tashin-event .L2-block .stair-text-block.stair-text-right {
+    padding-left: 3%;
+  }
+  /* line 488, ../sass/page/_layers.scss */
+  .tashin-event .L2-block .stair-text-block.stair-text-right .text-detail-block {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 3%;
+  }
+  /* line 498, ../sass/page/_layers.scss */
+  .tashin-event .sub-title-block h6.sub-title {
+    font-size: 28px;
+    padding: 0;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 15px;
+  }
+  /* line 509, ../sass/page/_layers.scss */
+  .tashin-event .sub-title-block .semi-circle {
+    padding-left: 0;
+    text-align: center;
+  }
+  /* line 514, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 3%;
+  }
+  /* line 521, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block .btn-block {
+    text-align: center;
+  }
+  /* line 525, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    line-height: normal;
+  }
+  /* line 529, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block h1.title-long {
+    text-align: center;
+    display: block;
+  }
+  /* line 534, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block h1.title-long .title-sm {
+    font-size: 28px;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+  }
+  /* line 542, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block h6 {
+    font-size: 48px;
+  }
+  /* line 545, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block p {
+    font-size: 16px;
+    max-width: 80%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  /* line 551, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block .sm-text {
+    padding-left: 59px;
+    max-width: 79%;
+  }
+  /* line 557, ../sass/page/_layers.scss */
+  .tashin-event .L3-block {
+    margin-top: 50px;
+  }
+  /* line 562, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block {
+    padding: 0;
+    padding: 0 3%;
+  }
+  /* line 565, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block.stair-text-right {
+    padding: 0 3%;
+  }
+  /* line 567, ../sass/page/_layers.scss */
+  .tashin-event .stair-text-block.stair-text-right .text-detail-block {
+    position: relative;
+    padding-right: 0;
+  }
+  /* line 573, ../sass/page/_layers.scss */
+  .tashin-event #stair-level5-sub {
+    top: -68;
+  }
+  /* line 575, ../sass/page/_layers.scss */
+  .tashin-event #stair-level5-sub .btn-block {
+    bottom: 62px;
+  }
+  /* line 581, ../sass/page/_layers.scss */
+  .tashin-event #rightPerson {
+    width: 150%;
+  }
+  /* line 584, ../sass/page/_layers.scss */
+  .tashin-event .level5-sub-bg {
+    background-position: left 42% top;
+  }
+  /* line 588, ../sass/page/_layers.scss */
+  .tashin-event .level5-sub-bg .desc-block h2 {
+    font-size: 36px;
+    letter-spacing: 1.76px;
+  }
+  /* line 592, ../sass/page/_layers.scss */
+  .tashin-event .level5-sub-bg .desc-block h5.date {
+    font-size: 18px;
+    letter-spacing: 1.12px;
+  }
+  /* line 596, ../sass/page/_layers.scss */
+  .tashin-event .level5-sub-bg .desc-block .text-detail {
+    font-size: 20px;
+    letter-spacing: 1.25px;
+  }
+  /* line 608, ../sass/page/_layers.scss */
+  .tashin-event .coupon-block .coupon-paper {
+    max-width: 306px;
+    padding: 5px 25px;
+  }
+  /* line 612, ../sass/page/_layers.scss */
+  .tashin-event .coupon-block .text-give {
+    left: 6px;
+    bottom: -20px;
+  }
+  /* line 618, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-top {
+    max-width: 55px;
+    left: -41px;
+  }
+  /* line 622, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-left {
+    max-width: 55px;
+    left: -19px;
+  }
+  /* line 627, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-left {
+    max-width: 49px;
+    top: -312px;
+    left: -30px;
+  }
+  /* line 632, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-right {
+    max-width: 27px;
+    right: 26px;
+    top: -224px;
+  }
+  /* line 638, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-left-2 {
+    left: -82px;
+    max-width: 74px;
+    top: 0;
+    margin-top: 20px;
+  }
+  /* line 644, ../sass/page/_layers.scss */
+  .tashin-event #sub-p-right-2 {
+    right: 16px;
+    top: 0;
+    max-width: 100px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 652, ../sass/page/_layers.scss */
+  .tashin-event #L1Step1-7,
+  .tashin-event #L1Step1-8,
+  .tashin-event #L1Step1-9,
+  .tashin-event #L1Step1-10,
+  .tashin-event #L1Step1-11 {
+    opacity: 0 !important;
+  }
+  /* line 659, ../sass/page/_layers.scss */
+  .tashin-event .L2-block {
+    padding-top: 0;
+  }
+}
+/* line 1, ../sass/page/_banner.scss */
+.tashin-event .show-pc-and-pad {
+  display: block;
+}
+@media (max-width: 767px) {
+  /* line 5, ../sass/page/_banner.scss */
+  .tashin-event .show-pc-and-pad {
+    display: none;
+  }
+}
+@media (min-width: 767px) {
+  /* line 10, ../sass/page/_banner.scss */
+  .tashin-event .show-mobile {
+    display: none;
+  }
+}
+/* line 14, ../sass/page/_banner.scss */
+.tashin-event .block-three {
+  background-color: #D3EFF8;
+}
+/* line 16, ../sass/page/_banner.scss */
+.tashin-event .block-three .page-banner {
+  position: relative;
+}
+/* line 19, ../sass/page/_banner.scss */
+.tashin-event .block-three .banner-desc {
+  background-color: #58ACC6;
+  width: 100%;
+  text-align: center;
+  padding: 30px 6%;
+  box-sizing: border-box;
+}
+/* line 25, ../sass/page/_banner.scss */
+.tashin-event .block-three .banner-desc p {
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  color: #fff;
+  font-weight: bold;
+  line-height: normal;
+}
+/* line 33, ../sass/page/_banner.scss */
+.tashin-event .block-three .banner-desc .banner-text {
+  text-align: left;
+  list-style-type: disc;
+  padding: 0 2%;
+}
+/* line 37, ../sass/page/_banner.scss */
+.tashin-event .block-three .banner-desc .banner-text > li {
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  color: #fff;
+  font-weight: bold;
+  line-height: normal;
+}
+/* line 47, ../sass/page/_banner.scss */
+.tashin-event .block-three #B3-Text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* line 51, ../sass/page/_banner.scss */
+.tashin-event .block-three #B3-P1 {
+  display: inline-block;
+  width: 20%;
+  float: left;
+  position: absolute;
+  top: 150px;
+  left: 5%;
+}
+/* line 59, ../sass/page/_banner.scss */
+.tashin-event .block-three #B3-P2 {
+  display: inline-block;
+  width: 25%;
+  float: right;
+  position: absolute;
+  right: 5%;
+  top: 100px;
+}
+/* line 67, ../sass/page/_banner.scss */
+.tashin-event .block-three .b3-text-block {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  top: -200px;
+}
+/* line 77, ../sass/page/_banner.scss */
+.tashin-event .block-three .b3-text-block h1 {
+  color: #FF8080;
+  font-size: 60px;
+  letter-spacing: 2.9px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+/* line 85, ../sass/page/_banner.scss */
+.tashin-event .block-three .b3-text-block h6 {
+  font-size: 28px;
+  color: #FF8080;
+  letter-spacing: 1.9px;
+  font-weight: bold;
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  margin: 20px 0;
+}
+/* line 96, ../sass/page/_banner.scss */
+.tashin-event .block-three .b3-text-block p {
+  color: #4a4a4a;
+  letter-spacing: 1.8px;
+  font-weight: bold;
+  font-size: 28px;
+}
+/* line 104, ../sass/page/_banner.scss */
+.tashin-event .block-three .btn-block {
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 1350px) {
+  /* line 111, ../sass/page/_banner.scss */
+  .tashin-event .block-three .b3-text-block {
+    top: -150px;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 119, ../sass/page/_banner.scss */
+  .tashin-event .block-three .b3-text-block {
+    top: -85px;
+  }
+  /* line 122, ../sass/page/_banner.scss */
+  .tashin-event .block-three #B3-P2 {
+    top: 200px;
+    right: 1%;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 131, ../sass/page/_banner.scss */
+  .tashin-event .block-three #B3-Text {
+    max-width: 350px;
+  }
+  /* line 136, ../sass/page/_banner.scss */
+  .tashin-event .block-three .banner-desc p {
+    font-size: 18px;
+  }
+  /* line 143, ../sass/page/_banner.scss */
+  .tashin-event .block-three .banner-desc .banner-text > li {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 153, ../sass/page/_banner.scss */
+  .tashin-event .block-three #B3-bg {
+    position: absolute;
+    top: 0;
+  }
+  /* line 158, ../sass/page/_banner.scss */
+  .tashin-event .block-three #B3-P1, .tashin-event .block-three #B3-P2 {
+    top: auto;
+    bottom: 0;
+  }
+  /* line 161, ../sass/page/_banner.scss */
+  .tashin-event .block-three #B3-P1 svg, .tashin-event .block-three #B3-P2 svg {
+    top: auto;
+    bottom: 0;
+  }
+  /* line 166, ../sass/page/_banner.scss */
+  .tashin-event .block-three #B3-P1 {
+    left: 1%;
+    width: 36%;
+  }
+  /* line 171, ../sass/page/_banner.scss */
+  .tashin-event .block-three #B3-P2 {
+    right: 1%;
+    width: 38%;
+  }
+  /* line 179, ../sass/page/_banner.scss */
+  .tashin-event .block-three .banner-desc p {
+    font-size: 16px;
+  }
+  /* line 184, ../sass/page/_banner.scss */
+  .tashin-event .block-three .banner-desc .banner-text > li {
+    font-size: 16px;
+  }
+  /* line 189, ../sass/page/_banner.scss */
+  .tashin-event .block-three .b3-text-block {
+    top: 0;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  /* line 195, ../sass/page/_banner.scss */
+  .tashin-event .block-three .b3-text-block h1 {
+    color: #FF8080;
+    font-size: 48px;
+    letter-spacing: 2.3px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+  }
+  /* line 203, ../sass/page/_banner.scss */
+  .tashin-event .block-three .b3-text-block h6 {
+    font-size: 28px;
+    color: #FF8080;
+    letter-spacing: 1.8px;
+    font-weight: bold;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    margin: 20px 0;
+  }
+  /* line 214, ../sass/page/_banner.scss */
+  .tashin-event .block-three .b3-text-block p {
+    color: #4a4a4a;
+    letter-spacing: 1.6px;
+    font-size: 26px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 226, ../sass/page/_banner.scss */
+  .tashin-event .block-three #B3-bg {
+    position: absolute;
+    top: 0;
+  }
+  /* line 231, ../sass/page/_banner.scss */
+  .tashin-event .block-three #B3-P1, .tashin-event .block-three #B3-P2 {
+    top: auto;
+    bottom: 0;
+  }
+  /* line 234, ../sass/page/_banner.scss */
+  .tashin-event .block-three #B3-P1 svg, .tashin-event .block-three #B3-P2 svg {
+    top: auto;
+    bottom: 0;
+  }
+  /* line 239, ../sass/page/_banner.scss */
+  .tashin-event .block-three #B3-P1 {
+    left: 1%;
+    width: 40%;
+  }
+  /* line 244, ../sass/page/_banner.scss */
+  .tashin-event .block-three #B3-P2 {
+    right: 1%;
+    width: 45%;
+  }
+  /* line 249, ../sass/page/_banner.scss */
+  .tashin-event .block-three .btn-block {
+    margin-bottom: 280px;
+  }
+  /* line 254, ../sass/page/_banner.scss */
+  .tashin-event .block-three .banner-desc p {
+    font-size: 16px;
+  }
+  /* line 259, ../sass/page/_banner.scss */
+  .tashin-event .block-three .banner-desc .banner-text > li {
+    font-size: 16px;
+  }
+  /* line 264, ../sass/page/_banner.scss */
+  .tashin-event .block-three .b3-text-block {
+    top: 0;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  /* line 270, ../sass/page/_banner.scss */
+  .tashin-event .block-three .b3-text-block h1 {
+    color: #FF8080;
+    font-size: 48px;
+    letter-spacing: 2.3px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+  }
+  /* line 278, ../sass/page/_banner.scss */
+  .tashin-event .block-three .b3-text-block h6 {
+    font-size: 28px;
+    color: #FF8080;
+    letter-spacing: 1.8px;
+    font-weight: bold;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    margin: 20px 0;
+  }
+  /* line 289, ../sass/page/_banner.scss */
+  .tashin-event .block-three .b3-text-block p {
+    color: #4a4a4a;
+    letter-spacing: 1.6px;
+    font-size: 26px;
+  }
+}
+/* line 1, ../sass/page/_location.scss */
+.tashin-event .block-four {
+  background-color: #fff;
+  background-image: url(../images/bg-location.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* line 7, ../sass/page/_location.scss */
+.tashin-event .block-four h2 {
+  font-size: 60px;
+  letter-spacing: 2.9px;
+  font-weight: bold;
+  color: #58ACC6;
+  margin-top: 85px;
+  margin-bottom: 50px;
+}
+/* line 16, ../sass/page/_location.scss */
+.tashin-event .block-four .map-block {
+  min-height: 380px;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: none;
+}
+/* line 24, ../sass/page/_location.scss */
+.tashin-event .block-four .search-block {
+  margin-bottom: 40px;
+}
+/* line 28, ../sass/page/_location.scss */
+.tashin-event .block-four .gas-layout-form .form-tag {
+  color: #58ACC6;
+}
+/* line 31, ../sass/page/_location.scss */
+.tashin-event .block-four .gas-layout-form .form-tag {
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  color: #58ACC6;
+}
+/* line 36, ../sass/page/_location.scss */
+.tashin-event .block-four .gas-layout-form select {
+  background-position: right 14px center;
+  background-image: url(../images/select-arrow-down.svg);
+}
+/* line 41, ../sass/page/_location.scss */
+.tashin-event .block-four .gas-layout-form .f-addr {
+  font-size: 0;
+}
+/* line 43, ../sass/page/_location.scss */
+.tashin-event .block-four .gas-layout-form .f-addr .form-tag {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+}
+/* line 48, ../sass/page/_location.scss */
+.tashin-event .block-four .gas-layout-form .f-addr select {
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+  max-width: 250px;
+}
+/* line 58, ../sass/page/_location.scss */
+.tashin-event .block-four .gas-layout-form .f-keyword .form-tag {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+}
+/* line 63, ../sass/page/_location.scss */
+.tashin-event .block-four .gas-layout-form .f-keyword .input-block {
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+  max-width: 250px;
+}
+/* line 76, ../sass/page/_location.scss */
+.tashin-event .block-four .loaction-list {
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+/* line 80, ../sass/page/_location.scss */
+.tashin-event .block-four .loaction-list > li {
+  display: block;
+  min-height: 50px;
+  padding: 12px 3%;
+  box-sizing: border-box;
+  border: 1px solid #58ACC6;
+  border-radius: 5px;
+}
+/* line 87, ../sass/page/_location.scss */
+.tashin-event .block-four .loaction-list > li.active {
+  background-color: #58ACC6;
+}
+/* line 89, ../sass/page/_location.scss */
+.tashin-event .block-four .loaction-list > li.active a {
+  color: #fff;
+}
+/* line 91, ../sass/page/_location.scss */
+.tashin-event .block-four .loaction-list > li.active a .location-detail {
+  color: #fff;
+}
+/* line 96, ../sass/page/_location.scss */
+.tashin-event .block-four .loaction-list > li + li {
+  margin-top: 20px;
+}
+/* line 99, ../sass/page/_location.scss */
+.tashin-event .block-four .loaction-list > li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  font-size: 0;
+}
+/* line 105, ../sass/page/_location.scss */
+.tashin-event .block-four .loaction-list > li a .location-detail {
+  display: inline-block;
+  vertical-align: middle;
+  width: 95%;
+  color: #58ACC6;
+  font-size: 0px;
+  overflow: hidden;
+}
+/* line 112, ../sass/page/_location.scss */
+.tashin-event .block-four .loaction-list > li a .location-detail .location-title {
+  display: inline-block;
+  width: 45%;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  overflow: hidden;
+  text-align: left;
+  line-height: normal;
+}
+/* line 121, ../sass/page/_location.scss */
+.tashin-event .block-four .loaction-list > li a .location-detail .location-addr {
+  display: inline-block;
+  width: 55%;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  overflow: hidden;
+  text-align: left;
+  line-height: normal;
+}
+/* line 132, ../sass/page/_location.scss */
+.tashin-event .block-four .loaction-list > li a .location-pin {
+  display: inline-block;
+  vertical-align: middle;
+  width: 5%;
+  text-align: center;
+}
+/* line 137, ../sass/page/_location.scss */
+.tashin-event .block-four .loaction-list > li a .location-pin img {
+  max-width: 20px;
+  width: auto;
+}
+@media (max-width: 1366px) {
+  /* line 152, ../sass/page/_location.scss */
+  .tashin-event .block-four .gas-layout-form .f-keyword .form-tag {
+    width: 25%;
+  }
+}
+@media (max-width: 1023px) {
+  /* line 161, ../sass/page/_location.scss */
+  .tashin-event .block-four h2 {
+    font-size: 48px;
+    letter-spacing: 2.3px;
+  }
+  /* line 167, ../sass/page/_location.scss */
+  .tashin-event .block-four .gas-layout-form .f-keyword .form-tag {
+    width: 30%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 176, ../sass/page/_location.scss */
+  .tashin-event .block-four h2 {
+    letter-spacing: 1.7px;
+    font-size: 34px;
+  }
+  /* line 181, ../sass/page/_location.scss */
+  .tashin-event .block-four .gas-layout-form .f-addr {
+    width: 49%;
+  }
+  /* line 183, ../sass/page/_location.scss */
+  .tashin-event .block-four .gas-layout-form .f-addr .form-tag {
+    width: 30%;
+  }
+  /* line 187, ../sass/page/_location.scss */
+  .tashin-event .block-four .gas-layout-form .f-keyword {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  /* line 191, ../sass/page/_location.scss */
+  .tashin-event .block-four .gas-layout-form .f-keyword .form-tag {
+    width: 20%;
+  }
+  /* line 194, ../sass/page/_location.scss */
+  .tashin-event .block-four .gas-layout-form .f-keyword .input-block {
+    max-width: auto;
+    max-width: none;
+    width: 74%;
+  }
+  /* line 204, ../sass/page/_location.scss */
+  .tashin-event .block-four .loaction-list > li a .location-detail {
+    padding-right: 5px;
+    box-sizing: border-box;
+  }
+  /* line 207, ../sass/page/_location.scss */
+  .tashin-event .block-four .loaction-list > li a .location-detail .location-title {
+    width: 100%;
+    font-size: 14px;
+  }
+  /* line 211, ../sass/page/_location.scss */
+  .tashin-event .block-four .loaction-list > li a .location-detail .location-addr {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* line 229, ../sass/page/_location.scss */
+  .tashin-event .block-four .gas-layout-form select {
+    background-image: none;
+  }
+}
+/* line 4, ../sass/page/_inpage.scss */
+.tashin-event .text-list--number {
+  list-style-type: decimal;
+  list-style-position: inside;
+  text-indent: -18px;
+  padding-left: 18px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+/* line 11, ../sass/page/_inpage.scss */
+.tashin-event .text-list--number > li {
+  list-style-type: inherit;
+}
+/* line 16, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage {
+  background-color: #fff;
+  padding-top: 55px;
+  height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  top: 0;
+  z-index: 15;
+  left: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  visibility: visible;
+  position: fixed;
+  z-index: 999;
+  display: none;
+}
+/* line 31, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage.bg-inpage-grey {
+  background-color: #f5f5f5;
+}
+/* line 39, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage.inpage-step-2 .inpage-step-block.steps3 > li:nth-of-type(2) .list-text-lv1 {
+  padding-left: 80px;
+}
+/* line 44, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage.inpage-step-2 .inpage-step-block.steps3 > li:nth-of-type(1) .list-text-lv1 {
+  padding-left: 60px;
+}
+/* line 55, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage.inpage-step-4 .inpage-step-block > li .text-block {
+  max-width: 220px;
+  padding-left: 13%;
+  text-align: left;
+}
+/* line 66, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .layout-inpage-content {
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  box-sizing: border-box;
+}
+/* line 73, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .title-block h2 {
+  font-size: 60px;
+  letter-spacing: 2.9px;
+  color: #ed0000;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  line-height: normal;
+}
+/* line 82, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .title-block h6 {
+  font-size: 36px;
+  letter-spacing: 1.8px;
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+/* line 92, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .title-block .inpage-icon-close {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  cursor: pointer;
+}
+/* line 99, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-content-block {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/* line 105, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block {
+  font-size: 0;
+  letter-spacing: 1;
+  width: 100%;
+}
+/* line 115, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block.inpage-step-4 .inpage-other-block .inpage-detail-block .detail-list > li p {
+  max-width: 190px;
+}
+/* line 124, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block.inpage-step-4 > li .text-block {
+  max-width: 220px;
+  padding-left: 13%;
+}
+/* line 131, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block.steps3 > li {
+  width: 33.3%;
+}
+/* line 136, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block.steps4 > li {
+  width: 25%;
+}
+/* line 141, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block.steps5 > li {
+  width: 20%;
+}
+/* line 145, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block > li {
+  display: inline-block;
+  font-size: 22px;
+  color: #000;
+  letter-spacing: 1.4px;
+  vertical-align: top;
+  text-align: center;
+}
+/* line 152, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block > li .text-block {
+  max-width: 300px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-weight: bold;
+}
+/* line 160, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block > li p {
+  font-size: 22px;
+  letter-spacing: 1.4px;
+  line-height: normal;
+}
+/* line 165, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block > li .img-block {
+  padding-bottom: 20px;
+}
+/* line 167, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block > li .img-block img {
+  max-width: 216px;
+  width: auto;
+}
+/* line 172, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block > li .list-text-lv1 {
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 20px;
+}
+/* line 176, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block > li .list-text-lv1 > li {
+  color: #000;
+  line-height: normal;
+}
+/* line 181, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block > li .list-text-lv2 {
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 40%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 6px;
+}
+/* line 188, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block > li .list-text-lv2 > li {
+  color: #717171;
+  font-size: 18px;
+  letter-spacing: 1.1px;
+  line-height: normal;
+}
+/* line 195, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block > li .card-block {
+  background-color: #f9f9f9;
+  display: inline-block;
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+  height: 380px;
+  padding-top: 115px;
+  padding-left: 33px;
+  padding-right: 33px;
+  box-sizing: border-box;
+  text-align: center;
+}
+/* line 207, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block > li .card-block .img-hand {
+  position: absolute;
+  right: 0;
+  top: -40px;
+}
+/* line 212, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block > li .card-block .img-block {
+  width: 127px;
+  margin: 0 auto;
+}
+/* line 216, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block > li .card-block .img-block img {
+  width: 100%;
+}
+/* line 220, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block > li .card-block h6 {
+  font-size: 24px;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+/* line 226, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-step-block > li .card-block p {
+  font-size: 22px;
+  letter-spacing: 1.4px;
+  color: #9b9b9b;
+  line-height: normal;
+}
+/* line 235, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-other-block {
+  background-color: #ed0000;
+  font-weight: 700;
+  font-size: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* line 241, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-other-block.color-dark {
+  background-color: #393939;
+}
+/* line 247, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-other-block.color-dark .inpage-detail-block .detail-list > li .img-block img {
+  max-width: 218px;
+  width: auto;
+}
+/* line 256, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-other-block .title-block {
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 262, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-other-block h3 {
+  font-size: 44px;
+  letter-spacing: 2.4px;
+  display: inline-block;
+  color: #fff;
+  vertical-align: middle;
+}
+/* line 268, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-other-block h3 .focus {
+  font-size: 72px;
+  letter-spacing: 2.4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 274, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-other-block h3 .text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 44px;
+  letter-spacing: 2.4px;
+}
+/* line 281, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-other-block h6 {
+  color: #FF8080;
+  font-size: 29px;
+  letter-spacing: 1.6px;
+  margin-top: 20px;
+}
+/* line 287, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-other-block .inpage-detail-block {
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
+}
+/* line 291, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-other-block .inpage-detail-block p {
+  color: #fff;
+}
+/* line 297, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list > li {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+/* line 301, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list > li p {
+  font-size: 22px;
+  letter-spacing: 1.4px;
+  line-height: normal;
+  max-width: 204px;
+  margin: 0 auto;
+}
+/* line 308, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list > li .img-block {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* line 311, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list > li .img-block img {
+  max-width: 95px;
+  width: auto;
+}
+/* line 318, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list.list3 > li {
+  width: 33.3%;
+}
+/* line 323, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list.list4 > li {
+  width: 25%;
+}
+/* line 330, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-reminder-block {
+  background-color: #d8d8d8;
+  font-size: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+/* line 336, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-reminder-block .title-block {
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 341, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-reminder-block .title-block .icon-reminder {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+/* line 346, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-reminder-block .title-block h3 {
+  font-size: 32px;
+  letter-spacing: 1.1px;
+  color: #4a4a4a;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 354, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-reminder-block .reminder-detail-block {
+  width: 75%;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 358, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-reminder-block .reminder-detail-block p {
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  color: #4a4a4a;
+  line-height: 32px;
+}
+/* line 367, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-detail-block {
+  text-align: center;
+  position: relative;
+  max-width: 930px;
+  margin: 0 auto;
+  width: 100%;
+}
+/* line 373, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-detail-block + .inpage-detail-block {
+  margin-top: 60px;
+}
+/* line 376, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-detail-block .detail-title-block {
+  background-color: #FF8080;
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+  padding: 0 1%;
+  max-width: 134px;
+  height: 43px;
+  width: 100%;
+  border-radius: 40px;
+  box-sizing: border-box;
+  line-height: 43px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -25px;
+}
+/* line 393, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-detail-block .detail-title-block h1 {
+  letter-spacing: 0.9px;
+}
+/* line 397, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-detail-block .detail-block {
+  padding: 50px 33px 25px 33px;
+  color: #000;
+  font-size: 18px;
+  line-height: normal;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: left;
+}
+/* line 405, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-detail-block .detail-block.pos-center {
+  text-align: center;
+}
+/* line 408, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-detail-block .detail-block p,
+.tashin-event .block-inpage .inpage-detail-block .detail-block .text-list--number {
+  line-height: normal;
+}
+/* line 414, ../sass/page/_inpage.scss */
+.tashin-event .block-inpage .inpage-detail-block .detail-block .text-list--number li + li {
+  margin-top: 10px;
+}
+@media (max-width: 1310px) {
+  /* line 430, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .card-block {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 450, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage.inpage-step-2 .inpage-step-block.steps3 > li:nth-of-type(1) .list-text-lv1, .tashin-event .block-inpage.inpage-step-2 .inpage-step-block.steps3 > li:nth-of-type(2) .list-text-lv1 {
+    padding-left: 70px;
+  }
+  /* line 460, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage.inpage-step-4 .title-block h2 {
+    display: inline;
+    padding-left: 0;
+  }
+  /* line 464, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage.inpage-step-4 .title-block h6 {
+    left: -25px;
+  }
+  /* line 473, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage.inpage-step-4 .inpage-other-block .inpage-detail-block .detail-list > li p {
+    max-width: 172px;
+  }
+  /* line 483, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps5 > li {
+    width: 33.3%;
+  }
+  /* line 486, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps5 > li .img-block img {
+    max-width: 217px;
+    width: 100%;
+  }
+  /* line 491, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps5 > li:nth-of-type(4), .tashin-event .block-inpage .inpage-step-block.steps5 > li:nth-of-type(5) {
+    margin-top: 40px;
+  }
+  /* line 499, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .text-block {
+    max-width: 220px;
+  }
+  /* line 502, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .card-block {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /* line 511, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .title-block {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  /* line 515, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .title-block h6 {
+    vertical-align: middle;
+    margin-top: 11px;
+    display: block;
+  }
+  /* line 521, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .inpage-detail-block {
+    display: block;
+    width: 100%;
+  }
+  /* line 526, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-reminder-block {
+    padding-right: 0;
+  }
+  /* line 529, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-reminder-block .title-block {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  /* line 534, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-reminder-block .reminder-detail-block {
+    display: block;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /* line 541, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-reminder-block .reminder-detail-block.reminder-short {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* line 546, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-reminder-block .reminder-detail-block p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 1023px) {
+  /* line 562, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage.inpage-step-2 .inpage-step-block.steps3 > li .text-block {
+    max-width: auto;
+    max-width: none;
+  }
+  /* line 567, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage.inpage-step-2 .inpage-step-block.steps3 > li:nth-of-type(1) .list-text-lv1 {
+    padding-left: 45px;
+  }
+  /* line 572, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage.inpage-step-2 .inpage-step-block.steps3 > li:nth-of-type(2) .list-text-lv1 {
+    padding-left: 54px;
+  }
+  /* line 577, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage.inpage-step-2 .inpage-step-block.steps3 > li:nth-of-type(3) .list-text-lv1 {
+    padding-left: 46px;
+  }
+  /* line 590, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps3 > li .img-block img {
+    max-width: 196px;
+    width: 100%;
+  }
+  /* line 598, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps4 > li {
+    width: 50%;
+  }
+  /* line 600, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps4 > li:nth-of-type(3), .tashin-event .block-inpage .inpage-step-block.steps4 > li:nth-of-type(4) {
+    margin-top: 90px;
+  }
+  /* line 607, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps5 > li {
+    vertical-align: top;
+  }
+  /* line 610, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps5 > li .img-block img {
+    max-width: 195px;
+    width: 100%;
+  }
+  /* line 617, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li {
+    margin-top: 30px;
+  }
+  /* line 621, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .card-block {
+    max-width: 240px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /* line 627, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .text-block {
+    max-width: 176px;
+  }
+  /* line 631, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .list-text-lv1 > li {
+    font-size: 18px;
+  }
+  /* line 635, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .list-text-lv2 {
+    padding-left: 30%;
+  }
+  /* line 637, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .list-text-lv2 > li {
+    font-size: 17px;
+  }
+  /* line 641, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li p {
+    font-size: 20px;
+  }
+  /* line 648, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .title-block {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  /* line 655, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list > li {
+    vertical-align: top;
+  }
+  /* line 658, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list > li p {
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    display: inline-block;
+    max-width: 140px;
+    width: 100%;
+    line-height: normal;
+  }
+  /* line 671, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-reminder-block .title-block {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  /* line 676, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-reminder-block .reminder-detail-block {
+    display: block;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /* line 683, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-reminder-block .reminder-detail-block p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 699, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage.inpage-step-2 .inpage-step-block.steps3 > li .text-block {
+    max-width: auto;
+    max-width: none;
+  }
+  /* line 705, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage.inpage-step-2 .inpage-step-block.steps3 > li:nth-of-type(1) .list-text-lv1, .tashin-event .block-inpage.inpage-step-2 .inpage-step-block.steps3 > li:nth-of-type(2) .list-text-lv1 {
+    padding-left: 35px;
+  }
+  /* line 710, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage.inpage-step-2 .inpage-step-block.steps3 > li:nth-of-type(3) .list-text-lv1 {
+    padding-left: 35px;
+  }
+  /* line 720, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage.inpage-step-4 .title-block h2 {
+    font-size: 36px;
+    display: inline;
+    padding-left: 0;
+  }
+  /* line 725, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage.inpage-step-4 .title-block h6 {
+    left: -25px;
+    margin-bottom: 0;
+  }
+  /* line 731, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-content-block,
+  .tashin-event .block-inpage .layout-inpage-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* line 737, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .title-block {
+    position: relative;
+  }
+  /* line 739, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .title-block h2 {
+    font-size: 48px;
+    letter-spacing: 2.3px;
+    max-width: 243px;
+    white-space: normal;
+    padding-left: 30px;
+    line-height: normal;
+  }
+  /* line 747, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .title-block .inpage-icon-close {
+    padding-right: 20px;
+  }
+  /* line 750, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .title-block h6 {
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    padding-left: 5px;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  /* line 762, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps3 > li {
+    width: 50%;
+  }
+  /* line 765, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps3 > li .img-block img {
+    max-width: 144px;
+    width: 100%;
+  }
+  /* line 773, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps4 > li {
+    width: 50%;
+  }
+  /* line 775, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps4 > li:nth-of-type(3), .tashin-event .block-inpage .inpage-step-block.steps4 > li:nth-of-type(4) {
+    margin-top: 90px;
+  }
+  /* line 782, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps5 > li {
+    width: 50%;
+  }
+  /* line 785, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps5 > li .img-block img {
+    max-width: 145px;
+    width: 100%;
+  }
+  /* line 790, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps5 > li:nth-of-type(3), .tashin-event .block-inpage .inpage-step-block.steps5 > li:nth-of-type(4), .tashin-event .block-inpage .inpage-step-block.steps5 > li:nth-of-type(5) {
+    margin-top: 60px;
+  }
+  /* line 797, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li {
+    margin-top: 30px;
+  }
+  /* line 800, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .img-block img {
+    max-width: 144px;
+  }
+  /* line 805, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .card-block {
+    max-width: 200px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /* line 811, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .card-block .img-hand {
+    max-width: 242px;
+  }
+  /* line 813, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .card-block .img-hand img {
+    width: 100%;
+  }
+  /* line 817, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .card-block .img-block {
+    max-width: 80px;
+    width: 100%;
+  }
+  /* line 821, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .card-block h6 {
+    font-size: 18px;
+    letter-spacing: 1.1px;
+  }
+  /* line 825, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .card-block p {
+    font-size: 14px;
+  }
+  /* line 830, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .text-block {
+    max-width: 150px;
+  }
+  /* line 833, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li p {
+    font-size: 17px;
+  }
+  /* line 837, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .list-text-lv1 > li {
+    font-size: 17px;
+  }
+  /* line 841, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .list-text-lv2 {
+    padding-left: 25%;
+  }
+  /* line 843, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .list-text-lv2 > li {
+    font-size: 14px;
+  }
+  /* line 851, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .title-block {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  /* line 855, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .title-block h6 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 0;
+  }
+  /* line 871, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block.color-dark .inpage-detail-block .detail-list > li .img-block img {
+    max-width: 180px;
+  }
+  /* line 882, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list.list4 > li {
+    width: 50%;
+  }
+  /* line 884, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list.list4 > li:nth-of-type(3), .tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list.list4 > li:nth-of-type(4) {
+    margin-top: 40px;
+  }
+  /* line 891, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list.list3 > li {
+    width: 50%;
+  }
+  /* line 893, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list.list3 > li:nth-of-type(3), .tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list.list3 > li:nth-of-type(4) {
+    margin-top: 40px;
+  }
+  /* line 900, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list > li p {
+    font-size: 18px;
+    letter-spacing: 1.1px;
+    font-weight: normal;
+    display: inline-block;
+    max-width: 117px;
+    width: 100%;
+    line-height: normal;
+  }
+  /* line 915, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-reminder-block .reminder-detail-block {
+    display: block;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /* line 922, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-reminder-block .reminder-detail-block p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+  /* line 930, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-detail-block .detail-block {
+    padding: 45px 15px 20px 15px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 939, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-content-block,
+  .tashin-event .block-inpage .layout-inpage-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* line 945, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-icon-close img {
+    width: 30px;
+  }
+  /* line 950, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .title-block {
+    position: relative;
+  }
+  /* line 952, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .title-block h2 {
+    font-size: 48px;
+    letter-spacing: 2.3px;
+    max-width: 243px;
+    white-space: normal;
+    padding-left: 30px;
+    line-height: normal;
+  }
+  /* line 960, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .title-block .inpage-icon-close {
+    padding-right: 20px;
+  }
+  /* line 963, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .title-block h6 {
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    padding-left: 5px;
+    font-size: 20px;
+  }
+  /* line 973, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage.inpage-step-5-5 h2 {
+    font-size: 33px;
+    letter-spacing: 3.6px;
+    padding-left: 0;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  /* line 985, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage.inpage-step-4 .inpage-step-block > li .text-block {
+    max-width: 161px;
+    padding-left: 13%;
+  }
+  /* line 995, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps3 > li {
+    width: 50%;
+  }
+  /* line 998, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps3 > li .img-block img {
+    max-width: 144px;
+    width: 100%;
+  }
+  /* line 1006, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps4 > li {
+    width: 50%;
+  }
+  /* line 1008, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps4 > li:nth-of-type(3), .tashin-event .block-inpage .inpage-step-block.steps4 > li:nth-of-type(4) {
+    margin-top: 90px;
+  }
+  /* line 1015, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps5 > li {
+    width: 50%;
+  }
+  /* line 1018, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps5 > li .img-block img {
+    max-width: 145px;
+    width: 100%;
+  }
+  /* line 1023, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block.steps5 > li:nth-of-type(3), .tashin-event .block-inpage .inpage-step-block.steps5 > li:nth-of-type(4), .tashin-event .block-inpage .inpage-step-block.steps5 > li:nth-of-type(5) {
+    margin-top: 60px;
+  }
+  /* line 1030, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li {
+    margin-top: 30px;
+  }
+  /* line 1033, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .card-block {
+    max-width: 150px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /* line 1039, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .card-block .img-hand {
+    max-width: 242px;
+  }
+  /* line 1041, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .card-block .img-hand img {
+    width: 100%;
+  }
+  /* line 1045, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .card-block .img-block {
+    max-width: 80px;
+    width: 100%;
+  }
+  /* line 1049, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .card-block h6 {
+    font-size: 18px;
+    letter-spacing: 1.1px;
+  }
+  /* line 1053, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .card-block p {
+    font-size: 14px;
+  }
+  /* line 1058, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .text-block {
+    max-width: 150px;
+  }
+  /* line 1061, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li p {
+    font-size: 17px;
+  }
+  /* line 1065, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .list-text-lv1 > li {
+    font-size: 17px;
+  }
+  /* line 1069, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .list-text-lv2 {
+    padding-left: 25%;
+  }
+  /* line 1071, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-step-block > li .list-text-lv2 > li {
+    font-size: 14px;
+  }
+  /* line 1079, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .title-block {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  /* line 1083, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .title-block h6 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 0;
+  }
+  /* line 1099, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block.color-dark .inpage-detail-block .detail-list > li .img-block img {
+    max-width: 180px;
+  }
+  /* line 1110, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list.list4 > li {
+    width: 50%;
+  }
+  /* line 1112, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list.list4 > li:nth-of-type(3), .tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list.list4 > li:nth-of-type(4) {
+    margin-top: 40px;
+  }
+  /* line 1119, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list.list3 > li {
+    width: 50%;
+  }
+  /* line 1121, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list.list3 > li:nth-of-type(3), .tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list.list3 > li:nth-of-type(4) {
+    margin-top: 40px;
+  }
+  /* line 1128, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-other-block .inpage-detail-block .detail-list > li p {
+    font-size: 18px;
+    letter-spacing: 1.1px;
+    font-weight: normal;
+    display: inline-block;
+    max-width: 117px;
+    width: 100%;
+    line-height: normal;
+  }
+  /* line 1143, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-reminder-block .reminder-detail-block {
+    display: block;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /* line 1150, ../sass/page/_inpage.scss */
+  .tashin-event .block-inpage .inpage-reminder-block .reminder-detail-block p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* line 1165, ../sass/page/_inpage.scss */
+  .tashin-event .text-list--number {
+    text-indent: -32px;
+  }
+}
+@supports (-ms-ime-align: auto) {
+  /* line 1175, ../sass/page/_inpage.scss */
+  .tashin-event .text-list--number {
+    text-indent: -32px;
+  }
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    /* line 14, ../sass/page/_ios-fix.scss */
+    .tashin-event svg {
+      width: 100% !important;
+      height: 100% !important;
+    }
+    /* line 19, ../sass/page/_ios-fix.scss */
+    .tashin-event .semi-circle svg {
+      width: auto !important;
+      heigth: auto !important;
+    }
+    /* line 24, ../sass/page/_ios-fix.scss */
+    .tashin-event #text2 {
+      transform: translateX(-100px) !important;
+      -webkit-transform: translateX(-100px) !important;
+    }
+  }
+}
+/* line 30, ../sass/page/_ios-fix.scss */
+.tashin-event _::-webkit-full-page-media, .tashin-event _:future, .tashin-event :root svg {
+  width: 100% !important;
+  height: 100% !important;
+}
+/* line 34, ../sass/page/_ios-fix.scss */
+.tashin-event _::-webkit-full-page-media, .tashin-event _:future, .tashin-event :root #text2 {
+  transform: translateX(-100px) !important;
+  -webkit-transform: translateX(-100px) !important;
+}
+/* line 41, ../sass/page/_ios-fix.scss */
+.tashin-event _::-webkit-full-page-media, .tashin-event _:future, .tashin-event :root .semi-circle svg {
+  width: auto !important;
+  heigth: auto !important;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 66, ../sass/page/_ios-fix.scss */
+  .tashin-event svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  /* line 71, ../sass/page/_ios-fix.scss */
+  .tashin-event .semi-circle svg {
+    width: auto !important;
+    heigth: auto !important;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 87, ../sass/page/_ios-fix.scss */
+  .tashin-event svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  /* line 92, ../sass/page/_ios-fix.scss */
+  .tashin-event .semi-circle svg {
+    width: auto !important;
+    heigth: auto !important;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 110, ../sass/page/_ios-fix.scss */
+  .tashin-event svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  /* line 115, ../sass/page/_ios-fix.scss */
+  .tashin-event .semi-circle svg {
+    width: auto !important;
+    heigth: auto !important;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  /* line 134, ../sass/page/_ios-fix.scss */
+  .tashin-event svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  /* line 139, ../sass/page/_ios-fix.scss */
+  .tashin-event .semi-circle svg {
+    width: auto !important;
+    heigth: auto !important;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 163, ../sass/page/_ios-fix.scss */
+  .tashin-event svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  /* line 168, ../sass/page/_ios-fix.scss */
+  .tashin-event .semi-circle svg {
+    width: auto !important;
+    heigth: auto !important;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 10230px) {
+  /* line 101, ../sass/event.scss */
+  .tashin-event {
+    /* Styles */
+  }
+}
+/* line 2, ../sass/page/_mobile-suggestion.scss */
+.tashin-event .mobile-full {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  font-family: "微軟正黑體";
+  background-color: #fbfbfb;
+  position: fixed;
+  display: table;
+  top: 0;
+  z-index: 99999;
+  overflow: hidden;
+  display: none;
+  vertical-align: middle;
+}
+/* line 19, ../sass/page/_mobile-suggestion.scss */
+.tashin-event .mobile-full .mobile-content-block {
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+}
+/* line 24, ../sass/page/_mobile-suggestion.scss */
+.tashin-event .mobile-full .img-block {
+  margin-bottom: 15px;
+}
+/* line 28, ../sass/page/_mobile-suggestion.scss */
+.tashin-event .mobile-full p {
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  color: #4a4a4a;
+}
+@media (max-width: 767px) {
+  /* line 36, ../sass/page/_mobile-suggestion.scss */
+  .tashin-event .mobile-full {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+/* line 124, ../sass/event.scss */
+.tashin-event.ios #Num {
+  left: 15px;
+}
+/* line 127, ../sass/event.scss */
+.tashin-event.ios #num2 {
+  transform: translateX(-100px) !important;
+  -webkit-transform: translateX(-100px) !important;
+}
+/* line 133, ../sass/event.scss */
+.tashin-event #Point5 {
+  display: none;
+}
+
+/*# sourceMappingURL=event.css.map */

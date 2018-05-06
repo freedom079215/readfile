@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://mkp.taishinbank.com.tw/TsCms/event/mk180102 -->
+<html class="desktop landscape"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>台新銀行財富管理</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="台新銀行財富管理">
+    <meta name="keywords" content="台新銀行財富管理">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="台新銀行財富管理">
+    <meta property="og:description" content="台新銀行財富管理">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="./wealth_files/screen.css" rel="stylesheet">
+    <link href="./wealth_files/css.css" rel="stylesheet">
+
+    
+<script type="text/javascript">
+function validateForm(){
+	console.log('validateForm');
+	var chtName = document.getElementById('chtName').value;
+	var phone2 = document.getElementById('phone2').value;
+	var phone3 = document.getElementById('phone3').value;
+	var mobile = document.getElementById('mobile').value;
+	var branch = document.getElementById('branch').value;
+	var alertMessage = "";
+	if (chtName=='' || (phone2=='' && mobile=='') || (mobile!==''&&mobile.length!=10) || branch=='' || (phone2!='' && isNaN(phone2)) || (phone3!='' && isNaN(phone3)) || (mobile!='' && isNaN(mobile)) || (mobile!='' && mobile.slice(0,2)!="09")) {
+	 	if (chtName=='') { alertMessage += '請輸入姓名\n'; }
+		if (phone2=='' && mobile=='') { alertMessage += '請輸入市話或手機\n'; }
+		if (mobile!=''&&mobile.length!=10) { alertMessage += '手機長度輸入錯誤\n'; }
+		if ((phone2!='' && isNaN(phone2)) || (phone3!='' && isNaN(phone3)) || (mobile!='' && isNaN(mobile)) || (mobile!='' && mobile.slice(0,2)!="09")) { alertMessage += '市話或手機輸入格式錯誤\n'; }
+		if (branch=='') { alertMessage += '請選擇欲洽辦分行\n'; } 
+		alert(alertMessage);
+		return false;
+	}
+
+}
+function submit(){
+	console.log('submit');
+	$('#mk180102-form').submit();
+}
+
+
+function closeFailPage(){
+	$('#failPage').hide();
+}
+</script>
+    
+  <script src="./wealth_files/saved_resource"></script></head>
+  <body style="">
+    <div id="wrapper">
+    
+<!-- 提交後的錯誤或成功訊息 -->
+<!-- The Fail Message Modal -->
+<div id="failPage" class="modal" style="display: none;">
+    <div class="modal-content">
+	<h5>親愛的客戶您好，<br>請再次確認您輸入的資料是否正確，謝謝。</h5>
+	
+	<button class="btTypeC" onclick="closeFailPage()">修改資料</button>
+	</div>
+</div>
+
+<!-- The Success Message Modal -->
+<div id="successPage" class="modal" style="display: none;">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+<!--     <span class="close">&times;</span> -->
+    <p>您已完成活動登錄，感謝您的參與！</p>
+    <button class="btTypeC" onclick="$(&#39;#successPage&#39;).hide()">回活動頁</button>
+  </div>
+
+</div>
+<!-- 提交後的錯誤或成功訊息 end -->
+    
+      <header><a id="logo" href="https://www.taishinbank.com.tw/" target="_blank"><img src="./wealth_files/logo.png" alt="台新銀行"></a></header>
+      <div id="main" class="main">
+        <div id="kv">
+          <div class="con">
+            <div class="title">
+              <h3>美好未來<span>現在開始孕育</span></h3>
+              <h1>台新財富管理<span>因為專業所以懂你</span></h1>
+            </div>
+          </div>
+          <div class="con">
+            <div id="subTitle">
+              <h2>台新財富管理三大優勢</h2>
+              <p><span>★專業團隊：</span><i>依據客戶財務需求 量身訂做理財諮詢服務</i></p>
+              <p><span>★多元商品：</span><i>開放式產品平台 提供多元理財產品</i></p>
+              <p><span>★頂級會員權益回饋：</span><i>體察客戶需求 提供貼心且實質的權益回饋</i></p>
+            </div>
+            <div id="buttons">
+              <div class="minBtn"><a href="https://mkp.taishinbank.com.tw/TsCms/event/mk180102/index3" onclick="trackEvent(&#39;click&#39;,&#39;首頁&#39;,&#39;新臺幣優利定存&#39;)" class="justify">
+                  <h3>新臺幣優利定存<span>最高階年息1.68%</span></h3></a><a href="https://mkp.taishinbank.com.tw/TsCms/event/mk180102/index2" onclick="trackEvent(&#39;click&#39;,&#39;首頁&#39;,&#39;外幣優利定存&#39;)" class="justify">
+                  <h3>外幣優利定存<span>最高階年息6.68%</span></h3></a><a href="javascript:void(0)" onclick="goto(&#39;#interestForm&#39;);trackEvent(&#39;click&#39;,&#39;首頁&#39;,&#39;我有興趣&#39;)" class="onlyMobile">
+                  <h3>我 有 興 趣</h3></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="con">
+          <div id="reverse">
+            <div>
+              <p class="textMid">台新銀行獲得國內外多項大獎的肯定！感謝您多年來對我們的支持和信賴，台新銀行專業的團隊會依據您與家庭的生涯階段、財務需求以及風險屬性和承受度，量身打造最適合的理財諮詢服務！<br>為回饋客戶，即日起以新資金參加臺外幣優利定存專案，可享新臺幣最高階年息1.68%、美元人民幣最高階年息6.68%、澳幣一個月年息3.68%！</p>
+              <p class="tel textMid onlyMobile">請洽各地分行或速撥專線：<b>0800-000-456</b><small>按</small><b>3</b></p>
+            </div>
+            <div>
+              <form name="mk180102-form" id="mk180102-form" method="POST" autocomplete="on" action="https://mkp.taishinbank.com.tw/TsCms/event/register" onsubmit="return validateForm();">
+                <input type="hidden" name="_csrf" value="7daac6e7-bf16-45e6-85c5-bc0a1c5dce01">
+                <input type="hidden" name="campId" value="20180301190022"><!-- 活動代碼 -->
+                <input type="hidden" name="groupNo" value="105"><!-- 客群代碼 -->
+                <input type="hidden" name="endDate" value="20180331"><!-- 活動結束日期 -->
+                <h2>我有興趣</h2>
+                <ul>
+                  <li>
+                    <input id="chtName" name="chtName" type="text" maxlength="6" placeholder="請輸入姓名">
+                  </li>
+                  <li>
+                    <input id="phone2" name="phone2" type="text" maxlength="10" placeholder="請輸入市話">
+                  </li>
+                  <li>
+                    <input id="phone3" name="phone3" type="text" maxlength="6" placeholder="分機">
+                  </li>
+                  <li>
+                    <input id="mobile" name="mobile" type="text" maxlength="10" placeholder="請輸入手機">
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <label for="branch">欲辦分行</label>
+                    <select id="county" onchange="selectCounty(this);">
+                      <option value="0">分行縣市</option>
+                      <option value="基隆市">基隆市</option>
+                      <option value="台北市">台北市</option>
+                      <option value="新北市">新北市</option>
+                      <option value="宜蘭縣">宜蘭縣</option>
+                      <option value="新竹市">新竹市</option>
+                      <option value="新竹縣">新竹縣</option>
+                      <option value="桃園市">桃園市</option>
+                      <option value="苗栗縣">苗栗縣</option>
+                      <option value="台中市">台中市</option>
+                      <option value="彰化縣">彰化縣</option>
+                      <option value="嘉義市">嘉義市</option>
+                      <option value="台南市">台南市</option>
+                      <option value="高雄市">高雄市</option>
+                      <option value="屏東縣">屏東縣</option>
+                      <option value="花蓮縣">花蓮縣</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select name="branch" id="branch">
+                      <option value="">請選擇分行</option>
+                    </select>
+                  </li>
+                </ul>
+                <div>
+                  <p>注意事項：<br>您所填寫之個人資料，台新銀行將於您所預約申辦服務之範圍內為蒐集、處理與利用。<br>相關活動詳情及限制請洽台新銀行各分行，活動未盡事項，悉依台新銀行公告活動內容為主。<br>或洽速撥專線0800-000-456按3我們將儘速請專人與您聯絡<a href="https://www.taishinbank.com.tw/" target="_blank">www.taishinbank.com.tw</a></p>
+                  <button type="submit"><span>送 出</span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <button id="gotop" type="button" onclick="goto(&#39;header&#39;);trackEvent(&#39;click&#39;,&#39;首頁&#39;,&#39;Top&#39;);" value="go top" class="onlyMobile"></button>
+        </div>
+      </div>
+      <footer><span><img src="./wealth_files/footer_logo.jpg" alt="台新國際商業銀行"></span>
+        <p>版權所有2018台新國際商業銀行<span>Copyright Taishin International Bank. All Right Reserved</span></p>
+      </footer>
+    </div>
+  
+  <script src="./wealth_files/device.min.js"></script>
+  <script src="./wealth_files/script.min.js"></script>
+  <script type="text/javascript">
+    var google_tag_params = {
+    dynx_itemid: 'REPLACE_WITH_VALUE',
+    dynx_itemid2: 'REPLACE_WITH_VALUE',
+    dynx_pagetype: 'REPLACE_WITH_VALUE',
+    dynx_totalvalue: 'REPLACE_WITH_VALUE',
+    };
+  </script>
+
+  
+  
+	
+	
+  
+<script type="application/javascript" id="ywa-1525610691566-66202" class="ywa-10000" defer="" src="./wealth_files/sp.pl.下載"></script></body></html>

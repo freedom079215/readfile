@@ -16,7 +16,31 @@
       .row input[type=text]{
         background: #ece9e9;
       }
+      header{ 
+        position:static !important;
+      }
 </style>
+<script type="text/javascript">
+  function downloadInnerHtml(filename, elId, mimeType) {
+      // var elHtml = document.getElementById(elId).innerHTML;
+      var link = document.createElement('a');
+      mimeType = mimeType || 'text/plain';
+      for(var v =0;v<gacode.length;v++)
+      {
+        if(v==0){
+          str = gacode[v]
+        }
+        else
+        {
+          str = str + " " + gacode[v]
+        }
+      }
+      link.setAttribute('download', filename);
+      link.setAttribute('href', 'data:' + mimeType  +  ';charset=utf-8,' + encodeURIComponent(str));
+      link.click(); 
+      console.log('click_success')
+  }
+</script>
 <script>        
   var file_text = new String
   function handleFileSelect()
@@ -62,7 +86,7 @@ $(document).ready(function(){
 
      $("#analyze").click(function(){
       
-          var str = $.get("ts3.htm", function(data, status){
+          var str = $.get("tsbmkp.htm", function(data, status){
             $( "#main" ).html( data );
             jQuery.fn.extend({
                 getPath: function () {
@@ -162,19 +186,19 @@ $(document).ready(function(){
                   <button id="analyze2" class="btn btn-primary">開始追蹤設定</button>
               </div>
               <div class="col-3">
-                  <button id='send' class="btn btn-primary">產出GACode</button>
+                  <button id='send' class="btn btn-primary">檢測GACode</button>
               </div>
               <div class="col-3">
                   <button class="btn btn-light"><a href="#" id="downloadLink">下載GA追蹤碼js</a></button>
               </div>
 
             </div>
-            <div id='GA' class="row">
+            <div id='GA_test' class="row">
             </div>
            <div class="row">
               <div class="col-12">設定GA Code</div>
               <div class="col">
-                    <div id="GACode"><br></div>
+                    <div id="GACode" class="row"><br></div>
               </div>
            </div>
             <p></p>
@@ -196,11 +220,69 @@ $(document).ready(function(){
       });
 </script>
 <script type="text/javascript">
+  $('#send').click(function(){
+    var form = new Array;
+    var test = new Array;
+    var event_action = new Array;
+    var event_category = new Array;
+    var event_value = new Array;
+    form = $("form").serializeArray()
+    console.log(form)
+    console.log(button_ID.length)
+    for(var i = 0; i < button_ID.length; i++)
+    {
+          if(button_ID[i] ==null)
+          {
+                continue
+          }
+          for(var j = 0; j < form.length; j++)
+          {
+                if(form[j].name == null)
+                {
+                      continue
+                }
+                var category = "Event_Category" + i 
+                var action = "Event_Action" + i 
+                var value = "Event_label" + i 
+                if(form[j].name == action)
+                {
+                      event_action[i] = form[j].value;
+                      continue;
+                }
+                if(form[j].name == category)
+                {
+                      event_category[i] = form[j].value
+                      continue
+                }
+                if(form[j].name == value)
+                {
+                      event_value[i] = form[j].value
+                      continue
+                }
+          }
+          console.log(event_action)
+          text = "$(\"" + button_ID[i] + "\").click(function(){ \n\ gtag(\'event\', \'"+  event_action[i] + "\', { \'event_category\' : \'"+ event_category[i] +"\', \'event_label\' : \'" + event_value[i] +  "\' });" +
+               "});"
+          gacode[i]= text;
+          console.log(text)
+          console.log(link_ID[i])
+          // $("#GA_test").append("<br><hr> GA程式碼<br>"+text +"<br><hr>")
+          $("#GA"+i).removeClass('col-12').addClass('col-6');
 
-  var set_getPath = function(x){
-    
 
-  }
+          if(!$("#GA"+i).hasClass('code-active')) {
+            var idiv = document.createElement('div')
+            idiv.id = 'GA_output'+i;
+            idiv.className = 'col-6';
+            document.getElementById('GA'+i).after(idiv);
+            $("#"+'GA_output'+i).append("追蹤碼" + i+ ":" + text);
+            $("#GA"+i).addClass('code-active');
+
+          }
+
+        }
+ 
+      });
 
   $("#analyze2").click(function(){
 
@@ -270,4 +352,9 @@ $(document).ready(function(){
 
 
   })
+  $('#downloadLink').click(function(){
+
+      downloadInnerHtml(fileName, 'GACode','text/html');
+  });
 </script>
+
