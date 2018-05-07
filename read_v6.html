@@ -185,7 +185,7 @@ $(document).ready(function(){
                   <button class="btn btn-secondary" id='btnLoad' onclick='handleFileSelect();'>LOAD</button>
               </div>   
               <div class="col-3">
-                  <button id="analyze" class="btn btn-primary">讀入網頁資料</button>
+                  <button id="analyze" class="btn btn-primary">啟動準備</button>
                   <button id="analyze2" class="btn btn-primary">開始追蹤設定</button>
               </div>
               <div class="col-3">
@@ -268,7 +268,7 @@ $(document).ready(function(){
                "});"
           gacode[i]= text;
           console.log(text)
-          console.log(link_ID[i])
+          console.log(button_ID[i])
           // $("#GA_test").append("<br><hr> GA程式碼<br>"+text +"<br><hr>")
           $("#GA"+i).removeClass('col-12').addClass('col-6');
 
