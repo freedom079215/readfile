@@ -87,9 +87,9 @@ $(document).ready(function(){
 
      $("#analyze").click(function(){
       
-          //var str = $.get("tsbmkp.htm", function(data, status){
+          var str = $.get("family.htm", function(data, status){
 
-            //$( "#main" ).html( data );
+            $( "#main" ).html( data );
           data = $('#main').html()
             jQuery.fn.extend({
                 getPath: function () {

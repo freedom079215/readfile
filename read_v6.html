@@ -87,7 +87,7 @@ $(document).ready(function(){
 
      $("#analyze").click(function(){
       
-          //var str = $.get("tsbmkp.htm", function(data, status){
+          //xvar str = $.get("tsbmkp.htm", function(data, status){
 
             //$( "#main" ).html( data );
           data = $('#main').html()
@@ -231,9 +231,10 @@ $(document).ready(function(){
     var event_value = new Array;
     form = $("form").serializeArray()
     console.log(form)
-    console.log(button_ID.length)
+    console.log(button_ID)
     for(var i = 0; i < button_ID.length; i++)
     {
+      console.log('howmany'+i)
           if(button_ID[i] ==null)
           {
                 continue
@@ -312,40 +313,79 @@ $(document).ready(function(){
       var path = $( e.target ).getPath();
 
       // setTimeout(function(){
-        var length = button_ID.length;
-        console.log(length)
-        console.log(button_ID[0])
-        for(i = 0 ; i < length+1 ;i++)
+        var i = button_ID.length;
+        console.log(button_ID)
+        if(i==0)
         {
-          console.log(i)
-          if(typeof(button_ID[i]) == 'undefined')
-          {
-          console.log('store')
-          button_ID[i] = path;
-          break;
+          button_ID[i] = path
+          i++;
+          console.log('存入'+ button_ID[i] + '為' + path)
+          if(!$(this).hasClass('active')) {
+            $(this).addClass('active')
+                   .prepend("代碼:"+i)
+            var idiv = document.createElement('div')
+            idiv.id = 'GA'+i;
+            idiv.className = 'col-12'
+            document.getElementById('GACode').appendChild(idiv);
+            $("#"+'GA'+i).append("代碼" + i+ ":" +path);
+            var select = '<form><div class="form-group"> \n\
+                <label>Event_Category : </label>\n\
+               <input type="text" name="Event_Category'+i+'"> <br>\n\
+               <label>Event_Action : </label>\n\
+               <input type="text" name="Event_Action'+i+'"> <br>\n\
+                  <label>Event_Label</label><select name="Event_label'+i+'" id="event_label" size="4" class="form-control">\n\
+                    <option>form</option>\n\
+                    <option>questionnaire</option>\n\
+                    <option>button</option>\n\
+                    <option>others</option>\n\
+                  </select>\n\
+                </div></form>'
+            $("#"+'GA'+i).append("<br>" + select)
           }
         }
-        if(!$(this).hasClass('active')) {
-          $(this).addClass('active')
-                 .prepend("代碼:"+i)
-          var idiv = document.createElement('div')
-          idiv.id = 'GA'+i;
-          idiv.className = 'col-12'
-          document.getElementById('GACode').appendChild(idiv);
-          $("#"+'GA'+i).append("代碼" + i+ ":" +path);
-          var select = '<form><div class="form-group"> \n\
-              <label>Event_Category : </label>\n\
-             <input type="text" name="Event_Category'+i+'"> <br>\n\
-             <label>Event_Action : </label>\n\
-             <input type="text" name="Event_Action'+i+'"> <br>\n\
-                <label>Event_Label</label><select name="Event_label'+i+'" id="event_label" size="4" class="form-control">\n\
-                  <option>form</option>\n\
-                  <option>questionnaire</option>\n\
-                  <option>button</option>\n\
-                  <option>others</option>\n\
-                </select>\n\
-              </div></form>'
-          $("#"+'GA'+i).append("<br>" + select)
+        else
+        {
+          for(j = 0 ; j < i ;i++)
+          {
+            console.log(i)
+            if((button_ID[j]) == path)
+            {
+              var breakpoint = 1;
+              break;
+
+            }
+
+          }
+            else
+            {
+              button_ID[j] = path
+              i++
+              console.log('存入'+ button_ID[i] + '為' + path)
+                  if(!$(this).hasClass('active')) {
+                    $(this).addClass('active')
+                           .prepend("代碼:"+i)
+                    var idiv = document.createElement('div')
+                    idiv.id = 'GA'+i;
+                    idiv.className = 'col-12'
+                    document.getElementById('GACode').appendChild(idiv);
+                    $("#"+'GA'+i).append("代碼" + i+ ":" +path);
+                    var select = '<form><div class="form-group"> \n\
+                        <label>Event_Category : </label>\n\
+                       <input type="text" name="Event_Category'+i+'"> <br>\n\
+                       <label>Event_Action : </label>\n\
+                       <input type="text" name="Event_Action'+i+'"> <br>\n\
+                          <label>Event_Label</label><select name="Event_label'+i+'" id="event_label" size="4" class="form-control">\n\
+                            <option>form</option>\n\
+                            <option>questionnaire</option>\n\
+                            <option>button</option>\n\
+                            <option>others</option>\n\
+                          </select>\n\
+                        </div></form>'
+                    $("#"+'GA'+i).append("<br>" + select)
+                }
+            }
+          }
+
         }
 
 
